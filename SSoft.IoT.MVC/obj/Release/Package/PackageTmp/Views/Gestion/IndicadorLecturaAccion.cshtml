@@ -1,0 +1,121 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Layout/_master.cshtml";
+}
+<script src="~/Script/Highcharts/highcharts.js"></script>
+<script src="~/Script/Highcharts/modules/series-label.js"></script>
+<script src="~/Script/Highcharts/modules/exporting.js"></script>
+<script src="~/Script/CultivoOnlineJs/Gestion/IndicadorLecturaAccionJs.js"></script>
+@*<div class="gtco-section border-bottom">
+        <div class="gtco-container">
+            <div class="row">
+                <div class="col-md-8 gtco-heading">
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+    </div>*@
+<br />
+<h1 style="margin-left:30%;">Bienvenido</h1>
+<hr />
+<p style="margin-left:5%;">
+    <b>Monitor de seguimiento</b>
+    <button id="refrescar" class="btn btn-success" style="margin-left:5%;">Actualizar Indicadores</button>
+</p>
+<hr />
+<div class="row">
+    <div class="col-sm-4">
+        <h4 style="margin-left:30%;">Estado de las Maquinas</h4>
+        <table id="saludTable"></table>
+        <div id="saludPager"></div>
+    </div>
+</div>
+<hr />
+
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog" style="width: 90%;">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Indicador Porcentaje Humedad</h4>
+            </div>
+            <div class="modal-body">
+                <div style="margin-left:5%;">
+                    <table id="tareasTable"></table>
+                    <div id="tareasPager"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="myModalGr" role="dialog">
+    <div class="modal-dialog" style="width: 90%;">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Historial Toma Muestras Humedad</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row margenTopLinea">
+                    <div class="col-md-3">
+                        <div role="form">
+                            <div class="form-group">
+                                <label for="name">Consulte un dia:</label>
+                                @Html.TextBox("fechaConsulta", "", new { @class = "form-control form_datetime" })
+                                <div class="help-block with-errors"></div>
+                                <button id="consultaGrafico" class="btn btn-success" title="Consultar">Consultar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="chart1Header">
+                </div>
+                <div id="chart1" style="height: 300px; width: 100%;border:1px solid black;">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="myModalDetalle" role="dialog">
+    <div class="modal-dialog" style="width: 90%;">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Detalle Consumo Agua</h4>
+            </div>
+            <div class="modal-body">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">...</div>
+                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+                    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+                </div>
+
+                <div style="margin-left:5%;">
+                    <table id="accionesTable"></table>
+                    <div id="accionesPager"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>

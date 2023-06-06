@@ -1,0 +1,205 @@
+C:\Proyect\SSoft\Fuente\SSoft\SSoft.IoT.MVC\bin\SSoft.IoT.MVC.dll.config
+C:\Proyect\SSoft\Fuente\SSoft\SSoft.IoT.MVC\bin\SSoft.IoT.MVC.dll
+C:\Proyect\SSoft\Fuente\SSoft\SSoft.IoT.MVC\bin\SSoft.IoT.MVC.pdb
+C:\Proyect\SSoft\Fuente\SSoft\SSoft.IoT.MVC\bin\Microsoft.Web.Infrastructure.dll
+C:\Proyect\SSoft\Fuente\SSoft\SSoft.IoT.MVC\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Proyect\SSoft\Fuente\SSoft\SSoft.IoT.MVC\bin\Newtonsoft.Json.dll
+C:\Proyect\SSoft\Fuente\SSoft\SSoft.IoT.MVC\bin\SSoft.Aplicacion.dll
+C:\Proyect\SSoft\Fuente\SSoft\SSoft.IoT.MVC\bin\SSoft.Transversal.dll
+C:\Proyect\SSoft\Fuente\SSoft\SSoft.IoT.MVC\bin\System.Web.Helpers.dll
+C:\Proyect\SSoft\Fuente\SSoft\SSoft.IoT.MVC\bin\System.Web.Mvc.dll
+C:\Proyect\SSoft\Fuente\SSoft\SSoft.IoT.MVC\bin\System.Web.Razor.dll
+C:\Proyect\SSoft\Fuente\SSoft\SSoft.IoT.MVC\bin\System.Web.WebPages.Deployment.dll
+C:\Proyect\SSoft\Fuente\SSoft\SSoft.IoT.MVC\bin\System.Web.WebPages.dll
+C:\Proyect\SSoft\Fuente\SSoft\SSoft.IoT.MVC\bin\System.Web.WebPages.Razor.dll
+C:\Proyect\SSoft\Fuente\SSoft\SSoft.IoT.MVC\bin\SSoft.Dominio.dll
+C:\Proyect\SSoft\Fuente\SSoft\SSoft.IoT.MVC\bin\SSoft.Repositorio.dll
+C:\Proyect\SSoft\Fuente\SSoft\SSoft.IoT.MVC\bin\SSoft.DataAccess.dll
+C:\Proyect\SSoft\Fuente\SSoft\SSoft.IoT.MVC\bin\EntityFramework.dll
+C:\Proyect\SSoft\Fuente\SSoft\SSoft.IoT.MVC\bin\SSoft.Aplicacion.pdb
+C:\Proyect\SSoft\Fuente\SSoft\SSoft.IoT.MVC\bin\SSoft.Transversal.pdb
+C:\Proyect\SSoft\Fuente\SSoft\SSoft.IoT.MVC\bin\Newtonsoft.Json.xml
+C:\Proyect\SSoft\Fuente\SSoft\SSoft.IoT.MVC\bin\System.Web.Helpers.xml
+C:\Proyect\SSoft\Fuente\SSoft\SSoft.IoT.MVC\bin\System.Web.Mvc.xml
+C:\Proyect\SSoft\Fuente\SSoft\SSoft.IoT.MVC\bin\System.Web.Razor.xml
+C:\Proyect\SSoft\Fuente\SSoft\SSoft.IoT.MVC\bin\System.Web.WebPages.xml
+C:\Proyect\SSoft\Fuente\SSoft\SSoft.IoT.MVC\bin\System.Web.WebPages.Deployment.xml
+C:\Proyect\SSoft\Fuente\SSoft\SSoft.IoT.MVC\bin\System.Web.WebPages.Razor.xml
+C:\Proyect\SSoft\Fuente\SSoft\SSoft.IoT.MVC\bin\SSoft.Dominio.pdb
+C:\Proyect\SSoft\Fuente\SSoft\SSoft.IoT.MVC\bin\SSoft.Repositorio.pdb
+C:\Proyect\SSoft\Fuente\SSoft\SSoft.IoT.MVC\bin\SSoft.DataAccess.pdb
+C:\Proyect\SSoft\Fuente\SSoft\SSoft.IoT.MVC\bin\EntityFramework.xml
+C:\Proyect\SSoft\Fuente\SSoft\SSoft.IoT.MVC\bin\es\System.Web.Helpers.resources.dll
+C:\Proyect\SSoft\Fuente\SSoft\SSoft.IoT.MVC\bin\es\System.Web.Mvc.resources.dll
+C:\Proyect\SSoft\Fuente\SSoft\SSoft.IoT.MVC\bin\es\System.Web.Razor.resources.dll
+C:\Proyect\SSoft\Fuente\SSoft\SSoft.IoT.MVC\bin\es\System.Web.WebPages.resources.dll
+C:\Proyect\SSoft\Fuente\SSoft\SSoft.IoT.MVC\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Proyect\SSoft\Fuente\SSoft\SSoft.IoT.MVC\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Proyect\SSoft\Fuente\SSoft\SSoft.IoT.MVC\obj\Debug\SSoft.IoT.MVC.csprojResolveAssemblyReference.cache
+C:\Proyect\SSoft\Fuente\SSoft\SSoft.IoT.MVC\obj\Debug\SSoft.IoT.MVC.dll
+C:\Proyect\SSoft\Fuente\SSoft\SSoft.IoT.MVC\obj\Debug\SSoft.IoT.MVC.pdb
+C:\Proyect\SSoft\Fuente\SSoft\SSoft.IoT.MVC\bin\EntityFramework.SqlServer.dll
+C:\Proyect\SSoft\Fuente\SSoft\SSoft.IoT.MVC\bin\EntityFramework.SqlServer.xml
+C:\Proyect\SSoft\Fuente\SSoft\SSoft.IoT.MVC\bin\Microsoft.WebSockets.dll
+D:\Proyect\SSoft\Fuente\SSoft\SSoft.IoT.MVC\bin\SSoft.IoT.MVC.dll.config
+D:\Proyect\SSoft\Fuente\SSoft\SSoft.IoT.MVC\bin\SSoft.IoT.MVC.dll
+D:\Proyect\SSoft\Fuente\SSoft\SSoft.IoT.MVC\bin\SSoft.IoT.MVC.pdb
+D:\Proyect\SSoft\Fuente\SSoft\SSoft.IoT.MVC\bin\EntityFramework.dll
+D:\Proyect\SSoft\Fuente\SSoft\SSoft.IoT.MVC\bin\EntityFramework.SqlServer.dll
+D:\Proyect\SSoft\Fuente\SSoft\SSoft.IoT.MVC\bin\Microsoft.Web.Infrastructure.dll
+D:\Proyect\SSoft\Fuente\SSoft\SSoft.IoT.MVC\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+D:\Proyect\SSoft\Fuente\SSoft\SSoft.IoT.MVC\bin\Microsoft.WebSockets.dll
+D:\Proyect\SSoft\Fuente\SSoft\SSoft.IoT.MVC\bin\Newtonsoft.Json.dll
+D:\Proyect\SSoft\Fuente\SSoft\SSoft.IoT.MVC\bin\SSoft.Aplicacion.dll
+D:\Proyect\SSoft\Fuente\SSoft\SSoft.IoT.MVC\bin\SSoft.Transversal.dll
+D:\Proyect\SSoft\Fuente\SSoft\SSoft.IoT.MVC\bin\System.Net.Http.Formatting.dll
+D:\Proyect\SSoft\Fuente\SSoft\SSoft.IoT.MVC\bin\System.Web.Helpers.dll
+D:\Proyect\SSoft\Fuente\SSoft\SSoft.IoT.MVC\bin\System.Web.Http.dll
+D:\Proyect\SSoft\Fuente\SSoft\SSoft.IoT.MVC\bin\System.Web.Http.WebHost.dll
+D:\Proyect\SSoft\Fuente\SSoft\SSoft.IoT.MVC\bin\System.Web.Mvc.dll
+D:\Proyect\SSoft\Fuente\SSoft\SSoft.IoT.MVC\bin\System.Web.Razor.dll
+D:\Proyect\SSoft\Fuente\SSoft\SSoft.IoT.MVC\bin\System.Web.WebPages.Deployment.dll
+D:\Proyect\SSoft\Fuente\SSoft\SSoft.IoT.MVC\bin\System.Web.WebPages.dll
+D:\Proyect\SSoft\Fuente\SSoft\SSoft.IoT.MVC\bin\System.Web.WebPages.Razor.dll
+D:\Proyect\SSoft\Fuente\SSoft\SSoft.IoT.MVC\bin\SSoft.Dominio.dll
+D:\Proyect\SSoft\Fuente\SSoft\SSoft.IoT.MVC\bin\SSoft.DataAccess.dll
+D:\Proyect\SSoft\Fuente\SSoft\SSoft.IoT.MVC\bin\SSoft.Repositorio.dll
+D:\Proyect\SSoft\Fuente\SSoft\SSoft.IoT.MVC\bin\SSoft.Aplicacion.pdb
+D:\Proyect\SSoft\Fuente\SSoft\SSoft.IoT.MVC\bin\SSoft.Transversal.pdb
+D:\Proyect\SSoft\Fuente\SSoft\SSoft.IoT.MVC\bin\EntityFramework.xml
+D:\Proyect\SSoft\Fuente\SSoft\SSoft.IoT.MVC\bin\EntityFramework.SqlServer.xml
+D:\Proyect\SSoft\Fuente\SSoft\SSoft.IoT.MVC\bin\Newtonsoft.Json.xml
+D:\Proyect\SSoft\Fuente\SSoft\SSoft.IoT.MVC\bin\System.Net.Http.Formatting.xml
+D:\Proyect\SSoft\Fuente\SSoft\SSoft.IoT.MVC\bin\System.Web.Helpers.xml
+D:\Proyect\SSoft\Fuente\SSoft\SSoft.IoT.MVC\bin\System.Web.Http.xml
+D:\Proyect\SSoft\Fuente\SSoft\SSoft.IoT.MVC\bin\System.Web.Http.WebHost.xml
+D:\Proyect\SSoft\Fuente\SSoft\SSoft.IoT.MVC\bin\System.Web.Mvc.xml
+D:\Proyect\SSoft\Fuente\SSoft\SSoft.IoT.MVC\bin\System.Web.Razor.xml
+D:\Proyect\SSoft\Fuente\SSoft\SSoft.IoT.MVC\bin\System.Web.WebPages.xml
+D:\Proyect\SSoft\Fuente\SSoft\SSoft.IoT.MVC\bin\System.Web.WebPages.Deployment.xml
+D:\Proyect\SSoft\Fuente\SSoft\SSoft.IoT.MVC\bin\System.Web.WebPages.Razor.xml
+D:\Proyect\SSoft\Fuente\SSoft\SSoft.IoT.MVC\bin\SSoft.Dominio.pdb
+D:\Proyect\SSoft\Fuente\SSoft\SSoft.IoT.MVC\bin\SSoft.DataAccess.pdb
+D:\Proyect\SSoft\Fuente\SSoft\SSoft.IoT.MVC\bin\SSoft.Repositorio.pdb
+D:\Proyect\SSoft\Fuente\SSoft\SSoft.IoT.MVC\bin\es\System.Net.Http.Formatting.resources.dll
+D:\Proyect\SSoft\Fuente\SSoft\SSoft.IoT.MVC\bin\es\System.Web.Helpers.resources.dll
+D:\Proyect\SSoft\Fuente\SSoft\SSoft.IoT.MVC\bin\es\System.Web.Http.resources.dll
+D:\Proyect\SSoft\Fuente\SSoft\SSoft.IoT.MVC\bin\es\System.Web.Http.WebHost.resources.dll
+D:\Proyect\SSoft\Fuente\SSoft\SSoft.IoT.MVC\bin\es\System.Web.Mvc.resources.dll
+D:\Proyect\SSoft\Fuente\SSoft\SSoft.IoT.MVC\bin\es\System.Web.Razor.resources.dll
+D:\Proyect\SSoft\Fuente\SSoft\SSoft.IoT.MVC\bin\es\System.Web.WebPages.resources.dll
+D:\Proyect\SSoft\Fuente\SSoft\SSoft.IoT.MVC\bin\es\System.Web.WebPages.Deployment.resources.dll
+D:\Proyect\SSoft\Fuente\SSoft\SSoft.IoT.MVC\bin\es\System.Web.WebPages.Razor.resources.dll
+D:\Proyect\SSoft\Fuente\SSoft\SSoft.IoT.MVC\obj\Debug\SSoft.IoT.MVC.csprojResolveAssemblyReference.cache
+D:\Proyect\SSoft\Fuente\SSoft\SSoft.IoT.MVC\obj\Debug\SSoft.IoT.MVC.dll
+D:\Proyect\SSoft\Fuente\SSoft\SSoft.IoT.MVC\obj\Debug\SSoft.IoT.MVC.pdb
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.IoT.MVC\bin\SSoft.IoT.MVC.dll.config
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.IoT.MVC\bin\SSoft.IoT.MVC.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.IoT.MVC\bin\SSoft.IoT.MVC.pdb
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.IoT.MVC\bin\EntityFramework.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.IoT.MVC\bin\EntityFramework.SqlServer.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.IoT.MVC\bin\Microsoft.Web.Infrastructure.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.IoT.MVC\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.IoT.MVC\bin\Microsoft.WebSockets.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.IoT.MVC\bin\Newtonsoft.Json.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.IoT.MVC\bin\SSoft.Aplicacion.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.IoT.MVC\bin\SSoft.Transversal.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.IoT.MVC\bin\System.Net.Http.Formatting.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.IoT.MVC\bin\System.Web.Helpers.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.IoT.MVC\bin\System.Web.Http.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.IoT.MVC\bin\System.Web.Http.WebHost.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.IoT.MVC\bin\System.Web.Mvc.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.IoT.MVC\bin\System.Web.Razor.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.IoT.MVC\bin\System.Web.WebPages.Deployment.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.IoT.MVC\bin\System.Web.WebPages.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.IoT.MVC\bin\System.Web.WebPages.Razor.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.IoT.MVC\bin\SSoft.Dominio.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.IoT.MVC\bin\SSoft.DataAccess.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.IoT.MVC\bin\SSoft.Repositorio.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.IoT.MVC\bin\SSoft.Aplicacion.pdb
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.IoT.MVC\bin\SSoft.Transversal.pdb
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.IoT.MVC\bin\EntityFramework.xml
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.IoT.MVC\bin\EntityFramework.SqlServer.xml
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.IoT.MVC\bin\Newtonsoft.Json.xml
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.IoT.MVC\bin\System.Net.Http.Formatting.xml
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.IoT.MVC\bin\System.Web.Helpers.xml
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.IoT.MVC\bin\System.Web.Http.xml
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.IoT.MVC\bin\System.Web.Http.WebHost.xml
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.IoT.MVC\bin\System.Web.Mvc.xml
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.IoT.MVC\bin\System.Web.Razor.xml
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.IoT.MVC\bin\System.Web.WebPages.xml
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.IoT.MVC\bin\System.Web.WebPages.Deployment.xml
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.IoT.MVC\bin\System.Web.WebPages.Razor.xml
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.IoT.MVC\bin\SSoft.Dominio.pdb
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.IoT.MVC\bin\SSoft.DataAccess.pdb
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.IoT.MVC\bin\SSoft.DataAccess.dll.config
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.IoT.MVC\bin\SSoft.Repositorio.pdb
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.IoT.MVC\bin\es\System.Net.Http.Formatting.resources.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.IoT.MVC\bin\es\System.Web.Helpers.resources.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.IoT.MVC\bin\es\System.Web.Http.resources.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.IoT.MVC\bin\es\System.Web.Http.WebHost.resources.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.IoT.MVC\bin\es\System.Web.Mvc.resources.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.IoT.MVC\bin\es\System.Web.Razor.resources.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.IoT.MVC\bin\es\System.Web.WebPages.resources.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.IoT.MVC\bin\es\System.Web.WebPages.Deployment.resources.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.IoT.MVC\bin\es\System.Web.WebPages.Razor.resources.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.IoT.MVC\obj\Debug\SSoft.IoT.MVC.csprojAssemblyReference.cache
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.IoT.MVC\obj\Debug\SSoft.IoT.MVC.csproj.CoreCompileInputs.cache
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.IoT.MVC\obj\Debug\SSoft.IoT.MVC.csproj.CopyComplete
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.IoT.MVC\obj\Debug\SSoft.IoT.MVC.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.IoT.MVC\obj\Debug\SSoft.IoT.MVC.pdb
+C:\Emprendimientos\E-Mapu\SSoft\SSoft.IoT.MVC\bin\SSoft.IoT.MVC.dll.config
+C:\Emprendimientos\E-Mapu\SSoft\SSoft.IoT.MVC\bin\SSoft.IoT.MVC.dll
+C:\Emprendimientos\E-Mapu\SSoft\SSoft.IoT.MVC\bin\SSoft.IoT.MVC.pdb
+C:\Emprendimientos\E-Mapu\SSoft\SSoft.IoT.MVC\bin\EntityFramework.dll
+C:\Emprendimientos\E-Mapu\SSoft\SSoft.IoT.MVC\bin\EntityFramework.SqlServer.dll
+C:\Emprendimientos\E-Mapu\SSoft\SSoft.IoT.MVC\bin\Microsoft.Web.Infrastructure.dll
+C:\Emprendimientos\E-Mapu\SSoft\SSoft.IoT.MVC\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Emprendimientos\E-Mapu\SSoft\SSoft.IoT.MVC\bin\Microsoft.WebSockets.dll
+C:\Emprendimientos\E-Mapu\SSoft\SSoft.IoT.MVC\bin\Newtonsoft.Json.dll
+C:\Emprendimientos\E-Mapu\SSoft\SSoft.IoT.MVC\bin\SSoft.Aplicacion.dll
+C:\Emprendimientos\E-Mapu\SSoft\SSoft.IoT.MVC\bin\SSoft.Transversal.dll
+C:\Emprendimientos\E-Mapu\SSoft\SSoft.IoT.MVC\bin\System.Net.Http.Formatting.dll
+C:\Emprendimientos\E-Mapu\SSoft\SSoft.IoT.MVC\bin\System.Web.Helpers.dll
+C:\Emprendimientos\E-Mapu\SSoft\SSoft.IoT.MVC\bin\System.Web.Http.dll
+C:\Emprendimientos\E-Mapu\SSoft\SSoft.IoT.MVC\bin\System.Web.Http.WebHost.dll
+C:\Emprendimientos\E-Mapu\SSoft\SSoft.IoT.MVC\bin\System.Web.Mvc.dll
+C:\Emprendimientos\E-Mapu\SSoft\SSoft.IoT.MVC\bin\System.Web.Razor.dll
+C:\Emprendimientos\E-Mapu\SSoft\SSoft.IoT.MVC\bin\System.Web.WebPages.Deployment.dll
+C:\Emprendimientos\E-Mapu\SSoft\SSoft.IoT.MVC\bin\System.Web.WebPages.dll
+C:\Emprendimientos\E-Mapu\SSoft\SSoft.IoT.MVC\bin\System.Web.WebPages.Razor.dll
+C:\Emprendimientos\E-Mapu\SSoft\SSoft.IoT.MVC\bin\SSoft.Dominio.dll
+C:\Emprendimientos\E-Mapu\SSoft\SSoft.IoT.MVC\bin\SSoft.DataAccess.dll
+C:\Emprendimientos\E-Mapu\SSoft\SSoft.IoT.MVC\bin\SSoft.Repositorio.dll
+C:\Emprendimientos\E-Mapu\SSoft\SSoft.IoT.MVC\bin\SSoft.Aplicacion.pdb
+C:\Emprendimientos\E-Mapu\SSoft\SSoft.IoT.MVC\bin\SSoft.Transversal.pdb
+C:\Emprendimientos\E-Mapu\SSoft\SSoft.IoT.MVC\bin\EntityFramework.xml
+C:\Emprendimientos\E-Mapu\SSoft\SSoft.IoT.MVC\bin\EntityFramework.SqlServer.xml
+C:\Emprendimientos\E-Mapu\SSoft\SSoft.IoT.MVC\bin\Newtonsoft.Json.xml
+C:\Emprendimientos\E-Mapu\SSoft\SSoft.IoT.MVC\bin\System.Net.Http.Formatting.xml
+C:\Emprendimientos\E-Mapu\SSoft\SSoft.IoT.MVC\bin\System.Web.Helpers.xml
+C:\Emprendimientos\E-Mapu\SSoft\SSoft.IoT.MVC\bin\System.Web.Http.xml
+C:\Emprendimientos\E-Mapu\SSoft\SSoft.IoT.MVC\bin\System.Web.Http.WebHost.xml
+C:\Emprendimientos\E-Mapu\SSoft\SSoft.IoT.MVC\bin\System.Web.Mvc.xml
+C:\Emprendimientos\E-Mapu\SSoft\SSoft.IoT.MVC\bin\System.Web.Razor.xml
+C:\Emprendimientos\E-Mapu\SSoft\SSoft.IoT.MVC\bin\System.Web.WebPages.xml
+C:\Emprendimientos\E-Mapu\SSoft\SSoft.IoT.MVC\bin\System.Web.WebPages.Deployment.xml
+C:\Emprendimientos\E-Mapu\SSoft\SSoft.IoT.MVC\bin\System.Web.WebPages.Razor.xml
+C:\Emprendimientos\E-Mapu\SSoft\SSoft.IoT.MVC\bin\SSoft.Dominio.pdb
+C:\Emprendimientos\E-Mapu\SSoft\SSoft.IoT.MVC\bin\SSoft.DataAccess.pdb
+C:\Emprendimientos\E-Mapu\SSoft\SSoft.IoT.MVC\bin\SSoft.DataAccess.dll.config
+C:\Emprendimientos\E-Mapu\SSoft\SSoft.IoT.MVC\bin\SSoft.Repositorio.pdb
+C:\Emprendimientos\E-Mapu\SSoft\SSoft.IoT.MVC\bin\es\System.Net.Http.Formatting.resources.dll
+C:\Emprendimientos\E-Mapu\SSoft\SSoft.IoT.MVC\bin\es\System.Web.Helpers.resources.dll
+C:\Emprendimientos\E-Mapu\SSoft\SSoft.IoT.MVC\bin\es\System.Web.Http.resources.dll
+C:\Emprendimientos\E-Mapu\SSoft\SSoft.IoT.MVC\bin\es\System.Web.Http.WebHost.resources.dll
+C:\Emprendimientos\E-Mapu\SSoft\SSoft.IoT.MVC\bin\es\System.Web.Mvc.resources.dll
+C:\Emprendimientos\E-Mapu\SSoft\SSoft.IoT.MVC\bin\es\System.Web.Razor.resources.dll
+C:\Emprendimientos\E-Mapu\SSoft\SSoft.IoT.MVC\bin\es\System.Web.WebPages.resources.dll
+C:\Emprendimientos\E-Mapu\SSoft\SSoft.IoT.MVC\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Emprendimientos\E-Mapu\SSoft\SSoft.IoT.MVC\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Emprendimientos\E-Mapu\SSoft\SSoft.IoT.MVC\obj\Debug\SSoft.IoT.MVC.csproj.AssemblyReference.cache
+C:\Emprendimientos\E-Mapu\SSoft\SSoft.IoT.MVC\obj\Debug\SSoft.IoT.MVC.csproj.CoreCompileInputs.cache
+C:\Emprendimientos\E-Mapu\SSoft\SSoft.IoT.MVC\obj\Debug\SSoft.IoT.MVC.csproj.CopyComplete
+C:\Emprendimientos\E-Mapu\SSoft\SSoft.IoT.MVC\obj\Debug\SSoft.IoT.MVC.dll
+C:\Emprendimientos\E-Mapu\SSoft\SSoft.IoT.MVC\obj\Debug\SSoft.IoT.MVC.pdb

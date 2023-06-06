@@ -1,0 +1,250 @@
+C:\Proyect\SSoft\Fuente\SSoft\ApiRest\bin\ApiRest.dll.config
+C:\Proyect\SSoft\Fuente\SSoft\ApiRest\bin\ApiRest.dll
+C:\Proyect\SSoft\Fuente\SSoft\ApiRest\bin\ApiRest.pdb
+C:\Proyect\SSoft\Fuente\SSoft\ApiRest\bin\Antlr3.Runtime.dll
+C:\Proyect\SSoft\Fuente\SSoft\ApiRest\bin\EntityFramework.dll
+C:\Proyect\SSoft\Fuente\SSoft\ApiRest\bin\Microsoft.Data.Edm.dll
+C:\Proyect\SSoft\Fuente\SSoft\ApiRest\bin\Microsoft.Data.OData.dll
+C:\Proyect\SSoft\Fuente\SSoft\ApiRest\bin\Microsoft.Web.Infrastructure.dll
+C:\Proyect\SSoft\Fuente\SSoft\ApiRest\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Proyect\SSoft\Fuente\SSoft\ApiRest\bin\Newtonsoft.Json.dll
+C:\Proyect\SSoft\Fuente\SSoft\ApiRest\bin\System.Spatial.dll
+C:\Proyect\SSoft\Fuente\SSoft\ApiRest\bin\System.Web.Helpers.dll
+C:\Proyect\SSoft\Fuente\SSoft\ApiRest\bin\System.Web.Http.OData.dll
+C:\Proyect\SSoft\Fuente\SSoft\ApiRest\bin\System.Web.Http.Tracing.dll
+C:\Proyect\SSoft\Fuente\SSoft\ApiRest\bin\System.Web.Mvc.dll
+C:\Proyect\SSoft\Fuente\SSoft\ApiRest\bin\System.Web.Optimization.dll
+C:\Proyect\SSoft\Fuente\SSoft\ApiRest\bin\System.Web.Providers.dll
+C:\Proyect\SSoft\Fuente\SSoft\ApiRest\bin\System.Web.Razor.dll
+C:\Proyect\SSoft\Fuente\SSoft\ApiRest\bin\System.Web.WebPages.Deployment.dll
+C:\Proyect\SSoft\Fuente\SSoft\ApiRest\bin\System.Web.WebPages.dll
+C:\Proyect\SSoft\Fuente\SSoft\ApiRest\bin\System.Web.WebPages.Razor.dll
+C:\Proyect\SSoft\Fuente\SSoft\ApiRest\bin\WebGrease.dll
+C:\Proyect\SSoft\Fuente\SSoft\ApiRest\bin\EntityFramework.xml
+C:\Proyect\SSoft\Fuente\SSoft\ApiRest\bin\Newtonsoft.Json.xml
+C:\Proyect\SSoft\Fuente\SSoft\ApiRest\bin\System.Web.Helpers.xml
+C:\Proyect\SSoft\Fuente\SSoft\ApiRest\bin\System.Web.Mvc.xml
+C:\Proyect\SSoft\Fuente\SSoft\ApiRest\bin\System.Web.Razor.xml
+C:\Proyect\SSoft\Fuente\SSoft\ApiRest\bin\System.Web.WebPages.xml
+C:\Proyect\SSoft\Fuente\SSoft\ApiRest\bin\System.Web.WebPages.Deployment.xml
+C:\Proyect\SSoft\Fuente\SSoft\ApiRest\bin\System.Web.WebPages.Razor.xml
+C:\Proyect\SSoft\Fuente\SSoft\ApiRest\bin\System.Web.Http.Tracing.xml
+C:\Proyect\SSoft\Fuente\SSoft\ApiRest\bin\System.Web.Http.OData.xml
+C:\Proyect\SSoft\Fuente\SSoft\ApiRest\bin\Microsoft.Data.Edm.xml
+C:\Proyect\SSoft\Fuente\SSoft\ApiRest\bin\Microsoft.Data.OData.xml
+C:\Proyect\SSoft\Fuente\SSoft\ApiRest\bin\System.Spatial.xml
+C:\Proyect\SSoft\Fuente\SSoft\ApiRest\bin\es\EntityFramework.resources.dll
+C:\Proyect\SSoft\Fuente\SSoft\ApiRest\bin\es\System.Web.Helpers.resources.dll
+C:\Proyect\SSoft\Fuente\SSoft\ApiRest\bin\es\System.Web.Mvc.resources.dll
+C:\Proyect\SSoft\Fuente\SSoft\ApiRest\bin\es\System.Web.Optimization.resources.dll
+C:\Proyect\SSoft\Fuente\SSoft\ApiRest\bin\es\System.Web.Providers.resources.dll
+C:\Proyect\SSoft\Fuente\SSoft\ApiRest\bin\es\System.Web.Razor.resources.dll
+C:\Proyect\SSoft\Fuente\SSoft\ApiRest\bin\es\System.Web.WebPages.resources.dll
+C:\Proyect\SSoft\Fuente\SSoft\ApiRest\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Proyect\SSoft\Fuente\SSoft\ApiRest\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Proyect\SSoft\Fuente\SSoft\ApiRest\bin\es\System.Web.Http.Tracing.resources.dll
+C:\Proyect\SSoft\Fuente\SSoft\ApiRest\bin\es\System.Web.Http.OData.resources.dll
+C:\Proyect\SSoft\Fuente\SSoft\ApiRest\bin\de\Microsoft.Data.Edm.resources.dll
+C:\Proyect\SSoft\Fuente\SSoft\ApiRest\bin\es\Microsoft.Data.Edm.resources.dll
+C:\Proyect\SSoft\Fuente\SSoft\ApiRest\bin\fr\Microsoft.Data.Edm.resources.dll
+C:\Proyect\SSoft\Fuente\SSoft\ApiRest\bin\it\Microsoft.Data.Edm.resources.dll
+C:\Proyect\SSoft\Fuente\SSoft\ApiRest\bin\ja\Microsoft.Data.Edm.resources.dll
+C:\Proyect\SSoft\Fuente\SSoft\ApiRest\bin\ko\Microsoft.Data.Edm.resources.dll
+C:\Proyect\SSoft\Fuente\SSoft\ApiRest\bin\ru\Microsoft.Data.Edm.resources.dll
+C:\Proyect\SSoft\Fuente\SSoft\ApiRest\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Proyect\SSoft\Fuente\SSoft\ApiRest\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Proyect\SSoft\Fuente\SSoft\ApiRest\bin\de\Microsoft.Data.OData.resources.dll
+C:\Proyect\SSoft\Fuente\SSoft\ApiRest\bin\es\Microsoft.Data.OData.resources.dll
+C:\Proyect\SSoft\Fuente\SSoft\ApiRest\bin\fr\Microsoft.Data.OData.resources.dll
+C:\Proyect\SSoft\Fuente\SSoft\ApiRest\bin\it\Microsoft.Data.OData.resources.dll
+C:\Proyect\SSoft\Fuente\SSoft\ApiRest\bin\ja\Microsoft.Data.OData.resources.dll
+C:\Proyect\SSoft\Fuente\SSoft\ApiRest\bin\ko\Microsoft.Data.OData.resources.dll
+C:\Proyect\SSoft\Fuente\SSoft\ApiRest\bin\ru\Microsoft.Data.OData.resources.dll
+C:\Proyect\SSoft\Fuente\SSoft\ApiRest\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Proyect\SSoft\Fuente\SSoft\ApiRest\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Proyect\SSoft\Fuente\SSoft\ApiRest\bin\de\System.Spatial.resources.dll
+C:\Proyect\SSoft\Fuente\SSoft\ApiRest\bin\es\System.Spatial.resources.dll
+C:\Proyect\SSoft\Fuente\SSoft\ApiRest\bin\fr\System.Spatial.resources.dll
+C:\Proyect\SSoft\Fuente\SSoft\ApiRest\bin\it\System.Spatial.resources.dll
+C:\Proyect\SSoft\Fuente\SSoft\ApiRest\bin\ja\System.Spatial.resources.dll
+C:\Proyect\SSoft\Fuente\SSoft\ApiRest\bin\ko\System.Spatial.resources.dll
+C:\Proyect\SSoft\Fuente\SSoft\ApiRest\bin\ru\System.Spatial.resources.dll
+C:\Proyect\SSoft\Fuente\SSoft\ApiRest\bin\zh-Hans\System.Spatial.resources.dll
+C:\Proyect\SSoft\Fuente\SSoft\ApiRest\bin\zh-Hant\System.Spatial.resources.dll
+C:\Proyect\SSoft\Fuente\SSoft\ApiRest\obj\Debug\ApiRest.csprojResolveAssemblyReference.cache
+C:\Proyect\SSoft\Fuente\SSoft\ApiRest\obj\Debug\ApiRest.dll
+C:\Proyect\SSoft\Fuente\SSoft\ApiRest\obj\Debug\ApiRest.pdb
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\ApiRest\bin\ApiRest.dll.config
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\ApiRest\bin\ApiRest.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\ApiRest\bin\ApiRest.pdb
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\ApiRest\bin\Antlr3.Runtime.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\ApiRest\bin\EntityFramework.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\ApiRest\bin\Microsoft.Data.Edm.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\ApiRest\bin\Microsoft.Data.OData.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\ApiRest\bin\Microsoft.Web.Infrastructure.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\ApiRest\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\ApiRest\bin\Newtonsoft.Json.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\ApiRest\bin\System.Net.Http.Formatting.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\ApiRest\bin\System.Spatial.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\ApiRest\bin\System.Web.Helpers.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\ApiRest\bin\System.Web.Http.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\ApiRest\bin\System.Web.Http.OData.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\ApiRest\bin\System.Web.Http.Tracing.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\ApiRest\bin\System.Web.Http.WebHost.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\ApiRest\bin\System.Web.Mvc.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\ApiRest\bin\System.Web.Optimization.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\ApiRest\bin\System.Web.Providers.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\ApiRest\bin\System.Web.Razor.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\ApiRest\bin\System.Web.WebPages.Deployment.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\ApiRest\bin\System.Web.WebPages.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\ApiRest\bin\System.Web.WebPages.Razor.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\ApiRest\bin\WebGrease.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\ApiRest\bin\EntityFramework.xml
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\ApiRest\bin\Newtonsoft.Json.xml
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\ApiRest\bin\System.Net.Http.Formatting.xml
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\ApiRest\bin\System.Web.Helpers.xml
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\ApiRest\bin\System.Web.Http.xml
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\ApiRest\bin\System.Web.Http.WebHost.xml
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\ApiRest\bin\System.Web.Mvc.xml
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\ApiRest\bin\System.Web.Razor.xml
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\ApiRest\bin\System.Web.WebPages.xml
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\ApiRest\bin\System.Web.WebPages.Deployment.xml
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\ApiRest\bin\System.Web.WebPages.Razor.xml
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\ApiRest\bin\System.Web.Http.Tracing.xml
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\ApiRest\bin\System.Web.Http.OData.xml
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\ApiRest\bin\Microsoft.Data.Edm.xml
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\ApiRest\bin\Microsoft.Data.OData.xml
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\ApiRest\bin\System.Spatial.xml
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\ApiRest\bin\es\EntityFramework.resources.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\ApiRest\bin\es\System.Net.Http.Formatting.resources.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\ApiRest\bin\es\System.Web.Helpers.resources.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\ApiRest\bin\es\System.Web.Http.resources.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\ApiRest\bin\es\System.Web.Http.WebHost.resources.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\ApiRest\bin\es\System.Web.Mvc.resources.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\ApiRest\bin\es\System.Web.Optimization.resources.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\ApiRest\bin\es\System.Web.Providers.resources.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\ApiRest\bin\es\System.Web.Razor.resources.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\ApiRest\bin\es\System.Web.WebPages.resources.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\ApiRest\bin\es\System.Web.WebPages.Deployment.resources.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\ApiRest\bin\es\System.Web.WebPages.Razor.resources.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\ApiRest\bin\es\System.Web.Http.Tracing.resources.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\ApiRest\bin\es\System.Web.Http.OData.resources.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\ApiRest\bin\de\Microsoft.Data.Edm.resources.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\ApiRest\bin\es\Microsoft.Data.Edm.resources.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\ApiRest\bin\fr\Microsoft.Data.Edm.resources.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\ApiRest\bin\it\Microsoft.Data.Edm.resources.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\ApiRest\bin\ja\Microsoft.Data.Edm.resources.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\ApiRest\bin\ko\Microsoft.Data.Edm.resources.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\ApiRest\bin\ru\Microsoft.Data.Edm.resources.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\ApiRest\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\ApiRest\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\ApiRest\bin\de\Microsoft.Data.OData.resources.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\ApiRest\bin\es\Microsoft.Data.OData.resources.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\ApiRest\bin\fr\Microsoft.Data.OData.resources.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\ApiRest\bin\it\Microsoft.Data.OData.resources.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\ApiRest\bin\ja\Microsoft.Data.OData.resources.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\ApiRest\bin\ko\Microsoft.Data.OData.resources.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\ApiRest\bin\ru\Microsoft.Data.OData.resources.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\ApiRest\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\ApiRest\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\ApiRest\bin\de\System.Spatial.resources.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\ApiRest\bin\es\System.Spatial.resources.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\ApiRest\bin\fr\System.Spatial.resources.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\ApiRest\bin\it\System.Spatial.resources.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\ApiRest\bin\ja\System.Spatial.resources.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\ApiRest\bin\ko\System.Spatial.resources.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\ApiRest\bin\ru\System.Spatial.resources.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\ApiRest\bin\zh-Hans\System.Spatial.resources.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\ApiRest\bin\zh-Hant\System.Spatial.resources.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\ApiRest\obj\Debug\ApiRest.csprojAssemblyReference.cache
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\ApiRest\obj\Debug\ApiRest.csproj.CoreCompileInputs.cache
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\ApiRest\obj\Debug\ApiRest.csproj.CopyComplete
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\ApiRest\obj\Debug\ApiRest.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\ApiRest\obj\Debug\ApiRest.pdb
+C:\Emprendimientos\E-Mapu\SSoft\ApiRest\bin\ApiRest.dll.config
+C:\Emprendimientos\E-Mapu\SSoft\ApiRest\bin\ApiRest.dll
+C:\Emprendimientos\E-Mapu\SSoft\ApiRest\bin\ApiRest.pdb
+C:\Emprendimientos\E-Mapu\SSoft\ApiRest\bin\Antlr3.Runtime.dll
+C:\Emprendimientos\E-Mapu\SSoft\ApiRest\bin\EntityFramework.dll
+C:\Emprendimientos\E-Mapu\SSoft\ApiRest\bin\Microsoft.Data.Edm.dll
+C:\Emprendimientos\E-Mapu\SSoft\ApiRest\bin\Microsoft.Data.OData.dll
+C:\Emprendimientos\E-Mapu\SSoft\ApiRest\bin\Microsoft.Web.Infrastructure.dll
+C:\Emprendimientos\E-Mapu\SSoft\ApiRest\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Emprendimientos\E-Mapu\SSoft\ApiRest\bin\Newtonsoft.Json.dll
+C:\Emprendimientos\E-Mapu\SSoft\ApiRest\bin\System.Net.Http.Formatting.dll
+C:\Emprendimientos\E-Mapu\SSoft\ApiRest\bin\System.Spatial.dll
+C:\Emprendimientos\E-Mapu\SSoft\ApiRest\bin\System.Web.Helpers.dll
+C:\Emprendimientos\E-Mapu\SSoft\ApiRest\bin\System.Web.Http.dll
+C:\Emprendimientos\E-Mapu\SSoft\ApiRest\bin\System.Web.Http.OData.dll
+C:\Emprendimientos\E-Mapu\SSoft\ApiRest\bin\System.Web.Http.Tracing.dll
+C:\Emprendimientos\E-Mapu\SSoft\ApiRest\bin\System.Web.Http.WebHost.dll
+C:\Emprendimientos\E-Mapu\SSoft\ApiRest\bin\System.Web.Mvc.dll
+C:\Emprendimientos\E-Mapu\SSoft\ApiRest\bin\System.Web.Optimization.dll
+C:\Emprendimientos\E-Mapu\SSoft\ApiRest\bin\System.Web.Providers.dll
+C:\Emprendimientos\E-Mapu\SSoft\ApiRest\bin\System.Web.Razor.dll
+C:\Emprendimientos\E-Mapu\SSoft\ApiRest\bin\System.Web.WebPages.Deployment.dll
+C:\Emprendimientos\E-Mapu\SSoft\ApiRest\bin\System.Web.WebPages.dll
+C:\Emprendimientos\E-Mapu\SSoft\ApiRest\bin\System.Web.WebPages.Razor.dll
+C:\Emprendimientos\E-Mapu\SSoft\ApiRest\bin\WebGrease.dll
+C:\Emprendimientos\E-Mapu\SSoft\ApiRest\bin\EntityFramework.xml
+C:\Emprendimientos\E-Mapu\SSoft\ApiRest\bin\Newtonsoft.Json.xml
+C:\Emprendimientos\E-Mapu\SSoft\ApiRest\bin\System.Net.Http.Formatting.xml
+C:\Emprendimientos\E-Mapu\SSoft\ApiRest\bin\System.Web.Helpers.xml
+C:\Emprendimientos\E-Mapu\SSoft\ApiRest\bin\System.Web.Http.xml
+C:\Emprendimientos\E-Mapu\SSoft\ApiRest\bin\System.Web.Http.WebHost.xml
+C:\Emprendimientos\E-Mapu\SSoft\ApiRest\bin\System.Web.Mvc.xml
+C:\Emprendimientos\E-Mapu\SSoft\ApiRest\bin\System.Web.Razor.xml
+C:\Emprendimientos\E-Mapu\SSoft\ApiRest\bin\System.Web.WebPages.xml
+C:\Emprendimientos\E-Mapu\SSoft\ApiRest\bin\System.Web.WebPages.Deployment.xml
+C:\Emprendimientos\E-Mapu\SSoft\ApiRest\bin\System.Web.WebPages.Razor.xml
+C:\Emprendimientos\E-Mapu\SSoft\ApiRest\bin\System.Web.Http.Tracing.xml
+C:\Emprendimientos\E-Mapu\SSoft\ApiRest\bin\System.Web.Http.OData.xml
+C:\Emprendimientos\E-Mapu\SSoft\ApiRest\bin\Microsoft.Data.Edm.xml
+C:\Emprendimientos\E-Mapu\SSoft\ApiRest\bin\Microsoft.Data.OData.xml
+C:\Emprendimientos\E-Mapu\SSoft\ApiRest\bin\System.Spatial.xml
+C:\Emprendimientos\E-Mapu\SSoft\ApiRest\bin\es\EntityFramework.resources.dll
+C:\Emprendimientos\E-Mapu\SSoft\ApiRest\bin\es\System.Net.Http.Formatting.resources.dll
+C:\Emprendimientos\E-Mapu\SSoft\ApiRest\bin\es\System.Web.Helpers.resources.dll
+C:\Emprendimientos\E-Mapu\SSoft\ApiRest\bin\es\System.Web.Http.resources.dll
+C:\Emprendimientos\E-Mapu\SSoft\ApiRest\bin\es\System.Web.Http.WebHost.resources.dll
+C:\Emprendimientos\E-Mapu\SSoft\ApiRest\bin\es\System.Web.Mvc.resources.dll
+C:\Emprendimientos\E-Mapu\SSoft\ApiRest\bin\es\System.Web.Optimization.resources.dll
+C:\Emprendimientos\E-Mapu\SSoft\ApiRest\bin\es\System.Web.Providers.resources.dll
+C:\Emprendimientos\E-Mapu\SSoft\ApiRest\bin\es\System.Web.Razor.resources.dll
+C:\Emprendimientos\E-Mapu\SSoft\ApiRest\bin\es\System.Web.WebPages.resources.dll
+C:\Emprendimientos\E-Mapu\SSoft\ApiRest\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Emprendimientos\E-Mapu\SSoft\ApiRest\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Emprendimientos\E-Mapu\SSoft\ApiRest\bin\es\System.Web.Http.Tracing.resources.dll
+C:\Emprendimientos\E-Mapu\SSoft\ApiRest\bin\es\System.Web.Http.OData.resources.dll
+C:\Emprendimientos\E-Mapu\SSoft\ApiRest\bin\de\Microsoft.Data.Edm.resources.dll
+C:\Emprendimientos\E-Mapu\SSoft\ApiRest\bin\es\Microsoft.Data.Edm.resources.dll
+C:\Emprendimientos\E-Mapu\SSoft\ApiRest\bin\fr\Microsoft.Data.Edm.resources.dll
+C:\Emprendimientos\E-Mapu\SSoft\ApiRest\bin\it\Microsoft.Data.Edm.resources.dll
+C:\Emprendimientos\E-Mapu\SSoft\ApiRest\bin\ja\Microsoft.Data.Edm.resources.dll
+C:\Emprendimientos\E-Mapu\SSoft\ApiRest\bin\ko\Microsoft.Data.Edm.resources.dll
+C:\Emprendimientos\E-Mapu\SSoft\ApiRest\bin\ru\Microsoft.Data.Edm.resources.dll
+C:\Emprendimientos\E-Mapu\SSoft\ApiRest\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Emprendimientos\E-Mapu\SSoft\ApiRest\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Emprendimientos\E-Mapu\SSoft\ApiRest\bin\de\Microsoft.Data.OData.resources.dll
+C:\Emprendimientos\E-Mapu\SSoft\ApiRest\bin\es\Microsoft.Data.OData.resources.dll
+C:\Emprendimientos\E-Mapu\SSoft\ApiRest\bin\fr\Microsoft.Data.OData.resources.dll
+C:\Emprendimientos\E-Mapu\SSoft\ApiRest\bin\it\Microsoft.Data.OData.resources.dll
+C:\Emprendimientos\E-Mapu\SSoft\ApiRest\bin\ja\Microsoft.Data.OData.resources.dll
+C:\Emprendimientos\E-Mapu\SSoft\ApiRest\bin\ko\Microsoft.Data.OData.resources.dll
+C:\Emprendimientos\E-Mapu\SSoft\ApiRest\bin\ru\Microsoft.Data.OData.resources.dll
+C:\Emprendimientos\E-Mapu\SSoft\ApiRest\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Emprendimientos\E-Mapu\SSoft\ApiRest\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Emprendimientos\E-Mapu\SSoft\ApiRest\bin\de\System.Spatial.resources.dll
+C:\Emprendimientos\E-Mapu\SSoft\ApiRest\bin\es\System.Spatial.resources.dll
+C:\Emprendimientos\E-Mapu\SSoft\ApiRest\bin\fr\System.Spatial.resources.dll
+C:\Emprendimientos\E-Mapu\SSoft\ApiRest\bin\it\System.Spatial.resources.dll
+C:\Emprendimientos\E-Mapu\SSoft\ApiRest\bin\ja\System.Spatial.resources.dll
+C:\Emprendimientos\E-Mapu\SSoft\ApiRest\bin\ko\System.Spatial.resources.dll
+C:\Emprendimientos\E-Mapu\SSoft\ApiRest\bin\ru\System.Spatial.resources.dll
+C:\Emprendimientos\E-Mapu\SSoft\ApiRest\bin\zh-Hans\System.Spatial.resources.dll
+C:\Emprendimientos\E-Mapu\SSoft\ApiRest\bin\zh-Hant\System.Spatial.resources.dll
+C:\Emprendimientos\E-Mapu\SSoft\ApiRest\obj\Debug\ApiRest.csproj.AssemblyReference.cache
+C:\Emprendimientos\E-Mapu\SSoft\ApiRest\obj\Debug\ApiRest.csproj.CoreCompileInputs.cache
+C:\Emprendimientos\E-Mapu\SSoft\ApiRest\obj\Debug\ApiRest.csproj.CopyComplete
+C:\Emprendimientos\E-Mapu\SSoft\ApiRest\obj\Debug\ApiRest.dll
+C:\Emprendimientos\E-Mapu\SSoft\ApiRest\obj\Debug\ApiRest.pdb

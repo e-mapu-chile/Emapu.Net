@@ -1,0 +1,66 @@
+C:\Proyect\SSoft\Fuente\SSoft\SSoft.Aplicacion\bin\Debug\SSoft.Aplicacion.dll
+C:\Proyect\SSoft\Fuente\SSoft\SSoft.Aplicacion\bin\Debug\SSoft.Aplicacion.pdb
+C:\Proyect\SSoft\Fuente\SSoft\SSoft.Aplicacion\bin\Debug\SSoft.Dominio.dll
+C:\Proyect\SSoft\Fuente\SSoft\SSoft.Aplicacion\bin\Debug\SSoft.Repositorio.dll
+C:\Proyect\SSoft\Fuente\SSoft\SSoft.Aplicacion\bin\Debug\SSoft.DataAccess.dll
+C:\Proyect\SSoft\Fuente\SSoft\SSoft.Aplicacion\bin\Debug\EntityFramework.dll
+C:\Proyect\SSoft\Fuente\SSoft\SSoft.Aplicacion\bin\Debug\SSoft.Dominio.pdb
+C:\Proyect\SSoft\Fuente\SSoft\SSoft.Aplicacion\bin\Debug\SSoft.Repositorio.pdb
+C:\Proyect\SSoft\Fuente\SSoft\SSoft.Aplicacion\bin\Debug\SSoft.DataAccess.pdb
+C:\Proyect\SSoft\Fuente\SSoft\SSoft.Aplicacion\bin\Debug\EntityFramework.xml
+C:\Proyect\SSoft\Fuente\SSoft\SSoft.Aplicacion\obj\Debug\SSoft.Aplicacion.csprojResolveAssemblyReference.cache
+C:\Proyect\SSoft\Fuente\SSoft\SSoft.Aplicacion\obj\Debug\SSoft.Aplicacion.dll
+C:\Proyect\SSoft\Fuente\SSoft\SSoft.Aplicacion\obj\Debug\SSoft.Aplicacion.pdb
+C:\Proyect\SSoft\Fuente\SSoft\SSoft.Aplicacion\bin\Debug\SSoft.Transversal.dll
+C:\Proyect\SSoft\Fuente\SSoft\SSoft.Aplicacion\bin\Debug\SSoft.Transversal.pdb
+D:\Proyect\SSoft\Fuente\SSoft\SSoft.Aplicacion\bin\Debug\SSoft.Aplicacion.dll
+D:\Proyect\SSoft\Fuente\SSoft\SSoft.Aplicacion\bin\Debug\SSoft.Aplicacion.pdb
+D:\Proyect\SSoft\Fuente\SSoft\SSoft.Aplicacion\bin\Debug\SSoft.DataAccess.dll
+D:\Proyect\SSoft\Fuente\SSoft\SSoft.Aplicacion\bin\Debug\SSoft.Dominio.dll
+D:\Proyect\SSoft\Fuente\SSoft\SSoft.Aplicacion\bin\Debug\SSoft.Repositorio.dll
+D:\Proyect\SSoft\Fuente\SSoft\SSoft.Aplicacion\bin\Debug\SSoft.Transversal.dll
+D:\Proyect\SSoft\Fuente\SSoft\SSoft.Aplicacion\bin\Debug\EntityFramework.dll
+D:\Proyect\SSoft\Fuente\SSoft\SSoft.Aplicacion\bin\Debug\SSoft.DataAccess.pdb
+D:\Proyect\SSoft\Fuente\SSoft\SSoft.Aplicacion\bin\Debug\SSoft.Dominio.pdb
+D:\Proyect\SSoft\Fuente\SSoft\SSoft.Aplicacion\bin\Debug\SSoft.Repositorio.pdb
+D:\Proyect\SSoft\Fuente\SSoft\SSoft.Aplicacion\bin\Debug\SSoft.Transversal.pdb
+D:\Proyect\SSoft\Fuente\SSoft\SSoft.Aplicacion\bin\Debug\EntityFramework.xml
+D:\Proyect\SSoft\Fuente\SSoft\SSoft.Aplicacion\obj\Debug\SSoft.Aplicacion.csprojResolveAssemblyReference.cache
+D:\Proyect\SSoft\Fuente\SSoft\SSoft.Aplicacion\obj\Debug\SSoft.Aplicacion.dll
+D:\Proyect\SSoft\Fuente\SSoft\SSoft.Aplicacion\obj\Debug\SSoft.Aplicacion.pdb
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.Aplicacion\bin\Debug\SSoft.Aplicacion.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.Aplicacion\bin\Debug\SSoft.Aplicacion.pdb
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.Aplicacion\bin\Debug\SSoft.DataAccess.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.Aplicacion\bin\Debug\SSoft.Dominio.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.Aplicacion\bin\Debug\SSoft.Repositorio.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.Aplicacion\bin\Debug\SSoft.Transversal.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.Aplicacion\bin\Debug\EntityFramework.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.Aplicacion\bin\Debug\SSoft.DataAccess.pdb
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.Aplicacion\bin\Debug\SSoft.DataAccess.dll.config
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.Aplicacion\bin\Debug\SSoft.Dominio.pdb
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.Aplicacion\bin\Debug\SSoft.Repositorio.pdb
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.Aplicacion\bin\Debug\SSoft.Transversal.pdb
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.Aplicacion\bin\Debug\EntityFramework.xml
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.Aplicacion\obj\Debug\SSoft.Aplicacion.csprojAssemblyReference.cache
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.Aplicacion\obj\Debug\SSoft.Aplicacion.csproj.CoreCompileInputs.cache
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.Aplicacion\obj\Debug\SSoft.Aplicacion.csproj.CopyComplete
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.Aplicacion\obj\Debug\SSoft.Aplicacion.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.Aplicacion\obj\Debug\SSoft.Aplicacion.pdb
+C:\Emprendimientos\E-Mapu\SSoft\SSoft.Aplicacion\obj\Debug\SSoft.Aplicacion.csproj.AssemblyReference.cache
+C:\Emprendimientos\E-Mapu\SSoft\SSoft.Aplicacion\obj\Debug\SSoft.Aplicacion.csproj.CoreCompileInputs.cache
+C:\Emprendimientos\E-Mapu\SSoft\SSoft.Aplicacion\obj\Debug\SSoft.Aplicacion.dll
+C:\Emprendimientos\E-Mapu\SSoft\SSoft.Aplicacion\obj\Debug\SSoft.Aplicacion.pdb
+C:\Emprendimientos\E-Mapu\SSoft\SSoft.Aplicacion\bin\Debug\SSoft.Aplicacion.dll
+C:\Emprendimientos\E-Mapu\SSoft\SSoft.Aplicacion\bin\Debug\SSoft.Aplicacion.pdb
+C:\Emprendimientos\E-Mapu\SSoft\SSoft.Aplicacion\bin\Debug\SSoft.DataAccess.dll
+C:\Emprendimientos\E-Mapu\SSoft\SSoft.Aplicacion\bin\Debug\SSoft.Dominio.dll
+C:\Emprendimientos\E-Mapu\SSoft\SSoft.Aplicacion\bin\Debug\SSoft.Repositorio.dll
+C:\Emprendimientos\E-Mapu\SSoft\SSoft.Aplicacion\bin\Debug\SSoft.Transversal.dll
+C:\Emprendimientos\E-Mapu\SSoft\SSoft.Aplicacion\bin\Debug\EntityFramework.dll
+C:\Emprendimientos\E-Mapu\SSoft\SSoft.Aplicacion\bin\Debug\SSoft.DataAccess.pdb
+C:\Emprendimientos\E-Mapu\SSoft\SSoft.Aplicacion\bin\Debug\SSoft.DataAccess.dll.config
+C:\Emprendimientos\E-Mapu\SSoft\SSoft.Aplicacion\bin\Debug\SSoft.Dominio.pdb
+C:\Emprendimientos\E-Mapu\SSoft\SSoft.Aplicacion\bin\Debug\SSoft.Repositorio.pdb
+C:\Emprendimientos\E-Mapu\SSoft\SSoft.Aplicacion\bin\Debug\SSoft.Transversal.pdb
+C:\Emprendimientos\E-Mapu\SSoft\SSoft.Aplicacion\bin\Debug\EntityFramework.xml
+C:\Emprendimientos\E-Mapu\SSoft\SSoft.Aplicacion\obj\Debug\SSoft.Aplicacion.csproj.CopyComplete

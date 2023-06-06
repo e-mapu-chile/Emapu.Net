@@ -1,0 +1,214 @@
+﻿@model SSoft.MVC.Models.RecursosModel
+@{
+    ViewBag.Title = "RegistroAnimal";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script src="~/Script/ActivoVivoJs/RegistroAnimalJs.js"></script>
+<div class="contenido caminoMiga">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6"> Usted se encuentra el la opción: » Registro Animal</div>
+            <div class="col-md-6" style="text-align: right">
+                @*@if ((string)Session["CodigoMensaje"] == "Ok")
+                    {
+                        <p>Bienvenido : @Session["Nombre"] </p>
+                        if ((string)Session["NombreExpendio"] != "" && (string)Session["NombreExpendio"] != null)
+                        {
+                            <p>Establecimiento: <span id="nombreExpendioHeader"><b> @((string)Session["NombreExpendio"])</b></span> </p>
+                        }
+                        else
+                        {
+                            <p><span id="nombreExpendioHeader"></span></p>
+                        }
+
+                    }*@
+            </div>
+        </div>
+    </div>
+</div>
+<div class="contenido">
+    <div id="ficha1" class="panel panel-success">
+        <!-- Default panel contents -->
+        <div class="panel-heading"><b>Información del Establecimiento</b></div>
+        <div class="panel-body">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-2">Seleccione Establecimiento Destino</div>
+                    <div class="col-md-4">
+                        <select id="establecimientoSelect">
+                            <option value="0">Seleccione</option>
+                        </select>
+                    </div>
+                </div>
+                <hr />
+                <div class="row">
+                    <div class="col-md-2">Nombre del Establecimiento</div>
+                    <div class="col-md-4">@Html.TextBox("nombreEstablecimiento", "", new { @readonly = "readonly", @class = "noEditable textLargo350" })</div>
+                    <div class="col-md-2">Titular del Establecimiento</div>
+                    <div class="col-md-4">@Html.TextBox("nombreTitularEstablecimiento", "", new { @readonly = "readonly", @class = "noEditable textLargo250" })</div>
+                </div>
+                <div class="row margenTopLinea">
+                    <div class="col-md-2">Dirección del Establecimiento</div>
+                    <div class="col-md-4">@Html.TextBox("nombreEstablecimiento", "", new { @readonly = "readonly", @class = "noEditable textLargo350" })</div>
+                </div>
+                <hr />
+                <div class="row margenTopLinea">
+                    <div class="col-md-9"></div>
+                    <div class="col-md-3">
+                        <button id="siguienteFicha2" onclick="Siguiente('ficha1','ficha2');" style="height:40px;"><i class="glyphicon glyphicon-circle-arrow-right"></i> Siguiente</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="ficha2" style="display:none;" class="panel panel-success">
+        <!-- Default panel contents -->
+        <div class="panel-heading"><b>Información del Animal</b></div>
+        <div class="panel-body">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-2">Seleccione Especie</div>
+                    <div class="col-md-3">
+                        <select id="especieSelect">
+                            <option value="0">Seleccione</option>
+                        </select>
+                    </div>
+                    <div class="col-md-2">Seleccione Categoria</div>
+                    <div class="col-md-3">
+                        <select id="categoriaSelect">
+                            <option value="0">Seleccione</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row margenTopLinea">
+                    <div class="col-md-2">Identificación</div>
+                    <div class="col-md-3">@Html.TextBox("identifacacionAnimal", "")</div>
+                    <div class="col-md-2">Sexo</div>
+                    <div class="col-md-3">
+                        <select id="sexoSelect">
+                            <option value="0">Seleccione</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row margenTopLinea">
+                    <div class="col-md-2">Fecha de Nacimiento</div>
+                    <div class="col-md-3"><input type="text" id="fechaNacimiento" /></div>
+                </div>
+                <hr />
+                <div class="row margenTopLinea">
+                    <div class="col-md-7"></div>
+                    <div class="col-md-2">
+                        <button id="siguienteFicha2" onclick="Atras('ficha2','ficha1');" style="height:40px;"><i class="glyphicon glyphicon-circle-arrow-left"></i> Atras</button>
+                    </div>
+                    <div class="col-md-2">
+                        <button id="siguienteFicha2" onclick="Siguiente('ficha2','ficha3');" style="height:40px;"><i class="glyphicon glyphicon-circle-arrow-right"></i> Siguiente</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="ficha3" style="display:none;" class="panel panel-success">
+        <!-- Default panel contents -->
+        <div class="panel-heading"><b>Información Clinica del Animal</b></div>
+        <div class="panel-body">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-2">Seleccione Medicamento Aplicado</div>
+                    <div class="col-md-3">
+                        <select id="medicamentoSelect">
+                            <option value="0">Seleccione</option>
+                        </select>
+                    </div>
+                    <div class="col-md-2">Fecha de Aplicación</div>
+                    <div class="col-md-3"><input type="text" id="fechaAplicacion" /></div>
+                </div>
+                <div class="row margenTopLinea">
+                    <div class="col-md-2">Rut Medico Veterinario</div>
+                    <div class="col-md-3"><input type="text" id="rutMv" /></div>
+                    <div class="col-md-2">Nombre Medico Veterinario</div>
+                    <div class="col-md-4">@Html.TextBox("nombreMv", "", new { @class = "textLargo250" })</div>
+                </div>
+                <div class="row margenTopLinea">
+                    <div class="col-md-2">Cantidad Dosis Aplicadas</div>
+                    <div class="col-md-3"><input type="number" id="dosisAplicada" /></div>
+                    <div class="col-md-5">
+                        <button id="fichaClinica" style="height:40px;"><i class="glyphicon glyphicon-plus-sign"></i>Agregar Información Clinica</button>
+                    </div>
+                </div>
+                <hr />
+                <div class="row margenTopLinea">
+                    <div class="col-md-7"></div>
+                    <div class="col-md-2">
+                        <button id="siguienteFicha2" onclick="Atras('ficha3','ficha2');" style="height:40px;"><i class="glyphicon glyphicon-circle-arrow-left"></i> Atras</button>
+                    </div>
+                    <div class="col-md-2">
+                        <button id="siguienteFicha2" style="height:40px;"><i class="glyphicon glyphicon-circle-arrow-right"></i> Siguiente</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="menuDialog">
+    <div class="grid" id="menuNivel1" style="display:none;">
+        <div class="row col-md-12">
+            @if ((string)Session["CodigoMensaje"] == "Ok")
+            {
+                var modulos = Model.recursos.GroupBy(t => t.Modulo).Select(g => g.First()).ToList();
+                foreach (var s in modulos)
+                {
+                    <div class="tile @s.Color col-md-3 col-xs-12">
+                        <a href="javascript:void(0);" class="menuOpc" onclick="MenuSeleccion(this,'menuNivel1','menuNivel2','@s.Modulo');">
+                            <h1>@s.Modulo</h1>
+                            <br />
+                            @if (@s.Modulo == "Animales")
+                            {
+                                <img src="~/Image/icons/Bovinos.png" />
+                            }
+                            @if (@s.Modulo == "Alimentos")
+                            {
+                                <img src="~/Image/icons/Alimentos.png" width="68" height="47" />
+                            }
+                            @if (@s.Modulo == "Medicamentos")
+                            {
+                                <img src="~/Image/icons/Medicamentos.png" width="55" height="47" />
+                            }
+                            <br />
+                            <p style="color: @s.ColorLetra;"></p>
+                        </a>
+                    </div>
+                }
+            }
+
+
+        </div>
+    </div>
+    <div class="grid" id="menuNivel2" style="display:none;">
+        <div class="row col-md-12">
+            @foreach (var s in Model.recursos)
+            {
+                <div class="tile @s.Color col-md-3 col-xs-12 @s.Modulo opciones2" style="display:none;">
+                    <a href="@s.Url" class="menuOpc" id="@s.Id">
+                        <h1>@s.Nombre</h1>
+                        <p style="color: @s.ColorLetra;">@s.Descripcion</p>
+                    </a>
+                </div>
+            }
+            @*<div class="tile tile-red col-md-3 col-xs-12">
+                    <div class="tile-content icon">
+                        <i class="glyphicon glyphicon-circle-arrow-left"></i>
+                    </div>
+                    <div class="tile-status">
+                        <span class="name">volver</span>
+                    </div>
+                </div>*@
+            <div class="tile tile-red col-md-2 col-xs-8" id="volverBtnMenu">
+                <a href="javascript:void(0);" onclick="VolverMenu('menuNivel1', 'menuNivel2');" class="sistemaOpc">
+                    <h1>Volver</h1>
+                    <br />
+                    <h1><i class="glyphicon glyphicon-circle-arrow-left"></i></h1>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

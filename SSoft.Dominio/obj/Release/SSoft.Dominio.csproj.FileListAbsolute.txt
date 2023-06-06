@@ -1,0 +1,42 @@
+C:\Proyect\SSoft\Fuente\SSoft\SSoft.Dominio\bin\Release\SSoft.Dominio.dll
+C:\Proyect\SSoft\Fuente\SSoft\SSoft.Dominio\bin\Release\SSoft.Dominio.pdb
+C:\Proyect\SSoft\Fuente\SSoft\SSoft.Dominio\bin\Release\SSoft.DataAccess.dll
+C:\Proyect\SSoft\Fuente\SSoft\SSoft.Dominio\bin\Release\EntityFramework.dll
+C:\Proyect\SSoft\Fuente\SSoft\SSoft.Dominio\bin\Release\SSoft.DataAccess.pdb
+C:\Proyect\SSoft\Fuente\SSoft\SSoft.Dominio\bin\Release\EntityFramework.xml
+C:\Proyect\SSoft\Fuente\SSoft\SSoft.Dominio\obj\Release\SSoft.Dominio.csprojResolveAssemblyReference.cache
+C:\Proyect\SSoft\Fuente\SSoft\SSoft.Dominio\obj\Release\SSoft.Dominio.dll
+C:\Proyect\SSoft\Fuente\SSoft\SSoft.Dominio\obj\Release\SSoft.Dominio.pdb
+D:\Proyect\SSoft\Fuente\SSoft\SSoft.Dominio\bin\Release\SSoft.Dominio.dll
+D:\Proyect\SSoft\Fuente\SSoft\SSoft.Dominio\bin\Release\SSoft.Dominio.pdb
+D:\Proyect\SSoft\Fuente\SSoft\SSoft.Dominio\bin\Release\SSoft.DataAccess.dll
+D:\Proyect\SSoft\Fuente\SSoft\SSoft.Dominio\bin\Release\EntityFramework.dll
+D:\Proyect\SSoft\Fuente\SSoft\SSoft.Dominio\bin\Release\SSoft.DataAccess.pdb
+D:\Proyect\SSoft\Fuente\SSoft\SSoft.Dominio\bin\Release\EntityFramework.xml
+D:\Proyect\SSoft\Fuente\SSoft\SSoft.Dominio\obj\Release\SSoft.Dominio.csprojResolveAssemblyReference.cache
+D:\Proyect\SSoft\Fuente\SSoft\SSoft.Dominio\obj\Release\SSoft.Dominio.dll
+D:\Proyect\SSoft\Fuente\SSoft\SSoft.Dominio\obj\Release\SSoft.Dominio.pdb
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.Dominio\bin\Release\SSoft.Dominio.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.Dominio\bin\Release\SSoft.Dominio.pdb
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.Dominio\bin\Release\SSoft.DataAccess.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.Dominio\bin\Release\EntityFramework.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.Dominio\bin\Release\SSoft.DataAccess.pdb
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.Dominio\bin\Release\SSoft.DataAccess.dll.config
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.Dominio\bin\Release\EntityFramework.xml
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.Dominio\obj\Release\SSoft.Dominio.csprojAssemblyReference.cache
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.Dominio\obj\Release\SSoft.Dominio.csproj.CoreCompileInputs.cache
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.Dominio\obj\Release\SSoft.Dominio.csproj.CopyComplete
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.Dominio\obj\Release\SSoft.Dominio.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.Dominio\obj\Release\SSoft.Dominio.pdb
+D:\Proyect\E-MAPU_CultivoONLINE\Server\SSoft\SSoft.Dominio\bin\Release\SSoft.Dominio.dll
+D:\Proyect\E-MAPU_CultivoONLINE\Server\SSoft\SSoft.Dominio\bin\Release\SSoft.Dominio.pdb
+D:\Proyect\E-MAPU_CultivoONLINE\Server\SSoft\SSoft.Dominio\bin\Release\SSoft.DataAccess.dll
+D:\Proyect\E-MAPU_CultivoONLINE\Server\SSoft\SSoft.Dominio\bin\Release\EntityFramework.dll
+D:\Proyect\E-MAPU_CultivoONLINE\Server\SSoft\SSoft.Dominio\bin\Release\SSoft.DataAccess.pdb
+D:\Proyect\E-MAPU_CultivoONLINE\Server\SSoft\SSoft.Dominio\bin\Release\SSoft.DataAccess.dll.config
+D:\Proyect\E-MAPU_CultivoONLINE\Server\SSoft\SSoft.Dominio\bin\Release\EntityFramework.xml
+D:\Proyect\E-MAPU_CultivoONLINE\Server\SSoft\SSoft.Dominio\obj\Release\SSoft.Dominio.csprojAssemblyReference.cache
+D:\Proyect\E-MAPU_CultivoONLINE\Server\SSoft\SSoft.Dominio\obj\Release\SSoft.Dominio.csproj.CoreCompileInputs.cache
+D:\Proyect\E-MAPU_CultivoONLINE\Server\SSoft\SSoft.Dominio\obj\Release\SSoft.Dominio.csproj.CopyComplete
+D:\Proyect\E-MAPU_CultivoONLINE\Server\SSoft\SSoft.Dominio\obj\Release\SSoft.Dominio.dll
+D:\Proyect\E-MAPU_CultivoONLINE\Server\SSoft\SSoft.Dominio\obj\Release\SSoft.Dominio.pdb

@@ -1,0 +1,16 @@
+C:\Proyect\SSoft\Fuente\SSoft\SSoft.Transversal\bin\Release\SSoft.Transversal.dll
+C:\Proyect\SSoft\Fuente\SSoft\SSoft.Transversal\bin\Release\SSoft.Transversal.pdb
+C:\Proyect\SSoft\Fuente\SSoft\SSoft.Transversal\obj\Release\SSoft.Transversal.dll
+C:\Proyect\SSoft\Fuente\SSoft\SSoft.Transversal\obj\Release\SSoft.Transversal.pdb
+C:\Proyect\SSoft\Fuente\SSoft\SSoft.Transversal\obj\Release\SSoft.Transversal.csprojResolveAssemblyReference.cache
+D:\Proyect\SSoft\Fuente\SSoft\SSoft.Transversal\bin\Release\SSoft.Transversal.dll
+D:\Proyect\SSoft\Fuente\SSoft\SSoft.Transversal\bin\Release\SSoft.Transversal.pdb
+D:\Proyect\SSoft\Fuente\SSoft\SSoft.Transversal\obj\Release\SSoft.Transversal.csprojResolveAssemblyReference.cache
+D:\Proyect\SSoft\Fuente\SSoft\SSoft.Transversal\obj\Release\SSoft.Transversal.dll
+D:\Proyect\SSoft\Fuente\SSoft\SSoft.Transversal\obj\Release\SSoft.Transversal.pdb
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.Transversal\bin\Release\SSoft.Transversal.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.Transversal\bin\Release\SSoft.Transversal.pdb
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.Transversal\obj\Release\SSoft.Transversal.csprojAssemblyReference.cache
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.Transversal\obj\Release\SSoft.Transversal.csproj.CoreCompileInputs.cache
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.Transversal\obj\Release\SSoft.Transversal.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.Transversal\obj\Release\SSoft.Transversal.pdb

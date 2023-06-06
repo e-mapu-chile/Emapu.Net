@@ -1,0 +1,44 @@
+C:\Proyect\SSoft\Fuente\SSoft\SSoft.DataAccess\SSoft.DataAccess\bin\Debug\SSoft.DataAccess.dll.config
+C:\Proyect\SSoft\Fuente\SSoft\SSoft.DataAccess\SSoft.DataAccess\bin\Debug\SSoft.DataAccess.dll
+C:\Proyect\SSoft\Fuente\SSoft\SSoft.DataAccess\SSoft.DataAccess\bin\Debug\SSoft.DataAccess.pdb
+C:\Proyect\SSoft\Fuente\SSoft\SSoft.DataAccess\SSoft.DataAccess\bin\Debug\EntityFramework.dll
+C:\Proyect\SSoft\Fuente\SSoft\SSoft.DataAccess\SSoft.DataAccess\bin\Debug\EntityFramework.SqlServer.dll
+C:\Proyect\SSoft\Fuente\SSoft\SSoft.DataAccess\SSoft.DataAccess\bin\Debug\EntityFramework.xml
+C:\Proyect\SSoft\Fuente\SSoft\SSoft.DataAccess\SSoft.DataAccess\bin\Debug\EntityFramework.SqlServer.xml
+C:\Proyect\SSoft\Fuente\SSoft\SSoft.DataAccess\SSoft.DataAccess\obj\Debug\SSoft.DataAccess.csprojResolveAssemblyReference.cache
+C:\Proyect\SSoft\Fuente\SSoft\SSoft.DataAccess\SSoft.DataAccess\obj\Debug\SSoft.DataAccess.dll
+C:\Proyect\SSoft\Fuente\SSoft\SSoft.DataAccess\SSoft.DataAccess\obj\Debug\SSoft.DataAccess.pdb
+D:\Proyect\SSoft\Fuente\SSoft\SSoft.DataAccess\SSoft.DataAccess\bin\Debug\SSoft.DataAccess.dll.config
+D:\Proyect\SSoft\Fuente\SSoft\SSoft.DataAccess\SSoft.DataAccess\bin\Debug\SSoft.DataAccess.dll
+D:\Proyect\SSoft\Fuente\SSoft\SSoft.DataAccess\SSoft.DataAccess\bin\Debug\SSoft.DataAccess.pdb
+D:\Proyect\SSoft\Fuente\SSoft\SSoft.DataAccess\SSoft.DataAccess\bin\Debug\EntityFramework.dll
+D:\Proyect\SSoft\Fuente\SSoft\SSoft.DataAccess\SSoft.DataAccess\bin\Debug\EntityFramework.SqlServer.dll
+D:\Proyect\SSoft\Fuente\SSoft\SSoft.DataAccess\SSoft.DataAccess\bin\Debug\EntityFramework.xml
+D:\Proyect\SSoft\Fuente\SSoft\SSoft.DataAccess\SSoft.DataAccess\bin\Debug\EntityFramework.SqlServer.xml
+D:\Proyect\SSoft\Fuente\SSoft\SSoft.DataAccess\SSoft.DataAccess\obj\Debug\SSoft.DataAccess.csprojResolveAssemblyReference.cache
+D:\Proyect\SSoft\Fuente\SSoft\SSoft.DataAccess\SSoft.DataAccess\obj\Debug\SSoft.DataAccess.dll
+D:\Proyect\SSoft\Fuente\SSoft\SSoft.DataAccess\SSoft.DataAccess\obj\Debug\SSoft.DataAccess.pdb
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.DataAccess\SSoft.DataAccess\bin\Debug\SSoft.DataAccess.dll.config
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.DataAccess\SSoft.DataAccess\bin\Debug\SSoft.DataAccess.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.DataAccess\SSoft.DataAccess\bin\Debug\SSoft.DataAccess.pdb
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.DataAccess\SSoft.DataAccess\bin\Debug\EntityFramework.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.DataAccess\SSoft.DataAccess\bin\Debug\EntityFramework.SqlServer.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.DataAccess\SSoft.DataAccess\bin\Debug\EntityFramework.xml
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.DataAccess\SSoft.DataAccess\bin\Debug\EntityFramework.SqlServer.xml
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.DataAccess\SSoft.DataAccess\obj\Debug\SSoft.DataAccess.csprojAssemblyReference.cache
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.DataAccess\SSoft.DataAccess\obj\Debug\SSoft.DataAccess.csproj.CoreCompileInputs.cache
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.DataAccess\SSoft.DataAccess\obj\Debug\SSoft.DataAccess.csproj.CopyComplete
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.DataAccess\SSoft.DataAccess\obj\Debug\SSoft.DataAccess.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.DataAccess\SSoft.DataAccess\obj\Debug\SSoft.DataAccess.pdb
+C:\Emprendimientos\E-Mapu\SSoft\SSoft.DataAccess\SSoft.DataAccess\bin\Debug\SSoft.DataAccess.dll.config
+C:\Emprendimientos\E-Mapu\SSoft\SSoft.DataAccess\SSoft.DataAccess\bin\Debug\SSoft.DataAccess.dll
+C:\Emprendimientos\E-Mapu\SSoft\SSoft.DataAccess\SSoft.DataAccess\bin\Debug\SSoft.DataAccess.pdb
+C:\Emprendimientos\E-Mapu\SSoft\SSoft.DataAccess\SSoft.DataAccess\bin\Debug\EntityFramework.dll
+C:\Emprendimientos\E-Mapu\SSoft\SSoft.DataAccess\SSoft.DataAccess\bin\Debug\EntityFramework.SqlServer.dll
+C:\Emprendimientos\E-Mapu\SSoft\SSoft.DataAccess\SSoft.DataAccess\bin\Debug\EntityFramework.xml
+C:\Emprendimientos\E-Mapu\SSoft\SSoft.DataAccess\SSoft.DataAccess\bin\Debug\EntityFramework.SqlServer.xml
+C:\Emprendimientos\E-Mapu\SSoft\SSoft.DataAccess\SSoft.DataAccess\obj\Debug\SSoft.DataAccess.csproj.CoreCompileInputs.cache
+C:\Emprendimientos\E-Mapu\SSoft\SSoft.DataAccess\SSoft.DataAccess\obj\Debug\SSoft.DataAccess.csproj.CopyComplete
+C:\Emprendimientos\E-Mapu\SSoft\SSoft.DataAccess\SSoft.DataAccess\obj\Debug\SSoft.DataAccess.dll
+C:\Emprendimientos\E-Mapu\SSoft\SSoft.DataAccess\SSoft.DataAccess\obj\Debug\SSoft.DataAccess.pdb
+C:\Emprendimientos\E-Mapu\SSoft\SSoft.DataAccess\SSoft.DataAccess\obj\Debug\SSoft.DataAccess.csproj.AssemblyReference.cache

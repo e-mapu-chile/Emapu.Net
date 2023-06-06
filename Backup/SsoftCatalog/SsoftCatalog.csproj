@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{285005CA-6076-456C-ADA4-158E79798300}</ProjectGuid>
+    <ProjectTypeGuids>{E3E379DF-F4C6-4180-9B81-6769533ABE47};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SsoftCatalog</RootNamespace>
+    <AssemblyName>SsoftCatalog</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Mvc.FixedDisplayModes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.FixedDisplayModes.1.0.0\lib\net40\Microsoft.Web.Mvc.FixedDisplayModes.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.4.5.11\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.4.0.30506.0\lib\net40\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.4.0.30506.0\lib\net40\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.4.0.30506.0\lib\net40\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.4.0.30506.0\lib\net40\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.2.0.30506.0\lib\net40\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controllers\IndexController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Content Include="Global.asax" />
+    <Content Include="TemaCss\transcend\css\base.css" />
+    <Content Include="TemaCss\transcend\css\font-awesome\css\fa-brands.css" />
+    <Content Include="TemaCss\transcend\css\font-awesome\css\fa-brands.min.css" />
+    <Content Include="TemaCss\transcend\css\font-awesome\css\fa-regular.css" />
+    <Content Include="TemaCss\transcend\css\font-awesome\css\fa-regular.min.css" />
+    <Content Include="TemaCss\transcend\css\font-awesome\css\fa-solid.css" />
+    <Content Include="TemaCss\transcend\css\font-awesome\css\fa-solid.min.css" />
+    <Content Include="TemaCss\transcend\css\font-awesome\css\fontawesome-all.css" />
+    <Content Include="TemaCss\transcend\css\font-awesome\css\fontawesome-all.min.css" />
+    <Content Include="TemaCss\transcend\css\font-awesome\css\fontawesome.css" />
+    <Content Include="TemaCss\transcend\css\font-awesome\css\fontawesome.min.css" />
+    <Content Include="TemaCss\transcend\css\font-awesome\webfonts\fa-brands-400.svg" />
+    <Content Include="TemaCss\transcend\css\font-awesome\webfonts\fa-regular-400.svg" />
+    <Content Include="TemaCss\transcend\css\font-awesome\webfonts\fa-solid-900.svg" />
+    <Content Include="TemaCss\transcend\css\fonts.css" />
+    <Content Include="TemaCss\transcend\css\main.css" />
+    <Content Include="TemaCss\transcend\css\micons\fonts\icomoon.svg" />
+    <Content Include="TemaCss\transcend\css\micons\micons.css" />
+    <Content Include="TemaCss\transcend\css\vendor.css" />
+    <Content Include="TemaCss\transcend\favicon.ico" />
+    <Content Include="TemaCss\transcend\images\avatars\user-01.jpg" />
+    <Content Include="TemaCss\transcend\images\avatars\user-02.jpg" />
+    <Content Include="TemaCss\transcend\images\avatars\user-03.jpg" />
+    <Content Include="TemaCss\transcend\images\avatars\user-04.jpg" />
+    <Content Include="TemaCss\transcend\images\avatars\user-05.jpg" />
+    <Content Include="TemaCss\transcend\images\hero-bg.jpg" />
+    <Content Include="TemaCss\transcend\images\icons\icon-arrow-down.svg" />
+    <Content Include="TemaCss\transcend\images\icons\icon-mail.svg" />
+    <Content Include="TemaCss\transcend\images\icons\png\icon-arrow-down.png" />
+    <Content Include="TemaCss\transcend\images\icons\png\icon-mail.png" />
+    <Content Include="TemaCss\transcend\images\logo.png" />
+    <Content Include="TemaCss\transcend\images\logo.svg" />
+    <Content Include="TemaCss\transcend\images\photoswipe\default-skin.png" />
+    <Content Include="TemaCss\transcend\images\photoswipe\default-skin.svg" />
+    <Content Include="TemaCss\transcend\images\photoswipe\preloader.gif" />
+    <Content Include="TemaCss\transcend\images\portfolio\fuji%402x.jpg" />
+    <Content Include="TemaCss\transcend\images\portfolio\fuji.jpg" />
+    <Content Include="TemaCss\transcend\images\portfolio\gallery\g-fuji.jpg" />
+    <Content Include="TemaCss\transcend\images\portfolio\gallery\g-lamp.jpg" />
+    <Content Include="TemaCss\transcend\images\portfolio\gallery\g-liberty.jpg" />
+    <Content Include="TemaCss\transcend\images\portfolio\gallery\g-salad.jpg" />
+    <Content Include="TemaCss\transcend\images\portfolio\gallery\g-shutterbug.jpg" />
+    <Content Include="TemaCss\transcend\images\portfolio\gallery\g-woodcraft.jpg" />
+    <Content Include="TemaCss\transcend\images\portfolio\lamp%402x.jpg" />
+    <Content Include="TemaCss\transcend\images\portfolio\lamp.jpg" />
+    <Content Include="TemaCss\transcend\images\portfolio\liberty%402x.jpg" />
+    <Content Include="TemaCss\transcend\images\portfolio\liberty.jpg" />
+    <Content Include="TemaCss\transcend\images\portfolio\salad%402x.jpg" />
+    <Content Include="TemaCss\transcend\images\portfolio\salad.jpg" />
+    <Content Include="TemaCss\transcend\images\portfolio\shutterbug%402x.jpg" />
+    <Content Include="TemaCss\transcend\images\portfolio\shutterbug.jpg" />
+    <Content Include="TemaCss\transcend\images\portfolio\woodcraft%402x.jpg" />
+    <Content Include="TemaCss\transcend\images\portfolio\woodcraft.jpg" />
+    <Content Include="TemaCss\transcend\images\sample-image.jpg" />
+    <Content Include="TemaCss\transcend\images\stats-bg.jpg" />
+    <Content Include="TemaCss\transcend\images\wheel-1000.jpg" />
+    <Content Include="TemaCss\transcend\images\wheel-2000.jpg" />
+    <Content Include="TemaCss\transcend\images\wheel-500.jpg" />
+    <Content Include="TemaCss\transcend\index.html" />
+    <Content Include="TemaCss\transcend\js\jquery-3.2.1.min.js" />
+    <Content Include="TemaCss\transcend\js\main.js" />
+    <Content Include="TemaCss\transcend\js\modernizr.js" />
+    <Content Include="TemaCss\transcend\js\pace.min.js" />
+    <Content Include="TemaCss\transcend\js\plugins.js" />
+    <Content Include="TemaCss\transcend\readme.txt" />
+    <Content Include="TemaCss\transcend\styles.html" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Layout\_master.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="TemaCss\transcend\css\font-awesome\webfonts\fa-brands-400.eot" />
+    <Content Include="TemaCss\transcend\css\font-awesome\webfonts\fa-brands-400.ttf" />
+    <Content Include="TemaCss\transcend\css\font-awesome\webfonts\fa-brands-400.woff" />
+    <Content Include="TemaCss\transcend\css\font-awesome\webfonts\fa-brands-400.woff2" />
+    <Content Include="TemaCss\transcend\css\font-awesome\webfonts\fa-regular-400.eot" />
+    <Content Include="TemaCss\transcend\css\font-awesome\webfonts\fa-regular-400.ttf" />
+    <Content Include="TemaCss\transcend\css\font-awesome\webfonts\fa-regular-400.woff" />
+    <Content Include="TemaCss\transcend\css\font-awesome\webfonts\fa-regular-400.woff2" />
+    <Content Include="TemaCss\transcend\css\font-awesome\webfonts\fa-solid-900.eot" />
+    <Content Include="TemaCss\transcend\css\font-awesome\webfonts\fa-solid-900.ttf" />
+    <Content Include="TemaCss\transcend\css\font-awesome\webfonts\fa-solid-900.woff" />
+    <Content Include="TemaCss\transcend\css\font-awesome\webfonts\fa-solid-900.woff2" />
+    <Content Include="TemaCss\transcend\css\micons\fonts\icomoon.eot" />
+    <Content Include="TemaCss\transcend\css\micons\fonts\icomoon.ttf" />
+    <Content Include="TemaCss\transcend\css\micons\fonts\icomoon.woff" />
+    <Content Include="TemaCss\transcend\fonts\domine\domine-bold-webfont.woff" />
+    <Content Include="TemaCss\transcend\fonts\domine\domine-bold-webfont.woff2" />
+    <Content Include="TemaCss\transcend\fonts\domine\domine-regular-webfont.ttf" />
+    <Content Include="TemaCss\transcend\fonts\domine\domine-regular-webfont.woff" />
+    <Content Include="TemaCss\transcend\fonts\domine\domine-regular-webfont.woff2" />
+    <Content Include="TemaCss\transcend\fonts\metropolis\metropolis-black-webfont.ttf" />
+    <Content Include="TemaCss\transcend\fonts\metropolis\metropolis-black-webfont.woff" />
+    <Content Include="TemaCss\transcend\fonts\metropolis\metropolis-black-webfont.woff2" />
+    <Content Include="TemaCss\transcend\fonts\metropolis\metropolis-blackitalic-webfont.ttf" />
+    <Content Include="TemaCss\transcend\fonts\metropolis\metropolis-blackitalic-webfont.woff" />
+    <Content Include="TemaCss\transcend\fonts\metropolis\metropolis-blackitalic-webfont.woff2" />
+    <Content Include="TemaCss\transcend\fonts\metropolis\metropolis-bold-webfont.ttf" />
+    <Content Include="TemaCss\transcend\fonts\metropolis\metropolis-bold-webfont.woff" />
+    <Content Include="TemaCss\transcend\fonts\metropolis\metropolis-bold-webfont.woff2" />
+    <Content Include="TemaCss\transcend\fonts\metropolis\metropolis-bolditalic-webfont.woff" />
+    <Content Include="TemaCss\transcend\fonts\metropolis\metropolis-bolditalic-webfont.woff2" />
+    <Content Include="TemaCss\transcend\fonts\metropolis\metropolis-extrabold-webfont.woff" />
+    <Content Include="TemaCss\transcend\fonts\metropolis\metropolis-extrabold-webfont.woff2" />
+    <Content Include="TemaCss\transcend\fonts\metropolis\metropolis-extrabolditalic-webfont.ttf" />
+    <Content Include="TemaCss\transcend\fonts\metropolis\metropolis-extrabolditalic-webfont.woff" />
+    <Content Include="TemaCss\transcend\fonts\metropolis\metropolis-extrabolditalic-webfont.woff2" />
+    <Content Include="TemaCss\transcend\fonts\metropolis\metropolis-extralight-webfont.ttf" />
+    <Content Include="TemaCss\transcend\fonts\metropolis\metropolis-extralight-webfont.woff" />
+    <Content Include="TemaCss\transcend\fonts\metropolis\metropolis-extralight-webfont.woff2" />
+    <Content Include="TemaCss\transcend\fonts\metropolis\metropolis-extralightitalic-webfont.woff" />
+    <Content Include="TemaCss\transcend\fonts\metropolis\metropolis-extralightitalic-webfont.woff2" />
+    <Content Include="TemaCss\transcend\fonts\metropolis\metropolis-light-webfont.woff" />
+    <Content Include="TemaCss\transcend\fonts\metropolis\metropolis-light-webfont.woff2" />
+    <Content Include="TemaCss\transcend\fonts\metropolis\metropolis-lightitalic-webfont.woff" />
+    <Content Include="TemaCss\transcend\fonts\metropolis\metropolis-lightitalic-webfont.woff2" />
+    <Content Include="TemaCss\transcend\fonts\metropolis\metropolis-medium-webfont.ttf" />
+    <Content Include="TemaCss\transcend\fonts\metropolis\metropolis-medium-webfont.woff" />
+    <Content Include="TemaCss\transcend\fonts\metropolis\metropolis-medium-webfont.woff2" />
+    <Content Include="TemaCss\transcend\fonts\metropolis\metropolis-mediumitalic-webfont.woff" />
+    <Content Include="TemaCss\transcend\fonts\metropolis\metropolis-mediumitalic-webfont.woff2" />
+    <Content Include="TemaCss\transcend\fonts\metropolis\metropolis-regular-webfont.ttf" />
+    <Content Include="TemaCss\transcend\fonts\metropolis\metropolis-regular-webfont.woff" />
+    <Content Include="TemaCss\transcend\fonts\metropolis\metropolis-regular-webfont.woff2" />
+    <Content Include="TemaCss\transcend\fonts\metropolis\metropolis-regularitalic-webfont.woff" />
+    <Content Include="TemaCss\transcend\fonts\metropolis\metropolis-regularitalic-webfont.woff2" />
+    <Content Include="TemaCss\transcend\fonts\metropolis\metropolis-semibold-webfont.ttf" />
+    <Content Include="TemaCss\transcend\fonts\metropolis\metropolis-semibold-webfont.woff" />
+    <Content Include="TemaCss\transcend\fonts\metropolis\metropolis-semibold-webfont.woff2" />
+    <Content Include="TemaCss\transcend\fonts\metropolis\metropolis-semibolditalic-webfont.ttf" />
+    <Content Include="TemaCss\transcend\fonts\metropolis\metropolis-semibolditalic-webfont.woff" />
+    <Content Include="TemaCss\transcend\fonts\metropolis\metropolis-semibolditalic-webfont.woff2" />
+    <Content Include="TemaCss\transcend\fonts\metropolis\metropolis-thin-webfont.woff" />
+    <Content Include="TemaCss\transcend\fonts\metropolis\metropolis-thin-webfont.woff2" />
+    <Content Include="TemaCss\transcend\fonts\metropolis\metropolis-thinitalic-webfont.woff" />
+    <Content Include="TemaCss\transcend\fonts\metropolis\metropolis-thinitalic-webfont.woff2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Index\Index.cshtml" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>9397</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:9397/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

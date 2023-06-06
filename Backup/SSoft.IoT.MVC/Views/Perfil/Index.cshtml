@@ -1,0 +1,65 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Layout/_master.cshtml";
+}
+<script src="~/Script/Highcharts/highcharts.js"></script>
+<script src="~/Script/Highcharts/modules/series-label.js"></script>
+<script src="~/Script/Highcharts/modules/exporting.js"></script>
+<script src="~/Script/CultivoOnlineJs/Gestion/IndicadorLecturaAccionJs.js"></script>
+@*<div class="gtco-section border-bottom">
+        <div class="gtco-container">
+            <div class="row">
+                <div class="col-md-8 gtco-heading">
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+    </div>*@
+<br />
+<h1 style="margin-left:30%;">Bienvenido</h1>
+<hr />
+<p style="margin-left:5%;">
+    <b>Cada maquina que usted tenga registrara informacion de lectura cada 5 minutos aprox.</b>
+    <button id="refrescar" class="btn btn-success" style="margin-left:5%;">Actualizar Indicadores</button>
+</p>
+<hr />
+<div class="row">
+    <div class="col-sm-8">
+        <h4 style="margin-left:30%;">Indicador porcentaje humedad</h4>
+        <div style="margin-left:5%;">
+            <table id="tareasTable"></table>
+            <div id="tareasPager"></div>
+        </div>
+    </div>
+</div>
+<hr />
+<div class="row">
+    <div class="col-sm-5">
+        <h4 style="margin-left:30%;">Lecturas de las Maquinas</h4>
+        <div id="chart1Header">
+        </div>
+        <div id="chart1" style="height: 300px; width: 100%; margin-left: 2%;">
+        </div>
+    </div>
+    <div class="col-sm-4">
+
+        <h4 style="margin-left:30%;">Estado de las Maquinas</h4>
+        <table id="saludTable"></table>
+        <div id="saludPager"></div>
+    </div>
+</div>
+<hr />
+
+<div class="row">
+    <div class="col-sm-8">
+        <h4 style="margin-left:30%;">Acciones ejecutadas</h4>
+        <div style="margin-left:5%;">
+            <table id="accionesTable"></table>
+            <div id="accionesPager"></div>
+        </div>
+    </div>
+</div>

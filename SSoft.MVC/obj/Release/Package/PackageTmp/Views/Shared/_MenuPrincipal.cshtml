@@ -1,0 +1,37 @@
+﻿<nav class="navbar navbar-default">
+    <div class="navbar-header">
+        @*style="background-color: #3b7869;"*@
+        @*<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>*@
+        <a class="navbar-brand" style="margin-top: -14px;" href="/" title="SSoft">
+            <img src="~/Image/logo24.png" style="margin-top:1%;" class="pull-left" />
+            <h1 class="pull-right" style="padding-left: 10px; color: black;">@*SSoft*@</h1>
+        </a>
+    </div>
+    <div class="container" style="background-color: #3b7869; ">
+        <div id="navbar" class="collapse navbar-collapse pull-right">
+            <ul class="nav navbar-nav navbar-left">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle " style="color: white;"
+                       data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false"><span class="glyphicon glyphicon-user"></span><span class="caret"></span></a>
+                    @* <h3 id="h3_@mod.Id"></h3>*@
+                    <ul class="dropdown-menu">
+                        <li><a id="cambiarClave" href="#">Cambiar Clave</a></li>
+                        <li><a href="../index/cerrarSesion">Cerrar Sesion</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../Perfil" style="color: white;"
+                       role="button" aria-haspopup="true"
+                       aria-expanded="false"><span class="glyphicon glyphicon-home"></span></a>
+                    @* <h3 id="h3_@mod.Id"></h3>*@
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

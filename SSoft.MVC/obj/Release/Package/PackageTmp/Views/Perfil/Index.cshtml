@@ -1,0 +1,27 @@
+﻿@model SSoft.MVC.Models.SistemasModel
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link href="~/Content/MetroUI/metro-bootstrap.css" rel="stylesheet" />
+<link href="~/Content/MetroUI/font-awesome.min.css" rel="stylesheet" />
+<script src="~/Script/SSoft/PerfilJs.js"></script>
+
+<div class="grid">
+    <div class="row col-md-12">
+
+        @foreach (var s in Model.sistemas)
+        {
+            <div class="tile @s.Color col-md-3 col-xs-12">
+                <a href="javascript:void(0);" class="sistemaOpc" id="@s.Id">
+                    <h1>@s.Nombre</h1>
+                    <p style="color: @s.ColorLetra;">@s.Descripcion</p>
+                </a>
+            </div>
+        }
+
+    </div>
+</div>
+
+
+

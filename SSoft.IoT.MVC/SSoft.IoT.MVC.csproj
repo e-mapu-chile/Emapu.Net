@@ -1,0 +1,579 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6440B96B-DA99-4D58-BE7F-B5FDF8867A5F}</ProjectGuid>
+    <ProjectTypeGuids>{E3E379DF-F4C6-4180-9B81-6769533ABE47};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SSoft.IoT.MVC</RootNamespace>
+    <AssemblyName>SSoft.IoT.MVC</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <MvcProjectUpgradeChecked>true</MvcProjectUpgradeChecked>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>12.0</OldToolsVersion>
+    <UseGlobalApplicationHostFile />
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SSoft.DataAccess\SSoft.DataAccess\bin\Debug\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\SSoft.DataAccess\SSoft.DataAccess\bin\Debug\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.WebSockets, Version=0.2.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.WebSockets.0.2.3.1\lib\net45\Microsoft.WebSockets.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Mvc.FixedDisplayModes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.FixedDisplayModes.1.0.0\lib\net40\Microsoft.Web.Mvc.FixedDisplayModes.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.4.5.11\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.4.0.30506.0\lib\net40\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.4.0.30506.0\lib\net40\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.4.0.30506.0\lib\net40\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.4.0.30506.0\lib\net40\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.2.0.30506.0\lib\net40\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Areas\CultivoApi\Controllers\CultivoOnlineController.cs" />
+    <Compile Include="Areas\CultivoApi\Controllers\IndexController.cs" />
+    <Compile Include="Areas\CultivoApi\CultivoApiAreaRegistration.cs" />
+    <Compile Include="Controllers\ConfiguracionModuloController.cs" />
+    <Compile Include="Controllers\CultivoApiController.cs" />
+    <Compile Include="Controllers\GestionController.cs" />
+    <Compile Include="Controllers\IndexController.cs" />
+    <Compile Include="Controllers\PerfilController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AlimentoModel.cs" />
+    <Compile Include="Models\AnimalModel.cs" />
+    <Compile Include="Models\Base\Extenders.cs" />
+    <Compile Include="Models\Base\FileUploadJsonResult.cs" />
+    <Compile Include="Models\CultivoOnLineModel.cs" />
+    <Compile Include="Models\UsuarioModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Content Include="Content\bootstrap-slider\Bootstrap-Slider.css" />
+    <Content Include="Content\BootStrap\bootstrap-grid.css" />
+    <Content Include="Content\BootStrap\bootstrap-grid.min.css" />
+    <Content Include="Content\BootStrap\bootstrap-reboot.css" />
+    <Content Include="Content\BootStrap\bootstrap-reboot.min.css" />
+    <Content Include="Content\BootStrap\bootstrap.css" />
+    <Content Include="Content\BootStrap\bootstrap.min.css" />
+    <Content Include="Content\Css\sitio.css" />
+    <Content Include="Content\Css\the-big-picture.css" />
+    <Content Include="Content\Fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\jquery-grid\ui.jqgrid.css" />
+    <Content Include="Content\MetroUI\font-awesome.min.css" />
+    <Content Include="Content\MetroUI\metro-bootstrap.css" />
+    <Content Include="Content\MetroUI\metro-bootstrap.min.css" />
+    <Content Include="Content\SmartWizard-master\smart_wizard.css" />
+    <Content Include="Content\SmartWizard-master\smart_wizard.min.css" />
+    <Content Include="Content\SmartWizard-master\smart_wizard_theme_arrows.css" />
+    <Content Include="Content\SmartWizard-master\smart_wizard_theme_arrows.min.css" />
+    <Content Include="Content\SmartWizard-master\smart_wizard_theme_circles.css" />
+    <Content Include="Content\SmartWizard-master\smart_wizard_theme_circles.min.css" />
+    <Content Include="Content\SmartWizard-master\smart_wizard_theme_dots.css" />
+    <Content Include="Content\SmartWizard-master\smart_wizard_theme_dots.min.css" />
+    <Content Include="Global.asax" />
+    <Content Include="Image\calendarioCultivo.PNG" />
+    <Content Include="Image\control.PNG" />
+    <Content Include="Image\FondoIndicador.png" />
+    <Content Include="Image\icono_Transparente.png" />
+    <Content Include="Image\LOGO circuito.png" />
+    <Content Include="Image\monitoreo.PNG" />
+    <Content Include="Image\nivelAltoAgua.png" />
+    <Content Include="Image\nivelBajoAgua.png" />
+    <Content Include="Image\nivelMedioAgua.png" />
+    <Content Include="Image\planificacion.jpg" />
+    <Content Include="Image\Predio.jpg" />
+    <Content Include="Image\Predio3.jpg" />
+    <Content Include="Image\reporte.PNG" />
+    <Content Include="Script\ActivoVivoJs\RegistroAlimento.js" />
+    <Content Include="Script\ActivoVivoJs\RegistroAnimalJs.js" />
+    <Content Include="Script\Base\datepicker-es.js" />
+    <Content Include="Script\Base\EspereGifImplement.js" />
+    <Content Include="Script\Base\jquery.mask.js" />
+    <Content Include="Script\Base\jquery.numberMask.js" />
+    <Content Include="Script\Base\jquery.Rut.min.js" />
+    <Content Include="Script\Base\Masked.js" />
+    <Content Include="Script\bootstrap-slider\Bootstrap-Slider.js" />
+    <Content Include="Script\BootStrap\bootstrap.bundle.js" />
+    <Content Include="Script\BootStrap\bootstrap.bundle.min.js" />
+    <Content Include="Script\BootStrap\bootstrap.js" />
+    <Content Include="Script\BootStrap\bootstrap.min.js" />
+    <Content Include="Script\canvasjs\canvasjs.min.js" />
+    <Content Include="Script\canvasjs\canvasjs.react.js" />
+    <Content Include="Script\canvasjs\examples\01-overview\animated-chart.html" />
+    <Content Include="Script\canvasjs\examples\01-overview\chart-from-json-data.html" />
+    <Content Include="Script\canvasjs\examples\01-overview\chart-with-axis-scale-breaks.html" />
+    <Content Include="Script\canvasjs\examples\01-overview\chart-with-crosshair.html" />
+    <Content Include="Script\canvasjs\examples\01-overview\chart-with-custom-legend-chart.html" />
+    <Content Include="Script\canvasjs\examples\01-overview\chart-with-image-overlay.html" />
+    <Content Include="Script\canvasjs\examples\01-overview\chart-with-index-data-label.html" />
+    <Content Include="Script\canvasjs\examples\01-overview\chart-with-inverted-reversed-axis.html" />
+    <Content Include="Script\canvasjs\examples\01-overview\chart-with-logarithmic-axis.html" />
+    <Content Include="Script\canvasjs\examples\01-overview\chart-with-secondary-axis.html" />
+    <Content Include="Script\canvasjs\examples\01-overview\chart-with-zoom-pan.html" />
+    <Content Include="Script\canvasjs\examples\01-overview\dynamic-chart.html" />
+    <Content Include="Script\canvasjs\examples\01-overview\interactive-draggable-chart.html" />
+    <Content Include="Script\canvasjs\examples\01-overview\multi-series-chart.html" />
+    <Content Include="Script\canvasjs\examples\01-overview\null-data-chart.html" />
+    <Content Include="Script\canvasjs\examples\01-overview\performance-demo.html" />
+    <Content Include="Script\canvasjs\examples\02-line-spline-step-line-charts\dashed-line-chart.html" />
+    <Content Include="Script\canvasjs\examples\02-line-spline-step-line-charts\dynamic-spline-chart.html" />
+    <Content Include="Script\canvasjs\examples\02-line-spline-step-line-charts\line-chart-with-axis-scale-breaks.html" />
+    <Content Include="Script\canvasjs\examples\02-line-spline-step-line-charts\line-chart-with-data-markers.html" />
+    <Content Include="Script\canvasjs\examples\02-line-spline-step-line-charts\line-chart-with-logarithmic-axis.html" />
+    <Content Include="Script\canvasjs\examples\02-line-spline-step-line-charts\line-chart-with-multiple-axis.html" />
+    <Content Include="Script\canvasjs\examples\02-line-spline-step-line-charts\line-chart-with-zoom-pan.html" />
+    <Content Include="Script\canvasjs\examples\02-line-spline-step-line-charts\line-chart.html" />
+    <Content Include="Script\canvasjs\examples\02-line-spline-step-line-charts\multi-series-line-chart.html" />
+    <Content Include="Script\canvasjs\examples\02-line-spline-step-line-charts\multi-series-spline-chart.html" />
+    <Content Include="Script\canvasjs\examples\02-line-spline-step-line-charts\multi-series-step-line-chart.html" />
+    <Content Include="Script\canvasjs\examples\02-line-spline-step-line-charts\spline-chart-with-legends.html" />
+    <Content Include="Script\canvasjs\examples\02-line-spline-step-line-charts\spline-chart-with-secondary-axis.html" />
+    <Content Include="Script\canvasjs\examples\02-line-spline-step-line-charts\spline-chart.html" />
+    <Content Include="Script\canvasjs\examples\02-line-spline-step-line-charts\step-line-chart.html" />
+    <Content Include="Script\canvasjs\examples\03-stacked-spline-range-area-charts\area-chart.html" />
+    <Content Include="Script\canvasjs\examples\03-stacked-spline-range-area-charts\multi-series-area-chart.html" />
+    <Content Include="Script\canvasjs\examples\03-stacked-spline-range-area-charts\multi-series-range-area-chart.html" />
+    <Content Include="Script\canvasjs\examples\03-stacked-spline-range-area-charts\multi-series-spline-area-chart.html" />
+    <Content Include="Script\canvasjs\examples\03-stacked-spline-range-area-charts\range-area-chart.html" />
+    <Content Include="Script\canvasjs\examples\03-stacked-spline-range-area-charts\range-spline-area-chart.html" />
+    <Content Include="Script\canvasjs\examples\03-stacked-spline-range-area-charts\spline-area-chart.html" />
+    <Content Include="Script\canvasjs\examples\03-stacked-spline-range-area-charts\stacked-area-100-chart-with-date-time-axis.html" />
+    <Content Include="Script\canvasjs\examples\03-stacked-spline-range-area-charts\stacked-area-100-chart.html" />
+    <Content Include="Script\canvasjs\examples\03-stacked-spline-range-area-charts\stacked-area-chart.html" />
+    <Content Include="Script\canvasjs\examples\03-stacked-spline-range-area-charts\step-area-chart.html" />
+    <Content Include="Script\canvasjs\examples\04-column-stacked-range-waterfall-charts\bar-chart-with-axis-scale-break.html" />
+    <Content Include="Script\canvasjs\examples\04-column-stacked-range-waterfall-charts\bar-chart.html" />
+    <Content Include="Script\canvasjs\examples\04-column-stacked-range-waterfall-charts\column-chart-with-multiple-axis.html" />
+    <Content Include="Script\canvasjs\examples\04-column-stacked-range-waterfall-charts\column-chart.html" />
+    <Content Include="Script\canvasjs\examples\04-column-stacked-range-waterfall-charts\multi-series-bar-chart.html" />
+    <Content Include="Script\canvasjs\examples\04-column-stacked-range-waterfall-charts\multi-series-range-column-chart.html" />
+    <Content Include="Script\canvasjs\examples\04-column-stacked-range-waterfall-charts\multi-series-waterfall-chart.html" />
+    <Content Include="Script\canvasjs\examples\04-column-stacked-range-waterfall-charts\range-bar-chart.html" />
+    <Content Include="Script\canvasjs\examples\04-column-stacked-range-waterfall-charts\range-column-chart.html" />
+    <Content Include="Script\canvasjs\examples\04-column-stacked-range-waterfall-charts\stacked-bar-100-chart.html" />
+    <Content Include="Script\canvasjs\examples\04-column-stacked-range-waterfall-charts\stacked-bar-chart.html" />
+    <Content Include="Script\canvasjs\examples\04-column-stacked-range-waterfall-charts\stacked-column-100-chart.html" />
+    <Content Include="Script\canvasjs\examples\04-column-stacked-range-waterfall-charts\stacked-column-chart.html" />
+    <Content Include="Script\canvasjs\examples\04-column-stacked-range-waterfall-charts\waterfall-chart-with-custom-color.html" />
+    <Content Include="Script\canvasjs\examples\04-column-stacked-range-waterfall-charts\waterfall-chart.html" />
+    <Content Include="Script\canvasjs\examples\05-pie-doughnut-funnel-pyramid-charts\doughnut-chart-with-custom-inner-radius.html" />
+    <Content Include="Script\canvasjs\examples\05-pie-doughnut-funnel-pyramid-charts\doughnut-Chart.html" />
+    <Content Include="Script\canvasjs\examples\05-pie-doughnut-funnel-pyramid-charts\funnel-chart-with-custom-neck.html" />
+    <Content Include="Script\canvasjs\examples\05-pie-doughnut-funnel-pyramid-charts\funnel-chart.html" />
+    <Content Include="Script\canvasjs\examples\05-pie-doughnut-funnel-pyramid-charts\inverted-reversed-funnel-chart.html" />
+    <Content Include="Script\canvasjs\examples\05-pie-doughnut-funnel-pyramid-charts\pie-chart-with-custom-radius.html" />
+    <Content Include="Script\canvasjs\examples\05-pie-doughnut-funnel-pyramid-charts\pie-chart-with-legends.html" />
+    <Content Include="Script\canvasjs\examples\05-pie-doughnut-funnel-pyramid-charts\pie-chart.html" />
+    <Content Include="Script\canvasjs\examples\05-pie-doughnut-funnel-pyramid-charts\pyramid-chart-where-area-represents-value.html" />
+    <Content Include="Script\canvasjs\examples\05-pie-doughnut-funnel-pyramid-charts\pyramid-chart-with-index-label-placed-Inside.html" />
+    <Content Include="Script\canvasjs\examples\05-pie-doughnut-funnel-pyramid-charts\pyramid-chart.html" />
+    <Content Include="Script\canvasjs\examples\06-candlestick-ohlc-charts\candlestick-line-chart.html" />
+    <Content Include="Script\canvasjs\examples\06-candlestick-ohlc-charts\multi-series-candlestick-chart.html" />
+    <Content Include="Script\canvasjs\examples\06-candlestick-ohlc-charts\ohlc-chart-from-json-data.html" />
+    <Content Include="Script\canvasjs\examples\06-candlestick-ohlc-charts\ohlc-stock-chart.html" />
+    <Content Include="Script\canvasjs\examples\07-scatter-bubble-charts\bubble-chart-with-data-marker.html" />
+    <Content Include="Script\canvasjs\examples\07-scatter-bubble-charts\bubble-chart-with-zoom-pan.html" />
+    <Content Include="Script\canvasjs\examples\07-scatter-bubble-charts\bubble-chart.html" />
+    <Content Include="Script\canvasjs\examples\07-scatter-bubble-charts\multi-series-scatter-point-chart.html" />
+    <Content Include="Script\canvasjs\examples\07-scatter-bubble-charts\scatter-point-chart-with-custom-marker.html" />
+    <Content Include="Script\canvasjs\examples\07-scatter-bubble-charts\scatter-point-chart.html" />
+    <Content Include="Script\canvasjs\examples\08-box-and-whisker-charts\box-and-whisker-chart-with-custom-color.html" />
+    <Content Include="Script\canvasjs\examples\08-box-and-whisker-charts\box-and-whisker-chart-with-outliers.html" />
+    <Content Include="Script\canvasjs\examples\08-box-and-whisker-charts\box-and-whisker-chart.html" />
+    <Content Include="Script\canvasjs\examples\09-combination-charts\column-line-area-chart.html" />
+    <Content Include="Script\canvasjs\examples\09-combination-charts\error-bar-chart.html" />
+    <Content Include="Script\canvasjs\examples\09-combination-charts\error-chart.html" />
+    <Content Include="Script\canvasjs\examples\09-combination-charts\error-line-chart.html" />
+    <Content Include="Script\canvasjs\examples\09-combination-charts\ohlc-line-chart.html" />
+    <Content Include="Script\canvasjs\examples\09-combination-charts\pareto-chart-with-index-data-label.html" />
+    <Content Include="Script\canvasjs\examples\09-combination-charts\pareto-chart.html" />
+    <Content Include="Script\canvasjs\examples\09-combination-charts\range-area-line-chart.html" />
+    <Content Include="Script\canvasjs\examples\10-dynamic-charts\dynamic-column-chart.html" />
+    <Content Include="Script\canvasjs\examples\10-dynamic-charts\dynamic-line-chart.html" />
+    <Content Include="Script\canvasjs\examples\10-dynamic-charts\dynamic-multi-series-chart.html" />
+    <Content Include="Script\canvasjs\examples\11-integration\jquery-charts.html" />
+    <Content Include="Script\canvasjs\examples\11-integration\jquery-line-chart-with-zoom-pan.html" />
+    <Content Include="Script\canvasjs\examples\11-integration\jquery-resizable-chart.html" />
+    <Content Include="Script\canvasjs\examples\11-integration\jquery-spline-area-chart-in-tab.html" />
+    <Content Include="Script\canvasjs\examples\11-integration\jquery-spline-chart-with-image-export.html" />
+    <Content Include="Script\canvasjs\instruction.txt" />
+    <Content Include="Script\canvasjs\jquery.canvasjs.min.js" />
+    <Content Include="Script\canvasjs\license.txt" />
+    <Content Include="Script\CheckBox\bootstrap-checkbox.js" />
+    <Content Include="Script\CultivoOnlineJs\CalibrarModulo.js" />
+    <Content Include="Script\CultivoOnlineJs\ConexionJs.js" />
+    <Content Include="Script\CultivoOnlineJs\ConfiguracionJs.js" />
+    <Content Include="Script\CultivoOnlineJs\Gestion\IndicadorLecturaAccionJs.js" />
+    <Content Include="Script\CultivoOnlineJs\PanelControl.js" />
+    <Content Include="Script\Highcharts\adapters\mootools-adapter.js" />
+    <Content Include="Script\Highcharts\adapters\mootools-adapter.src.js" />
+    <Content Include="Script\Highcharts\adapters\prototype-adapter.js" />
+    <Content Include="Script\Highcharts\adapters\prototype-adapter.src.js" />
+    <Content Include="Script\Highcharts\highcharts.js" />
+    <Content Include="Script\Highcharts\highcharts.src.js" />
+    <Content Include="Script\Highcharts\modules\canvas-tools.js" />
+    <Content Include="Script\Highcharts\modules\canvas-tools.src.js" />
+    <Content Include="Script\Highcharts\modules\exporting.js" />
+    <Content Include="Script\Highcharts\modules\exporting.src.js" />
+    <Content Include="Script\Highcharts\modules\series-label.js" />
+    <Content Include="Script\Highcharts\themes\dark-blue.js" />
+    <Content Include="Script\Highcharts\themes\dark-green.js" />
+    <Content Include="Script\Highcharts\themes\gray.js" />
+    <Content Include="Script\Highcharts\themes\grid.js" />
+    <Content Include="Script\Highcharts\themes\skies.js" />
+    <Content Include="Script\jquery-grid\grid.locale-en.js" />
+    <Content Include="Script\jquery-grid\jquery.jqGrid.min.js" />
+    <Content Include="Script\jquery-ui-1.12.1.custom\AUTHORS.txt" />
+    <Content Include="Script\jquery-ui-1.12.1.custom\datepicker-es.js" />
+    <Content Include="Script\jquery-ui-1.12.1.custom\external\jquery\jquery.js" />
+    <Content Include="Script\jquery-ui-1.12.1.custom\images\ui-icons_444444_256x240.png" />
+    <Content Include="Script\jquery-ui-1.12.1.custom\images\ui-icons_555555_256x240.png" />
+    <Content Include="Script\jquery-ui-1.12.1.custom\images\ui-icons_777620_256x240.png" />
+    <Content Include="Script\jquery-ui-1.12.1.custom\images\ui-icons_777777_256x240.png" />
+    <Content Include="Script\jquery-ui-1.12.1.custom\images\ui-icons_cc0000_256x240.png" />
+    <Content Include="Script\jquery-ui-1.12.1.custom\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Script\jquery-ui-1.12.1.custom\index.html" />
+    <Content Include="Script\jquery-ui-1.12.1.custom\jquery-ui.css" />
+    <Content Include="Script\jquery-ui-1.12.1.custom\jquery-ui.js" />
+    <Content Include="Script\jquery-ui-1.12.1.custom\jquery-ui.min.css" />
+    <Content Include="Script\jquery-ui-1.12.1.custom\jquery-ui.min.js" />
+    <Content Include="Script\jquery-ui-1.12.1.custom\jquery-ui.structure.css" />
+    <Content Include="Script\jquery-ui-1.12.1.custom\jquery-ui.structure.min.css" />
+    <Content Include="Script\jquery-ui-1.12.1.custom\jquery-ui.theme.css" />
+    <Content Include="Script\jquery-ui-1.12.1.custom\jquery-ui.theme.min.css" />
+    <Content Include="Script\jquery-ui-1.12.1.custom\LICENSE.txt" />
+    <Content Include="Script\Jquery\Jquery.Form.js" />
+    <Content Include="Script\Jquery\jquery.js" />
+    <Content Include="Script\Jquery\jquery.min.js" />
+    <Content Include="Script\Jquery\jquery.Rut.min.js" />
+    <Content Include="Script\Jquery\jquery.slim.js" />
+    <Content Include="Script\Jquery\jquery.slim.min.js" />
+    <Content Include="Script\Jquery\jquery.validate.min.js" />
+    <Content Include="Script\Jquery\Masked.js" />
+    <Content Include="Script\Jquery\nprogress.js" />
+    <Content Include="Script\MetroUI\Carrousel.js" />
+    <Content Include="Script\MetroUI\metro-docs.js" />
+    <Content Include="Script\SmartWizard-master\jquery.smartWizard.js" />
+    <Content Include="Script\SmartWizard-master\jquery.smartWizard.min.js" />
+    <Content Include="Script\SSoft\IndexJs.js" />
+    <Content Include="Script\SSoft\PerfilJs.js" />
+    <Content Include="TemaCss\splash\contact.html" />
+    <Content Include="TemaCss\splash\css\animate.css" />
+    <Content Include="TemaCss\splash\css\bootstrap.css" />
+    <Content Include="TemaCss\splash\css\icomoon.css" />
+    <Content Include="TemaCss\splash\css\magnific-popup.css" />
+    <Content Include="TemaCss\splash\css\owl.carousel.min.css" />
+    <Content Include="TemaCss\splash\css\owl.theme.default.min.css" />
+    <Content Include="TemaCss\splash\css\style.css" />
+    <Content Include="TemaCss\splash\css\themify-icons.css" />
+    <Content Include="TemaCss\splash\features.html" />
+    <Content Include="TemaCss\splash\fonts\bootstrap\glyphicons-halflings-regular.svg" />
+    <Content Include="TemaCss\splash\fonts\icomoon\icomoon.svg" />
+    <Content Include="TemaCss\splash\fonts\themify-icons\themify.svg" />
+    <Content Include="TemaCss\splash\images\img_1.jpg" />
+    <Content Include="TemaCss\splash\images\img_2.jpg" />
+    <Content Include="TemaCss\splash\images\img_3.jpg" />
+    <Content Include="TemaCss\splash\images\img_4.jpg" />
+    <Content Include="TemaCss\splash\images\img_5.jpg" />
+    <Content Include="TemaCss\splash\images\img_6.jpg" />
+    <Content Include="TemaCss\splash\images\img_bg_1.jpg" />
+    <Content Include="TemaCss\splash\images\img_bg_2.jpg" />
+    <Content Include="TemaCss\splash\images\img_bg_3.jpg" />
+    <Content Include="TemaCss\splash\images\iphone.png" />
+    <Content Include="TemaCss\splash\images\loader.gif" />
+    <Content Include="TemaCss\splash\images\macbook.png" />
+    <Content Include="TemaCss\splash\images\person_1.jpg" />
+    <Content Include="TemaCss\splash\images\person_2.jpg" />
+    <Content Include="TemaCss\splash\images\person_3.jpg" />
+    <Content Include="TemaCss\splash\index.html" />
+    <Content Include="TemaCss\splash\js\bootstrap.min.js" />
+    <Content Include="TemaCss\splash\js\jquery.countTo.js" />
+    <Content Include="TemaCss\splash\js\jquery.easing.1.3.js" />
+    <Content Include="TemaCss\splash\js\jquery.magnific-popup.min.js" />
+    <Content Include="TemaCss\splash\js\jquery.min.js" />
+    <Content Include="TemaCss\splash\js\jquery.stellar.min.js" />
+    <Content Include="TemaCss\splash\js\jquery.waypoints.min.js" />
+    <Content Include="TemaCss\splash\js\magnific-popup-options.js" />
+    <Content Include="TemaCss\splash\js\main.js" />
+    <Content Include="TemaCss\splash\js\modernizr-2.6.2.min.js" />
+    <Content Include="TemaCss\splash\js\owl.carousel.min.js" />
+    <Content Include="TemaCss\splash\js\respond.min.js" />
+    <Content Include="TemaCss\splash\pricing.html" />
+    <Content Include="TemaCss\splash\README.txt" />
+    <Content Include="TemaCss\splash\tour.html" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Areas\CultivoApi\Models\" />
+    <Folder Include="DataAccess\" />
+    <Folder Include="Properties\PublishProfiles\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SSoft.Aplicacion\SSoft.Aplicacion.csproj">
+      <Project>{fd11acac-d0cf-4bcc-8115-9477937bf10a}</Project>
+      <Name>SSoft.Aplicacion</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SSoft.Transversal\SSoft.Transversal.csproj">
+      <Project>{311b6c95-2a69-4ed3-9919-6b2dcd4c8ebd}</Project>
+      <Name>SSoft.Transversal</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\BootStrap\bootstrap.css.map" />
+    <Content Include="Content\BootStrap\bootstrap.min.css.map" />
+    <Content Include="Content\Fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\Fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Content\Fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Content\Fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Content\MetroUI\metro-bootstrap.css.map" />
+    <Content Include="Views\Layout\_master.cshtml" />
+    <Content Include="Views\Index\Index.cshtml" />
+    <Content Include="Script\BootStrap\bootstrap.bundle.js.map" />
+    <Content Include="Script\BootStrap\bootstrap.bundle.min.js.map" />
+    <Content Include="Script\BootStrap\bootstrap.js.map" />
+    <Content Include="Script\BootStrap\bootstrap.min.js.map" />
+    <Content Include="Script\jquery-ui-1.12.1.custom\package.json" />
+    <Content Include="Script\Jquery\jquery.min.map" />
+    <Content Include="Script\Jquery\jquery.slim.min.map" />
+    <Content Include="TemaCss\splash\fonts\bootstrap\glyphicons-halflings-regular.eot" />
+    <Content Include="TemaCss\splash\fonts\bootstrap\glyphicons-halflings-regular.ttf" />
+    <Content Include="TemaCss\splash\fonts\bootstrap\glyphicons-halflings-regular.woff" />
+    <Content Include="TemaCss\splash\fonts\bootstrap\glyphicons-halflings-regular.woff2" />
+    <Content Include="TemaCss\splash\fonts\icomoon\icomoon.eot" />
+    <Content Include="TemaCss\splash\fonts\icomoon\icomoon.ttf" />
+    <Content Include="TemaCss\splash\fonts\icomoon\icomoon.woff" />
+    <Content Include="TemaCss\splash\fonts\themify-icons\themify.eot" />
+    <Content Include="TemaCss\splash\fonts\themify-icons\themify.ttf" />
+    <Content Include="TemaCss\splash\fonts\themify-icons\themify.woff" />
+    <Content Include="TemaCss\splash\sass\bootstrap.scss" />
+    <Content Include="TemaCss\splash\sass\bootstrap\mixins\_alerts.scss" />
+    <Content Include="TemaCss\splash\sass\bootstrap\mixins\_background-variant.scss" />
+    <Content Include="TemaCss\splash\sass\bootstrap\mixins\_border-radius.scss" />
+    <Content Include="TemaCss\splash\sass\bootstrap\mixins\_buttons.scss" />
+    <Content Include="TemaCss\splash\sass\bootstrap\mixins\_center-block.scss" />
+    <Content Include="TemaCss\splash\sass\bootstrap\mixins\_clearfix.scss" />
+    <Content Include="TemaCss\splash\sass\bootstrap\mixins\_forms.scss" />
+    <Content Include="TemaCss\splash\sass\bootstrap\mixins\_gradients.scss" />
+    <Content Include="TemaCss\splash\sass\bootstrap\mixins\_grid-framework.scss" />
+    <Content Include="TemaCss\splash\sass\bootstrap\mixins\_grid.scss" />
+    <Content Include="TemaCss\splash\sass\bootstrap\mixins\_hide-text.scss" />
+    <Content Include="TemaCss\splash\sass\bootstrap\mixins\_image.scss" />
+    <Content Include="TemaCss\splash\sass\bootstrap\mixins\_labels.scss" />
+    <Content Include="TemaCss\splash\sass\bootstrap\mixins\_list-group.scss" />
+    <Content Include="TemaCss\splash\sass\bootstrap\mixins\_nav-divider.scss" />
+    <Content Include="TemaCss\splash\sass\bootstrap\mixins\_nav-vertical-align.scss" />
+    <Content Include="TemaCss\splash\sass\bootstrap\mixins\_opacity.scss" />
+    <Content Include="TemaCss\splash\sass\bootstrap\mixins\_pagination.scss" />
+    <Content Include="TemaCss\splash\sass\bootstrap\mixins\_panels.scss" />
+    <Content Include="TemaCss\splash\sass\bootstrap\mixins\_progress-bar.scss" />
+    <Content Include="TemaCss\splash\sass\bootstrap\mixins\_reset-filter.scss" />
+    <Content Include="TemaCss\splash\sass\bootstrap\mixins\_reset-text.scss" />
+    <Content Include="TemaCss\splash\sass\bootstrap\mixins\_resize.scss" />
+    <Content Include="TemaCss\splash\sass\bootstrap\mixins\_responsive-visibility.scss" />
+    <Content Include="TemaCss\splash\sass\bootstrap\mixins\_size.scss" />
+    <Content Include="TemaCss\splash\sass\bootstrap\mixins\_tab-focus.scss" />
+    <Content Include="TemaCss\splash\sass\bootstrap\mixins\_table-row.scss" />
+    <Content Include="TemaCss\splash\sass\bootstrap\mixins\_text-emphasis.scss" />
+    <Content Include="TemaCss\splash\sass\bootstrap\mixins\_text-overflow.scss" />
+    <Content Include="TemaCss\splash\sass\bootstrap\mixins\_vendor-prefixes.scss" />
+    <Content Include="TemaCss\splash\sass\bootstrap\_alerts.scss" />
+    <Content Include="TemaCss\splash\sass\bootstrap\_badges.scss" />
+    <Content Include="TemaCss\splash\sass\bootstrap\_breadcrumbs.scss" />
+    <Content Include="TemaCss\splash\sass\bootstrap\_button-groups.scss" />
+    <Content Include="TemaCss\splash\sass\bootstrap\_buttons.scss" />
+    <Content Include="TemaCss\splash\sass\bootstrap\_carousel.scss" />
+    <Content Include="TemaCss\splash\sass\bootstrap\_close.scss" />
+    <Content Include="TemaCss\splash\sass\bootstrap\_code.scss" />
+    <Content Include="TemaCss\splash\sass\bootstrap\_component-animations.scss" />
+    <Content Include="TemaCss\splash\sass\bootstrap\_dropdowns.scss" />
+    <Content Include="TemaCss\splash\sass\bootstrap\_forms.scss" />
+    <Content Include="TemaCss\splash\sass\bootstrap\_glyphicons.scss" />
+    <Content Include="TemaCss\splash\sass\bootstrap\_grid.scss" />
+    <Content Include="TemaCss\splash\sass\bootstrap\_input-groups.scss" />
+    <Content Include="TemaCss\splash\sass\bootstrap\_jumbotron.scss" />
+    <Content Include="TemaCss\splash\sass\bootstrap\_labels.scss" />
+    <Content Include="TemaCss\splash\sass\bootstrap\_list-group.scss" />
+    <Content Include="TemaCss\splash\sass\bootstrap\_media.scss" />
+    <Content Include="TemaCss\splash\sass\bootstrap\_mixins.scss" />
+    <Content Include="TemaCss\splash\sass\bootstrap\_modals.scss" />
+    <Content Include="TemaCss\splash\sass\bootstrap\_navbar.scss" />
+    <Content Include="TemaCss\splash\sass\bootstrap\_navs.scss" />
+    <Content Include="TemaCss\splash\sass\bootstrap\_normalize.scss" />
+    <Content Include="TemaCss\splash\sass\bootstrap\_pager.scss" />
+    <Content Include="TemaCss\splash\sass\bootstrap\_pagination.scss" />
+    <Content Include="TemaCss\splash\sass\bootstrap\_panels.scss" />
+    <Content Include="TemaCss\splash\sass\bootstrap\_popovers.scss" />
+    <Content Include="TemaCss\splash\sass\bootstrap\_print.scss" />
+    <Content Include="TemaCss\splash\sass\bootstrap\_progress-bars.scss" />
+    <Content Include="TemaCss\splash\sass\bootstrap\_responsive-embed.scss" />
+    <Content Include="TemaCss\splash\sass\bootstrap\_responsive-utilities.scss" />
+    <Content Include="TemaCss\splash\sass\bootstrap\_scaffolding.scss" />
+    <Content Include="TemaCss\splash\sass\bootstrap\_tables.scss" />
+    <Content Include="TemaCss\splash\sass\bootstrap\_theme.scss" />
+    <Content Include="TemaCss\splash\sass\bootstrap\_thumbnails.scss" />
+    <Content Include="TemaCss\splash\sass\bootstrap\_tooltip.scss" />
+    <Content Include="TemaCss\splash\sass\bootstrap\_type.scss" />
+    <Content Include="TemaCss\splash\sass\bootstrap\_utilities.scss" />
+    <Content Include="TemaCss\splash\sass\bootstrap\_variables.scss" />
+    <Content Include="TemaCss\splash\sass\bootstrap\_wells.scss" />
+    <Content Include="TemaCss\splash\sass\style.scss" />
+    <Content Include="TemaCss\splash\sass\_bootstrap-compass.scss" />
+    <Content Include="TemaCss\splash\sass\_bootstrap-mincer.scss" />
+    <Content Include="TemaCss\splash\sass\_bootstrap-sprockets.scss" />
+    <Content Include="Views\Perfil\Index.cshtml" />
+    <Content Include="Views\ConfiguracionModulo\Configuracion.cshtml" />
+    <Content Include="Views\ConfiguracionModulo\ConfigurarConexion.cshtml" />
+    <Content Include="Views\Gestion\IndicadorLecturaAccion.cshtml" />
+    <Content Include="Views\ConfiguracionModulo\CalibrarModulo.cshtml" />
+    <Content Include="Views\ConfiguracionModulo\PanelControl.cshtml" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>12777</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:12771</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

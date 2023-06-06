@@ -1,0 +1,21 @@
+C:\Proyect\SSoft\Fuente\SSoft\SSoft.Transversal\bin\Debug\SSoft.Transversal.dll
+C:\Proyect\SSoft\Fuente\SSoft\SSoft.Transversal\bin\Debug\SSoft.Transversal.pdb
+C:\Proyect\SSoft\Fuente\SSoft\SSoft.Transversal\obj\Debug\SSoft.Transversal.csprojResolveAssemblyReference.cache
+C:\Proyect\SSoft\Fuente\SSoft\SSoft.Transversal\obj\Debug\SSoft.Transversal.dll
+C:\Proyect\SSoft\Fuente\SSoft\SSoft.Transversal\obj\Debug\SSoft.Transversal.pdb
+D:\Proyect\SSoft\Fuente\SSoft\SSoft.Transversal\bin\Debug\SSoft.Transversal.dll
+D:\Proyect\SSoft\Fuente\SSoft\SSoft.Transversal\bin\Debug\SSoft.Transversal.pdb
+D:\Proyect\SSoft\Fuente\SSoft\SSoft.Transversal\obj\Debug\SSoft.Transversal.csprojResolveAssemblyReference.cache
+D:\Proyect\SSoft\Fuente\SSoft\SSoft.Transversal\obj\Debug\SSoft.Transversal.dll
+D:\Proyect\SSoft\Fuente\SSoft\SSoft.Transversal\obj\Debug\SSoft.Transversal.pdb
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.Transversal\bin\Debug\SSoft.Transversal.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.Transversal\bin\Debug\SSoft.Transversal.pdb
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.Transversal\obj\Debug\SSoft.Transversal.csproj.CoreCompileInputs.cache
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.Transversal\obj\Debug\SSoft.Transversal.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.Transversal\obj\Debug\SSoft.Transversal.pdb
+C:\Emprendimientos\E-Mapu\SSoft\SSoft.Transversal\bin\Debug\SSoft.Transversal.dll
+C:\Emprendimientos\E-Mapu\SSoft\SSoft.Transversal\bin\Debug\SSoft.Transversal.pdb
+C:\Emprendimientos\E-Mapu\SSoft\SSoft.Transversal\obj\Debug\SSoft.Transversal.csproj.CoreCompileInputs.cache
+C:\Emprendimientos\E-Mapu\SSoft\SSoft.Transversal\obj\Debug\SSoft.Transversal.dll
+C:\Emprendimientos\E-Mapu\SSoft\SSoft.Transversal\obj\Debug\SSoft.Transversal.pdb
+C:\Emprendimientos\E-Mapu\SSoft\SSoft.Transversal\obj\Debug\SSoft.Transversal.csproj.AssemblyReference.cache

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="dd5988d730b34f2e802f6f84f05bef32" Name="Diagram1">
+        <EntityTypeShape EntityType="masterModel.Alimento" Width="1.5" PointX="13.75" PointY="1.625" />
+        <EntityTypeShape EntityType="masterModel.Animal" Width="1.5" PointX="6" PointY="0.75" />
+        <EntityTypeShape EntityType="masterModel.BodegaEstablecimiento" Width="1.5" PointX="16" PointY="5.25" />
+        <EntityTypeShape EntityType="masterModel.Categoria" Width="1.5" PointX="3.75" PointY="24.75" />
+        <EntityTypeShape EntityType="masterModel.CategoriaEspecie" Width="1.5" PointX="9.25" PointY="20.5" />
+        <EntityTypeShape EntityType="masterModel.Componente" Width="1.5" PointX="6.75" PointY="19.75" />
+        <EntityTypeShape EntityType="masterModel.ConfiguracionPlaca" Width="1.5" PointX="8.25" PointY="9.5" />
+        <EntityTypeShape EntityType="masterModel.Empresa" Width="1.5" PointX="1.5" PointY="16" />
+        <EntityTypeShape EntityType="masterModel.EmpresaEspecie" Width="1.5" PointX="3.75" PointY="18.625" />
+        <EntityTypeShape EntityType="masterModel.Especie" Width="1.5" PointX="6" PointY="16.125" />
+        <EntityTypeShape EntityType="masterModel.Establecimiento" Width="1.5" PointX="0.75" PointY="4" />
+        <EntityTypeShape EntityType="masterModel.EstadoAnimal" Width="1.5" PointX="3.75" PointY="22.25" />
+        <EntityTypeShape EntityType="masterModel.EstadoLote" Width="1.5" PointX="1.5" PointY="29.875" />
+        <EntityTypeShape EntityType="masterModel.Lote" Width="1.5" PointX="3.75" PointY="29.5" />
+        <EntityTypeShape EntityType="masterModel.Medicamento" Width="1.5" PointX="10.75" PointY="5.625" />
+        <EntityTypeShape EntityType="masterModel.Modelo" Width="1.5" PointX="3.75" PointY="15.75" />
+        <EntityTypeShape EntityType="masterModel.ModeloComponentes" Width="1.5" PointX="9" PointY="15.5" />
+        <EntityTypeShape EntityType="masterModel.MovimientoAlimento" Width="1.5" PointX="16" PointY="9.625" />
+        <EntityTypeShape EntityType="masterModel.MovimientoMedicamento" Width="1.5" PointX="13" PointY="5.125" />
+        <EntityTypeShape EntityType="masterModel.MovimientosAnimal" Width="1.5" PointX="8.25" PointY="0.875" />
+        <EntityTypeShape EntityType="masterModel.Recurso" Width="1.5" PointX="0.75" PointY="25" />
+        <EntityTypeShape EntityType="masterModel.Roles" Width="1.5" PointX="0.75" PointY="20.75" />
+        <EntityTypeShape EntityType="masterModel.RolRecurso" Width="1.5" PointX="6" PointY="23.5" />
+        <EntityTypeShape EntityType="masterModel.Sistema" Width="1.5" PointX="3.75" PointY="2.125" />
+        <EntityTypeShape EntityType="masterModel.TipoMovimiento" Width="1.5" PointX="6" PointY="13.625" />
+        <EntityTypeShape EntityType="masterModel.TokenPlaca" Width="1.5" PointX="6" PointY="9.25" />
+        <EntityTypeShape EntityType="masterModel.Usuario" Width="1.5" PointX="0.75" PointY="9" />
+        <EntityTypeShape EntityType="masterModel.UsuarioEstablecimiento" Width="1.5" PointX="3" PointY="6.625" />
+        <EntityTypeShape EntityType="masterModel.UsuarioRecurso" Width="1.5" PointX="3" PointY="12.75" />
+        <EntityTypeShape EntityType="masterModel.UsuarioRol" Width="1.5" PointX="3" PointY="9.75" />
+        <EntityTypeShape EntityType="masterModel.UsuarioSistema" Width="1.5" PointX="6" PointY="5.75" />
+        <AssociationConnector Association="masterModel.FK_BodegaEstablecimiento_Alimento" />
+        <AssociationConnector Association="masterModel.FK_MovimientoAlimento_Alimento" />
+        <AssociationConnector Association="masterModel.FK_Animal_Categoria" />
+        <AssociationConnector Association="masterModel.FK_Animal_Establecimiento" />
+        <AssociationConnector Association="masterModel.FK_Animal_EstadoAnimal" />
+        <AssociationConnector Association="masterModel.FK_Animal_Lote" />
+        <AssociationConnector Association="masterModel.FK_MovimientosAnimal_Animal" />
+        <AssociationConnector Association="masterModel.FK_BodegaEstablecimiento_Medicamento" />
+        <AssociationConnector Association="masterModel.FK_CategoriaEspecie_Categoria" />
+        <AssociationConnector Association="masterModel.FK_CategoriaEspecie_Especie" />
+        <AssociationConnector Association="masterModel.FK_ModeloComponentes_Componente" />
+        <AssociationConnector Association="masterModel.FK_ConfiguracionPlaca_TokenPlaca" />
+        <AssociationConnector Association="masterModel.FK_EmpresaEspecie_Empresa" />
+        <AssociationConnector Association="masterModel.FK_Establecimiento_Empresa" />
+        <AssociationConnector Association="masterModel.FK_EmpresaEspecie_Especie" />
+        <AssociationConnector Association="masterModel.FK_MovimientosAnimal_Especie" />
+        <AssociationConnector Association="masterModel.FK_MovimientosAnimal_Establecimiento" />
+        <AssociationConnector Association="masterModel.FK_UsuarioEstablecimiento_Establecimiento" />
+        <AssociationConnector Association="masterModel.FK_Lote_EstadoLote" />
+        <AssociationConnector Association="masterModel.FK_MovimientoMedicamento_Medicamento" />
+        <AssociationConnector Association="masterModel.FK_ModeloComponentes_Modelo" />
+        <AssociationConnector Association="masterModel.FK_TokenPlaca_Modelo" />
+        <AssociationConnector Association="masterModel.FK_MovimientosAnimal_TipoMovimiento" />
+        <AssociationConnector Association="masterModel.FK_Recurso_Sistema" />
+        <AssociationConnector Association="masterModel.FK_RolRecurso_Recurso" />
+        <AssociationConnector Association="masterModel.FK_UsuarioRecurso_Recurso" />
+        <AssociationConnector Association="masterModel.FK_RolRecurso_Roles" />
+        <AssociationConnector Association="masterModel.FK_UsuarioRol_Roles" />
+        <AssociationConnector Association="masterModel.FK_UsuarioSistema_Sistema" />
+        <AssociationConnector Association="masterModel.FK_TokenPlaca_Usuario" />
+        <AssociationConnector Association="masterModel.FK_UsuarioEstablecimiento_Usuario" />
+        <AssociationConnector Association="masterModel.FK_UsuarioRecurso_Usuario" />
+        <AssociationConnector Association="masterModel.FK_UsuarioRol_Usuario" />
+        <AssociationConnector Association="masterModel.FK_UsuarioSistema_Usuario" />
+        <EntityTypeShape EntityType="masterModel.BitacoraLecturasAcciones" Width="1.5" PointX="10.625" PointY="9.75" />
+        <EntityTypeShape EntityType="masterModel.BitacoraLitrosAproxConsumido" Width="1.5" PointX="13.375" PointY="13.75" />
+        <AssociationConnector Association="masterModel.TokenPlacaRelacion2" />
+        <EntityTypeShape EntityType="masterModel.ListadoCorreos" Width="1.5" PointX="17.625" PointY="14.625" />
+        <EntityTypeShape EntityType="masterModel.PanelControl" Width="1.5" PointX="15.375" PointY="14" />
+        <AssociationConnector Association="masterModel.FK_ListadoCorreos_PanelControl" />
+        <AssociationConnector Association="masterModel.FK_PanelControl_Usuario" />
+        <EntityTypeShape EntityType="masterModel.EjecucionTokenEmail" Width="1.5" PointX="0.75" PointY="0.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

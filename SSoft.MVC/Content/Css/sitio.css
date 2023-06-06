@@ -1,0 +1,156 @@
+﻿body {
+    /*background-image: url("../../image/montania.jpg");
+    background-repeat: no-repeat, repeat;*/
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: white;
+    font-family: sans-serif;
+}
+
+.textLargo400 {
+    width: 400px;
+}
+
+.textLargo250 {
+    width: 250px;
+}
+
+.textLargo350 {
+    width: 350px;
+}
+
+.margenTopLinea {
+    margin-top: 5px;
+}
+
+.noEditable {
+    background-color: #dddddd;
+}
+
+.tit-verde {
+    font-size: 20px;
+    color: green;
+}
+
+.tit-negro {
+    font-size: 20px;
+    color: black;
+}
+
+.tit-cafe {
+    font-size: 20px;
+    color: #7F593F;
+}
+
+button {
+    background-color: #7F593F;
+    color: #F7EDD4;
+}
+
+.login {
+    /*margin: 20px auto;*/
+    width: 350px;
+    padding: 30px 25px;
+    background: white;
+    border: 1px solid #c4c4c4;
+    margin-left: 90%;
+}
+
+h1.login-title {
+    margin: -28px -25px 25px;
+    padding: 15px 25px;
+    line-height: 30px;
+    font-size: 25px;
+    font-weight: 300;
+    color: #ADADAD;
+    text-align: center;
+    background: #f7f7f7;
+}
+
+.login-input {
+    width: 285px;
+    height: 50px;
+    margin-bottom: 25px;
+    padding-left: 10px;
+    font-size: 15px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+    .login-input:focus {
+        border-color: #6e8095;
+        outline: none;
+    }
+
+.login-button {
+    width: 285px;
+    height: 50px;
+    padding: 0;
+    font-size: 20px;
+    color: #F7EDD4;
+    text-align: center;
+    background: #7F593F;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: 0;
+}
+
+.login-lost {
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+    .login-lost a {
+        color: #666;
+        text-decoration: none;
+        font-size: 13px;
+    }
+
+.imagenPredioFondo {
+    background-image: url('http://www.birds.com/wp-content/uploads/home/bird4.jpg');
+    /*style="background-image: url(~/Image/Predio.jpg)*/
+}
+.izquierda {
+    text-align: left;
+}
+
+.derecha {
+    text-align: right;
+}
+
+.centro {
+    text-align: center;
+}
+
+.tablaFormulario2Cols {
+    width: 100%;
+}
+
+    .tablaFormulario2Cols tr td {
+        width: 50%;
+    }
+.tablaFormulario4Cols {
+    width: 100%;
+}
+
+    .tablaFormulario4Cols tr td {
+        width: 25%;
+    }
+
+.tablaFormulario5Cols {
+    width: 100%;
+}
+
+    .tablaFormulario5Cols tr td {
+        width: 15%;
+    }
+
+.tablaFormulario6Cols {
+    width: 100%;
+}
+
+    .tablaFormulario6Cols tr td {
+        width: 10%;
+    }

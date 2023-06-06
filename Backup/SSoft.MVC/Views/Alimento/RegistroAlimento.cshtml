@@ -1,0 +1,157 @@
+﻿@model SSoft.MVC.Models.AlimentoModel
+@{
+    ViewBag.Title = "RegistroAlimento";
+    Layout = "~/Views/Shared/_Master.cshtml";
+}
+<link href="~/Content/SmartWizard-master/smart_wizard.css" rel="stylesheet" />
+<link href="~/Content/SmartWizard-master/smart_wizard_theme_arrows.css" rel="stylesheet" />
+<script src="~/Script/SmartWizard-master/jquery.smartWizard.js"></script>
+
+<script src="~/Script/ActivoVivoJs/RegistroAlimento.js"></script>
+<div class="gtco-section border-bottom">
+    <div class="gtco-container">
+        <div class="row">
+            <h3>Registro Alimento</h3>
+            <div class="container">
+                <!-- SmartWizard 1 html -->
+                <div id="smartwizard">
+                    <ul>
+                        <li><a href="#step-1">Paso 1<br /><small>Información del Establecimiento</small></a></li>
+                        <li><a href="#step-2">Paso 2<br /><small>Información de Ingreso Alimento</small></a></li>
+                    </ul>
+                    <div>
+                        <div id="step-1" class="">
+                            <h2>Paso1 Información del Establecimiento</h2>
+                            <br />
+                            <br />
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div id="form-step-0" role="form" data-toggle="validator">
+                                            <div class="form-group">
+                                                <label>Seleccione Establecimiento Destino:</label>
+                                                <select id="establecimientoSelect" class="form-control" name="Write your email address" required>
+                                                    <option value="">Seleccione</option>
+                                                    @foreach (var item in Model.Establecimientos)
+                                                    {
+                                                    <option value="@item.Id">@item.Descripcion</option>
+                                                    }
+                                                </select>
+                                                @Html.Hidden("establecimientoHidden")
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr />
+                                <div class="row">
+                                    <div class="col-md-5">
+                                        <div role="form">
+                                            <div class="form-group">
+                                                <label for="name">Nombre:</label>
+                                                <input type="text" class="form-control" name="name" id="nombreEstablecimiento" disabled="disabled">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div role="form">
+                                            <div class="form-group">
+                                                <label for="name">Titular:</label>
+                                                <input type="text" class="form-control" name="name" id="nombreTitularEstablecimiento" disabled="disabled">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row margenTopLinea">
+                                    <div class="col-md-5">
+                                        <div role="form">
+                                            <div class="form-group">
+                                                <label for="name">Dirección:</label>
+                                                <input type="text" class="form-control" name="name" id="direccion" disabled="disabled">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="step-2" class="">
+                            <h2>Paso 2 Información de Ingreso Alimento</h2>
+                            <br />
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-5">
+                                        <div id="form-step-0" role="form" data-toggle="validator">
+                                            <div class="form-group">
+                                                <label>Seleccione un Alimento:</label>
+                                                <select id="alimentoSelect" class="form-control" name="Write your email address" required>
+                                                    <option value="">Seleccione</option>
+                                                    @foreach (var item in Model.Alimentos)
+                                                    {
+                                                        <option value="@item.Id">@item.Descripcion</option>
+                                                    }
+                                                </select>
+                                                <div class="help-block with-errors"></div>
+                                                @Html.Hidden("alimentoHidden")
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div role="form">
+                                            <div class="form-group">
+                                                <label for="name">Número de Serie:</label>
+                                                <input type='text' class="form-control" id='numeroSerie' />
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row margenTopLinea">
+                                    <div class="col-md-5">
+                                        <div role="form">
+                                            <div class="form-group">
+                                                <label for="name">Cantidad Unidades:</label>
+                                                <input type='number' class="form-control" id='cantidad' />
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div role="form">
+                                            <div class="form-group">
+                                                <label for="name">Fecha Vencimiento:</label>
+                                                <input type='text' class="form-control" id='fechaVencimiento' />
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row margenTopLinea">
+                                    <div class="col-md-5">
+                                        <div role="form">
+                                            <div class="form-group">
+                                                <label for="name">Precio de Compra ($):</label>
+                                                @*<input type="text" class="form-control" name="name" id="precioCompra" required>*@
+                                                @Html.TextBox("PrecioCompra", "", new { @class = "form-control money" })
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <div class="col-md-5">
+                                        <input type="submit" class="btn btn-success" value="Agregar Alimento">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <button type="button" class="btn btn-primary" data-dismiss="modal">Cancelar</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

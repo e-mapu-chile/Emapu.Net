@@ -1,0 +1,322 @@
+﻿@model SSoft.MVC.Models.AnimalModel
+@{
+    ViewBag.Title = "RegistroAnimal";
+    Layout = "~/Views/Shared/_Master.cshtml";
+}
+<link href="~/Content/SmartWizard-master/smart_wizard.css" rel="stylesheet" />
+<link href="~/Content/SmartWizard-master/smart_wizard_theme_arrows.css" rel="stylesheet" />
+<script src="~/Script/SmartWizard-master/jquery.smartWizard.js"></script>
+
+<script src="~/Script/ActivoVivoJs/RegistroAnimalJs.js"></script>
+<div class="gtco-section border-bottom">
+    <div class="gtco-container">
+        <div class="row">
+            <h3>Registro Animal</h3>
+            <div class="container">
+                <!-- SmartWizard 1 html -->
+                <div id="smartwizard">
+                    <ul>
+                        <li><a href="#step-1">Paso 1<br /><small>Información del Establecimiento</small></a></li>
+                        <li><a href="#step-2">Paso 2<br /><small>Información de Ingreso</small></a></li>
+                        <li><a href="#step-3">Paso 3<br /><small>Información Animal</small></a></li>
+                    </ul>
+                    <div>
+                        <div id="step-1" class="">
+                            <h2>Paso1 Información del Establecimiento</h2>
+                            <br />
+                            <br />
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div id="form-step-0" role="form" data-toggle="validator">
+                                            <div class="form-group">
+                                                <label>Seleccione Establecimiento Destino:</label>
+                                                <select id="establecimientoSelect" class="form-control" name="Write your email address" required>
+                                                    <option value="">Seleccione</option>
+                                                    @foreach (var item in Model.Establecimientos)
+                                                    {
+                                                        <option value="@item.Id">@item.Descripcion</option>
+                                                    }
+                                                </select>
+                                                @Html.Hidden("establecimientoHidden")
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr />
+                                <div class="row">
+                                    <div class="col-md-5">
+                                        <div role="form">
+                                            <div class="form-group">
+                                                <label for="name">Nombre:</label>
+                                                <input type="text" class="form-control" name="name" id="nombreEstablecimiento" disabled="disabled">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div role="form">
+                                            <div class="form-group">
+                                                <label for="name">Titular:</label>
+                                                <input type="text" class="form-control" name="name" id="nombreTitularEstablecimiento" disabled="disabled">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row margenTopLinea">
+                                    <div class="col-md-5">
+                                        <div role="form">
+                                            <div class="form-group">
+                                                <label for="name">Dirección:</label>
+                                                <input type="text" class="form-control" name="name" id="direccion" disabled="disabled">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="step-2" class="">
+                            <h2>Paso 2 Información de Ingreso</h2>
+                            <br />
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-5">
+                                        <div id="form-step-0" role="form" data-toggle="validator">
+                                            <div class="form-group">
+                                                <label>Seleccione Especie:</label>
+                                                <select id="especieSelect" class="form-control" name="Write your email address" required>
+                                                    <option value="">Seleccione</option>
+                                                    @foreach (var item in Model.Especies)
+                                                    {
+                                                        <option value="@item.Id">@item.Descripcion</option>
+                                                    }
+                                                </select>
+                                                <div class="help-block with-errors"></div>
+                                                @Html.Hidden("especieHidden")
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div role="form">
+                                            <div class="form-group">
+                                                <label for="name">Identificación del Lote:</label>
+                                                <input type='text' class="form-control" id='lote' />
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div id="step-3" class="">
+                            <h2>Paso 3 Información Animal</h2>
+                            En este paso usted podra agregar animales de forma individual seleccionando la opción
+                            <a href="#" data-toggle="modal" data-target="#myModal" class="agregarAnimalBtn">Agregar Animal</a>, pero tambien puede ingresar
+                            por medio de una planilla excel animales de forma masiva, para lograrlo ustede descargue nuestra planilla <a href="javascript:void(0);" onclick="DescargarPlanilla();">Aca</a> donde debera ingresar sus datos
+                            para luego subirla a nuestra plataforma en la opcion "Adjuntar Planilla".
+                            <div class="row margenTopLinea">
+                                @*<div class="col-md-3">
+                                        <button id="descargar" class="btn btn-primary">Descargar Planilla</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <button id="adjuntar" class="btn btn-success">Adjuntar Planilla Animales</button>
+                                    </div>*@
+                                <div class="col-md-3">
+                                    <button type="button" data-toggle="modal" data-target="#myModal" class="btn btn-success agregarAnimalBtn" onclick="setValoresFor();">Agregar Animal</button>
+                                    @*<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Agregar Animal</button>*@
+                                </div>
+                                <div class="col-md-3">
+                                    <button type="button" data-toggle="modal" data-target="#myModalFile" class="btn btn-success agregarAnimalMasivoBtn" onclick="setValoresForFile();">Adjuntar Planilla</button>
+                                    @*<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Agregar Animal</button>*@
+                                </div>
+                            </div>
+                            <hr />
+                            <div style="width:100%;text-align:center;">
+                                <h3>Listado de Animales Ingresados</h3>
+                            </div>
+                            <div class="row margenTopLinea">
+                                <div class="col-md-9">
+                                    <table id="animalesTable"></table>
+                                    <div id="animalesPager"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog" style="width: 80%;">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Ingrese Información del Animal</h4>
+            </div>
+            <div class="modal-body">
+                <!-- Smart Wizard HTML -->
+                <form id="animalAddForm" action="@Url.Action("AgregarAnimal", "Animal")" method="post">
+                    @Html.Hidden("EspecieId", 0)
+                    @Html.Hidden("NombreLote")
+                    @Html.Hidden("EstablecimientoId", 0)
+                    <div class="row margenTopLinea">
+
+                        <div class="col-md-4">
+                            <div role="form">
+                                <div class="form-group">
+                                    <label for="name">Identificación del Animal:</label>
+                                    @Html.TextBox("IdentificacionAnimal", "", new { @class = "form-control", autofocus = false })
+                                    @* <input type="text" class="form-control" name="name" id="identificacionAnimal" required>*@
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div id="form-step-0" role="form" data-toggle="validator">
+                                <div class="form-group">
+                                    <label>Seleccione Categoria:</label>
+                                    <select id="categoriaSelect" class="form-control" name="Write your email address">
+                                        <option value="">Seleccione</option>
+                                    </select>
+                                    <div class="help-block with-errors"></div>
+                                    @Html.Hidden("CategoriaId", 0)
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row margenTopLinea">
+                        <div class="col-md-4">
+                            <div role="form">
+                                <div class="form-group">
+                                    <label for="name">Sexo:</label>
+                                    <select id="sexoSelect" class="form-control" name="Write your email address">
+                                        <option value="">Seleccione</option>
+                                        <option value="Macho">Macho</option>
+                                        <option value="Hembra">Hembra</option>
+                                    </select>
+                                    <div class="help-block with-errors"></div>
+                                    @Html.Hidden("Sexo")
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div role="form">
+                                <div class="form-group">
+                                    <label for="name">Fecha de Compra:</label>
+                                    @*<input type="text" class="form-control" name="name" id="fechaCompraHtml" >*@
+                                    @Html.TextBox("FechaCompra", "", new { @class = "form-control form_datetime", autofocus = false })
+                                    <div class="help-block with-errors"></div>
+                                    @*@Html.Hidden("FechaCompra")x*@
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row margenTopLinea">
+                        <div class="col-md-4">
+                            <div role="form">
+                                <div class="form-group">
+                                    <label for="name">Fecha de Nacimiento:</label>
+                                    @*<input type="text" class="form-control" name="name" id="fechaNacimientoHtml" >*@
+                                    @Html.TextBox("FechaNacimiento", "", new { @class = "form-control form_datetime", autofocus = false })
+                                    <div class="help-block with-errors"></div>
+                                    @*@Html.Hidden("FechaNacimiento")
+                                    *@
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div role="form">
+                                <div class="form-group">
+                                    <label for="name">KG. de Ingreso (Kg):</label>
+                                    @*<input type="text" class="form-control" name="name" id="kgIngreso" required>*@
+                                    @Html.TextBox("KgIngreso", "", new { @class = "form-control" })
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row margenTopLinea">
+                        <div class="col-md-4">
+                            <div role="form">
+                                <div class="form-group">
+                                    <label for="name">Precio de Compra ($):</label>
+                                    @*<input type="text" class="form-control" name="name" id="precioCompra" required>*@
+                                    @Html.TextBox("PrecioCompra", "", new { @class = "form-control money" })
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div role="form">
+                                <div class="form-group">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="col-md-5">
+                            <input type="submit" class="btn btn-success" value="Agregar Animal">
+                        </div>
+                        <div class="col-md-3">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Cancelar</button>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+<div class="modal fade" id="myModalFile" role="dialog">
+    <div class="modal-dialog" style="width: 80%;">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Adjunte Información del Animal</h4>
+            </div>
+            <div class="modal-body">
+                <!-- Smart Wizard HTML -->
+                <form id="ajaxUploadExcel2" action="@Url.Action("AdjuntarExcel", "Animal")" method="post" enctype="multipart/form-data">
+                    <p>
+                        @Html.Hidden("EspecieIdFile", 0)
+                        @Html.Hidden("NombreLoteFile")
+                        @Html.Hidden("EstablecimientoIdFile", 0)
+                        @*@Html.Hidden("FechaNacimiento")
+                            @Html.Hidden("FechaCompra")
+                            @Html.Hidden("KgIngreso")
+                            @Html.Hidden("PrecioCompra")
+                            @Html.Hidden("Sexo")
+                            @Html.Hidden("CategoriaId",0)
+                            @Html.Hidden("IdentificacionAnimal")*@
+                        @Html.Label("Adjunte Archivo: ")<input id="file3" type="file" name="file" class="button" />
+                        <button type="submit">Guardar Animales</button>
+
+                    </p>
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+@Html.Hidden("EstablecimientoIdHiddenForm")
+@Html.Hidden("EspecieIdHiddenForm")
+@Html.Hidden("FechaIngresoHiddenForm")
+@Html.Hidden("FechaCompraHiddenForm")
+@Html.Hidden("FechaNacimientoHiddenForm")
+

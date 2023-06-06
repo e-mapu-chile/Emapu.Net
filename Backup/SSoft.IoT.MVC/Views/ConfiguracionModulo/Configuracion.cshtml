@@ -1,0 +1,156 @@
+﻿@{
+    ViewBag.Title = "Configuracion";
+    Layout = "~/Views/Layout/_master.cshtml";
+}
+<script src="~/Script/CultivoOnlineJs/ConfiguracionJs.js"></script>
+<style>
+    .slider-track-high {
+        background: red;
+    }
+
+    .slider-track-low {
+        background: green;
+    }
+
+    .slider-selection {
+        background: yellow;
+    }
+</style>
+<div style="margin-top:150px;margin-left:2%;margin-right:1%;">
+    <h2>Configuración de Modulos</h2>
+    En este item usted podra configurar los distintos modulos adquiridos. primero seleccione su modulo para luego planificar su cultivo.
+    <hr />
+    <div style="width:100%;text-align:center;">
+        <h3>Listado de mis Modulos</h3>
+    </div>
+    <div class="row margenTopLinea">
+        <div class="col-md-9">
+            <table id="modeloTable"></table>
+            <div id="modeloPager"></div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog" style="width: 90%;">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Planificación del Cultivo</h4>
+            </div>
+            <div class="modal-body">
+                <div style="width:100%;text-align:center;">
+                    @* <h3>Planificación</h3>*@
+                </div>
+                @Html.Hidden("modeloIdCliente", 0)
+                <p>Aca usted puede agregar, editar o eliminar una tarea que necesite para su cultivo.</p>
+                <button data-toggle="modal" class="btn btn-success" data-target="#myModalPlani" onclick="Editar(0);">Agregar tarea</button>
+                <hr />
+                <div class="row margenTopLinea">
+                    <div class="col-md-9">
+                        <table id="configTable"></table>
+                        <div id="configPager"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<div class="modal fade" id="myModalPlani" role="dialog">
+    <div class="modal-dialog" style="width: 70%;">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div style="width:100%;text-align:center;">
+                    <h3>Tarea</h3>
+                </div>
+                <hr />
+                <div class="row margenTopLinea">
+                    <div class="col-md-3">
+                        <div role="form">
+                            <div class="form-group">
+                                <label for="name">Nombre de la Tarea:</label>
+                                @Html.TextBox("nombreTarea", "", new { @class = "form-control", autofocus = true })
+                                <div class="help-block with-errors"></div>
+                                @Html.Hidden("idConfHidden", 0)
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div role="form">
+                            <div class="form-group">
+                                <label for="name">Fecha de Inicio:</label>
+                                @Html.TextBox("fechaInicio", "", new { @class = "form-control form_datetime", autofocus = false })
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div role="form">
+                            <div class="form-group">
+                                <label for="name">Fecha de Fin:</label>
+                                @Html.TextBox("fechaFin", "", new { @class = "form-control form_datetime", autofocus = false })
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row margenTopLinea">
+                    <div class="col-md-12">
+                        <div role="form">
+                            <div class="form-group">
+                                <div style="width: 100%; text-align: center;">
+                                    <h3>Parametros</h3>
+                                    <p>Seleccione el rango de humedad que desea mantener (sector amarillo), esto nos permite mantener la humedad deseada</p>
+                                </div>
+                                <table style="width: 100%;">
+                                    <tr>
+                                        <td style=" width:80%">
+                                            <div id="formularioDinamico" style="width: 100%;">
+
+                                            </div>
+                                        </td>
+                                        <td style="width:20%">
+                                            <table>
+                                                <tr>
+                                                    <td><b>Nivel segun Rango Humedad:</b></td>
+                                                    <td>
+                                                        <div id="nivelRango">
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="col-md-5">
+                        <button id="guardarConfig" class="btn btn-success" title="Guardar">Guardar</button>
+                    </div>
+                    <div class="col-md-3">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Cancelar</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+@Html.Hidden("tokenPlacaIdHidden", 0)
+@Html.Hidden("modeloIdHidden", 0)

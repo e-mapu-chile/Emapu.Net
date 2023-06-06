@@ -1,0 +1,40 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script src="~/Script/SSoft/IndexJs.js"></script>
+<br />
+<div class="ancho900 tit-verde margen350 "></div>
+<br />
+<div id="loginDialog">
+    <div class="container-fluid" style=" z-index: -1px;">
+        <div class="row">
+            <div class="col-md-4">
+                <div id="dialog-form">
+                    <form id="editUserForm" action="@Url.Action("Login", "Index")" method="post" class="login">
+                        <p><h3 class="tit-cafe">Acceso al Sistema</h3></p>
+                        <p>@Html.TextBox("Login", "", new { @class = "login-input", placeholder = "Digite su nombre de Usuario", autofocus = false })</p>
+                        <p>@Html.Password("Password", "", new { @class = "login-input", placeholder = "Digite su contraseña", autofocus = false })</p>
+                        <button type="submit" class="login-button">
+                            Ingresar
+                        </button>
+                        <br />
+                        <a id="olvidoClaveBtn" href="#">¿Olvido su Contraseña?</a>
+                    </form>
+                </div>
+                <div id="dialog-form2" style="display: none;">
+                    <form id="editUserForm2" action="@Url.Action("EnviaEmail", "Index")" method="post" class="login">
+                        <h3 class="tit-verde">Restaurar Contraseña</h3>
+                        <p>@Html.TextBox("Nick", "", new { @class = "login-input", placeholder = "Digite su nombre de usuario", autofocus = true })</p>
+                        <p>@Html.TextBox("Correo", "", new { @class = "login-input", placeholder = "Digite su correo electronico", autofocus = false })</p>
+
+                        <button id="restaurar" type="submit" class="login-button">Restaurar Contraseña</button>
+                        <br />
+                        <a id="atras" href="#" style="margin-right: 10px;">Volver</a>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

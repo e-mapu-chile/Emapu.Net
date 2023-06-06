@@ -1,0 +1,44 @@
+C:\Proyect\SSoft\Fuente\SSoft\SSoft.DataAccess\SSoft.DataAccess\bin\Release\SSoft.DataAccess.dll.config
+C:\Proyect\SSoft\Fuente\SSoft\SSoft.DataAccess\SSoft.DataAccess\bin\Release\SSoft.DataAccess.dll
+C:\Proyect\SSoft\Fuente\SSoft\SSoft.DataAccess\SSoft.DataAccess\bin\Release\SSoft.DataAccess.pdb
+C:\Proyect\SSoft\Fuente\SSoft\SSoft.DataAccess\SSoft.DataAccess\bin\Release\EntityFramework.dll
+C:\Proyect\SSoft\Fuente\SSoft\SSoft.DataAccess\SSoft.DataAccess\bin\Release\EntityFramework.SqlServer.dll
+C:\Proyect\SSoft\Fuente\SSoft\SSoft.DataAccess\SSoft.DataAccess\bin\Release\EntityFramework.xml
+C:\Proyect\SSoft\Fuente\SSoft\SSoft.DataAccess\SSoft.DataAccess\bin\Release\EntityFramework.SqlServer.xml
+C:\Proyect\SSoft\Fuente\SSoft\SSoft.DataAccess\SSoft.DataAccess\obj\Release\SSoft.DataAccess.csprojResolveAssemblyReference.cache
+C:\Proyect\SSoft\Fuente\SSoft\SSoft.DataAccess\SSoft.DataAccess\obj\Release\SSoft.DataAccess.dll
+C:\Proyect\SSoft\Fuente\SSoft\SSoft.DataAccess\SSoft.DataAccess\obj\Release\SSoft.DataAccess.pdb
+D:\Proyect\SSoft\Fuente\SSoft\SSoft.DataAccess\SSoft.DataAccess\bin\Release\SSoft.DataAccess.dll.config
+D:\Proyect\SSoft\Fuente\SSoft\SSoft.DataAccess\SSoft.DataAccess\bin\Release\SSoft.DataAccess.dll
+D:\Proyect\SSoft\Fuente\SSoft\SSoft.DataAccess\SSoft.DataAccess\bin\Release\SSoft.DataAccess.pdb
+D:\Proyect\SSoft\Fuente\SSoft\SSoft.DataAccess\SSoft.DataAccess\bin\Release\EntityFramework.dll
+D:\Proyect\SSoft\Fuente\SSoft\SSoft.DataAccess\SSoft.DataAccess\bin\Release\EntityFramework.SqlServer.dll
+D:\Proyect\SSoft\Fuente\SSoft\SSoft.DataAccess\SSoft.DataAccess\bin\Release\EntityFramework.xml
+D:\Proyect\SSoft\Fuente\SSoft\SSoft.DataAccess\SSoft.DataAccess\bin\Release\EntityFramework.SqlServer.xml
+D:\Proyect\SSoft\Fuente\SSoft\SSoft.DataAccess\SSoft.DataAccess\obj\Release\SSoft.DataAccess.csprojResolveAssemblyReference.cache
+D:\Proyect\SSoft\Fuente\SSoft\SSoft.DataAccess\SSoft.DataAccess\obj\Release\SSoft.DataAccess.dll
+D:\Proyect\SSoft\Fuente\SSoft\SSoft.DataAccess\SSoft.DataAccess\obj\Release\SSoft.DataAccess.pdb
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.DataAccess\SSoft.DataAccess\bin\Release\SSoft.DataAccess.dll.config
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.DataAccess\SSoft.DataAccess\bin\Release\SSoft.DataAccess.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.DataAccess\SSoft.DataAccess\bin\Release\SSoft.DataAccess.pdb
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.DataAccess\SSoft.DataAccess\bin\Release\EntityFramework.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.DataAccess\SSoft.DataAccess\bin\Release\EntityFramework.SqlServer.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.DataAccess\SSoft.DataAccess\bin\Release\EntityFramework.xml
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.DataAccess\SSoft.DataAccess\bin\Release\EntityFramework.SqlServer.xml
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.DataAccess\SSoft.DataAccess\obj\Release\SSoft.DataAccess.csprojAssemblyReference.cache
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.DataAccess\SSoft.DataAccess\obj\Release\SSoft.DataAccess.csproj.CoreCompileInputs.cache
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.DataAccess\SSoft.DataAccess\obj\Release\SSoft.DataAccess.csproj.CopyComplete
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.DataAccess\SSoft.DataAccess\obj\Release\SSoft.DataAccess.dll
+D:\Proyect\E-MAPU CultivoONLINE\Server\SSoft\SSoft.DataAccess\SSoft.DataAccess\obj\Release\SSoft.DataAccess.pdb
+D:\Proyect\E-MAPU_CultivoONLINE\Server\SSoft\SSoft.DataAccess\SSoft.DataAccess\bin\Release\SSoft.DataAccess.dll.config
+D:\Proyect\E-MAPU_CultivoONLINE\Server\SSoft\SSoft.DataAccess\SSoft.DataAccess\bin\Release\SSoft.DataAccess.dll
+D:\Proyect\E-MAPU_CultivoONLINE\Server\SSoft\SSoft.DataAccess\SSoft.DataAccess\bin\Release\SSoft.DataAccess.pdb
+D:\Proyect\E-MAPU_CultivoONLINE\Server\SSoft\SSoft.DataAccess\SSoft.DataAccess\bin\Release\EntityFramework.dll
+D:\Proyect\E-MAPU_CultivoONLINE\Server\SSoft\SSoft.DataAccess\SSoft.DataAccess\bin\Release\EntityFramework.SqlServer.dll
+D:\Proyect\E-MAPU_CultivoONLINE\Server\SSoft\SSoft.DataAccess\SSoft.DataAccess\bin\Release\EntityFramework.xml
+D:\Proyect\E-MAPU_CultivoONLINE\Server\SSoft\SSoft.DataAccess\SSoft.DataAccess\bin\Release\EntityFramework.SqlServer.xml
+D:\Proyect\E-MAPU_CultivoONLINE\Server\SSoft\SSoft.DataAccess\SSoft.DataAccess\obj\Release\SSoft.DataAccess.csprojAssemblyReference.cache
+D:\Proyect\E-MAPU_CultivoONLINE\Server\SSoft\SSoft.DataAccess\SSoft.DataAccess\obj\Release\SSoft.DataAccess.csproj.CoreCompileInputs.cache
+D:\Proyect\E-MAPU_CultivoONLINE\Server\SSoft\SSoft.DataAccess\SSoft.DataAccess\obj\Release\SSoft.DataAccess.csproj.CopyComplete
+D:\Proyect\E-MAPU_CultivoONLINE\Server\SSoft\SSoft.DataAccess\SSoft.DataAccess\obj\Release\SSoft.DataAccess.dll
+D:\Proyect\E-MAPU_CultivoONLINE\Server\SSoft\SSoft.DataAccess\SSoft.DataAccess\obj\Release\SSoft.DataAccess.pdb

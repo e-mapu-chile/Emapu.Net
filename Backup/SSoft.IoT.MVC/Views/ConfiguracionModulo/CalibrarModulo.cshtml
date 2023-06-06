@@ -1,0 +1,152 @@
+﻿@{
+    ViewBag.Title = "CalibrarModulo";
+    Layout = "~/Views/Layout/_master.cshtml";
+}
+<script src="~/Script/CultivoOnlineJs/CalibrarModulo.js"></script>
+<style>
+    .slider-track-high {
+        background: red;
+    }
+
+    .slider-track-low {
+        background: green;
+    }
+
+    .slider-selection {
+        background: yellow;
+    }
+</style>
+<div style="margin-top:150px;margin-left:2%;margin-right:1%;">
+    <h2>Calibración de Modulos</h2>
+    En este item usted podra calibrar segun el tipo de suelo, ubicacion y clima su modulo, al presionar el boton
+    obtener valor sensor usted puede indicar que porcentaje de humedad corresponde.
+
+    <hr />
+    <div style="width:100%;text-align:center;">
+        <h3>Listado de mis Modulos</h3>
+    </div>
+    <div class="row margenTopLinea">
+        <div class="col-md-9">
+            <table id="modeloTable"></table>
+            <div id="modeloPager"></div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog" style="width: 90%;">
+        <!-- Modal content-->
+        <input type="hidden" id="idToken" value="0" />
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Calibrar</h4>
+            </div>
+            <p>seleccione el modo para calibrar.</p>
+            <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#home">Obtener Valor</a></li>
+                <li><a data-toggle="tab" href="#menu1">Manual</a></li>
+                <li><a data-toggle="tab" href="#menu2">Automatico</a></li>
+            </ul>
+
+            <div class="tab-content">
+                <div id="home" class="tab-pane fade in active">
+                    <div class="modal-body">
+                        <p>
+                            Para calibrar su equipo usted necesita accionar el boton "Obtener Valor Sensor", una vez presionado espere un momento para que el sistema
+                            le entrege un valor numerico.
+                        </p>
+                        <div class="row margenTopLinea">
+                            <div class="col-md-8">
+                                <div role="form">
+                                    <div class="form-group">
+                                        <button id="obtenerValor" class="btn btn-success" title="Obtener Valor del Sensor">Obtener Valor Sensor</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row margenTopLinea">
+                            <div class="col-md-8">
+                                <div role="form">
+                                    <div class="form-group">
+                                        <p>
+                                            El Valor del sensor es: <span id="valorS"></span>,
+                                            Indique el porcentaje de humedad que corresponde al valor entregado, entre mas cerca del valor 0 es mas humedo
+                                        </p>
+                                        <input class="span2 confvalue" id="porcentajeValueClient" type="text" style="width:90%;" />
+                                        <input type="hidden" id="valorSensorTxt" value="0" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="col-md-5">
+                            <button id="guardarCalibracion" class="btn btn-success" title="Guardar">Guardar</button>
+                        </div>
+                        <div class="col-md-3">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Cancelar</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="menu1" class="tab-pane fade">
+                    <div class="modal-body">
+                        <div class="row margenTopLinea">
+                            <div class="col-md-6">
+                                <div role="form">
+                                    <div class="form-group">
+                                        <p>
+                                            Para calibrar su equipo usted necesita seleccionar el valor de rango que necesite ( 0 hasta el 1024)
+                                        </p>
+                                        <input class="span2 confvalue" id="valorSensorEstimativo" type="text" style="width:90%;" />
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row margenTopLinea">
+                            <div class="col-md-6">
+                                <div role="form">
+                                    <div class="form-group">
+                                        <p>
+                                            El Valor del sensor es: <span id="valorS"></span>,
+                                            Indique el porcentaje de humedad que corresponde al valor entregado, entre mas cerca del valor 0 es mas humedo
+                                        </p>
+                                        <input class="span2 confvalue" id="porcentajeValueClient2" type="text" style="width:90%;" />
+                                        <input type="hidden" id="valorSensorTxt" value="0" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="col-md-5">
+                            <button id="guardarCalibracionManual" class="btn btn-success" title="Guardar">Guardar</button>
+                        </div>
+                        <div class="col-md-3">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Cancelar</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="menu2" class="tab-pane fade">
+                    <div class="modal-body">
+                        <div class="row margenTopLinea">
+                            <div class="col-md-6">
+                                <div role="form">
+                                    <div class="form-group">
+                                        <p>
+                                            Al presionar el boton Calibración Automatica, el sistema tomara el valor mas bajo del sensor para quedar en el rango mas humedo.
+                                        </p>
+                                        <button id="calibrarAuto" class="btn btn-success" title="Obtener Valor del Sensor">Calibración Automatica</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

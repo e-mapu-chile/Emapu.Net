@@ -1,0 +1,50 @@
+﻿@{
+    ViewBag.Title = "ConfigurarConexion";
+    Layout = "~/Views/Layout/_master.cshtml";
+}
+<script src="~/Script/CultivoOnlineJs/ConexionJs.js"></script>
+<br />
+<div class="container-fluid" style="margin-left:1%;">
+    <div class="row">
+        <div style="width:90%;text-align:center;">
+            <h3>Ingrese sus datos para conectarse a internet</h3>
+        </div>
+    </div>
+    <hr />
+    <p>En este paso usted debe indicar los datos de conexion y su KEY del equipo que viene en el codigo de barras, una vez descargado el archivo, usted debe grabarlo en la tarjeta micro SD que viene con el equipo, para posteriormente insertar la tarjeta SD a su equipo. Es sumamente importante que el archivo debe tener el nombre "conexion.dat" y no otro nombre</p>
+    <div class="row">
+        <div class="row margenTopLinea">
+            <div class="col-md-3">
+                <div role="form">
+                    <div class="form-group">
+                        <label for="name">Nombre de la RED:</label>
+                        @Html.TextBox("nombreRed", "", new { @class = "form-control", autofocus = false })
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div role="form">
+                    <div class="form-group">
+                        <label for="name">Clave de la RED:</label>
+                        @Html.TextBox("claveRed", "", new { @class = "form-control", autofocus = false })
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div role="form">
+                    <div class="form-group">
+                        <label for="name">Key:</label>
+                        @Html.TextBox("token", "", new { @class = "form-control", autofocus = false })
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <div class="row margenTopLinea">
+            <div class="col-md-5">
+                <button id="descargar" class="btn btn-success" title="Descargar">Descargar</button>
+            </div>
+        </div>
+    </div>
+
+</div>

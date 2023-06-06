@@ -1,0 +1,2695 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="masterModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Alimento">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Nombre" Type="nvarchar" MaxLength="150" />
+          <Property Name="Descripcion" Type="nvarchar" MaxLength="500" />
+          <Property Name="Vigente" Type="bit" />
+        </EntityType>
+        <EntityType Name="Animal">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="IdentificacionAnimal" Type="nvarchar" MaxLength="150" />
+          <Property Name="Sexo" Type="nvarchar" MaxLength="50" />
+          <Property Name="CategoriaEspecieId" Type="int" />
+          <Property Name="EstablecimientoId" Type="int" />
+          <Property Name="MedidaEdad" Type="nvarchar" MaxLength="50" />
+          <Property Name="EstadoAnimalId" Type="int" />
+          <Property Name="Vigente" Type="bit" />
+          <Property Name="FechaNacimiento" Type="datetime" />
+          <Property Name="LoteId" Type="int" />
+        </EntityType>
+        <EntityType Name="BitacoraLecturasAcciones">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="EmpresaId" Type="int" />
+          <Property Name="UsuarioId" Type="int" />
+          <Property Name="Token" Type="nvarchar" MaxLength="50" />
+          <Property Name="IdentificacionEquipo" Type="nvarchar" MaxLength="150" />
+          <Property Name="Longitud" Type="nvarchar" MaxLength="150" />
+          <Property Name="Latitud" Type="nvarchar" MaxLength="150" />
+          <Property Name="ModeloEquipo" Type="nvarchar" MaxLength="150" />
+          <Property Name="PinAnalogo" Type="int" />
+          <Property Name="Valor" Type="nvarchar" MaxLength="150" />
+          <Property Name="PinDigital" Type="int" />
+          <Property Name="AccionEjecutada" Type="nvarchar" MaxLength="550" />
+          <Property Name="FechaRegistro" Type="datetime" />
+          <Property Name="FechaRegistroUnix" Type="bigint" />
+          <Property Name="TareaEjecutada" Type="nvarchar" MaxLength="250" />
+        </EntityType>
+        <EntityType Name="BitacoraLitrosAproxConsumido">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="EmpresaId" Type="int" />
+          <Property Name="UsuarioId" Type="int" />
+          <Property Name="Token" Type="nvarchar" MaxLength="150" />
+          <Property Name="IdentificacionEquipo" Type="nvarchar" MaxLength="1050" />
+          <Property Name="Longitud" Type="nvarchar" MaxLength="150" />
+          <Property Name="Latitud" Type="nvarchar" MaxLength="150" />
+          <Property Name="ModeloEquipo" Type="nvarchar" MaxLength="150" />
+          <Property Name="PinAnalogo" Type="int" />
+          <Property Name="PinDigital" Type="int" />
+          <Property Name="FechaAccion" Type="datetime" />
+          <Property Name="FechaAccionUnix" Type="bigint" />
+          <Property Name="LitrosAprox" Type="nvarchar" MaxLength="50" />
+          <Property Name="Encendido" Type="int" />
+        </EntityType>
+        <EntityType Name="BodegaEstablecimiento">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="EstablecimientoId" Type="int" />
+          <Property Name="AlimentoId" Type="int" />
+          <Property Name="NumeroSerie" Type="nvarchar" MaxLength="500" />
+          <Property Name="FechaVencimiento" Type="datetime" />
+          <Property Name="CantidadStock" Type="int" />
+          <Property Name="MedicamentoId" Type="int" />
+          <Property Name="Vigente" Type="bit" />
+        </EntityType>
+        <EntityType Name="Categoria">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Nombre" Type="nvarchar" MaxLength="150" />
+          <Property Name="Vigente" Type="bit" />
+        </EntityType>
+        <EntityType Name="CategoriaEspecie">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="EspecieId" Type="int" />
+          <Property Name="CategoriaId" Type="int" />
+        </EntityType>
+        <EntityType Name="Componente">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Nombre" Type="nvarchar" MaxLength="150" />
+          <Property Name="EsAnalogo" Type="bit" />
+          <Property Name="Descripcion" Type="nvarchar" MaxLength="550" />
+        </EntityType>
+        <EntityType Name="ConfiguracionPlaca">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TokenPlacaId" Type="int" />
+          <Property Name="Configuracion" Type="nvarchar(max)" />
+          <Property Name="FechaInicio" Type="datetime" />
+          <Property Name="FechaFin" Type="datetime" />
+          <Property Name="Vigente" Type="bit" />
+          <Property Name="Nombre" Type="nvarchar" MaxLength="150" />
+          <Property Name="Descripcion" Type="nvarchar" MaxLength="1550" />
+          <Property Name="PorcentajeOptimo" Type="int" />
+          <Property Name="PorcentajeAccion" Type="int" />
+        </EntityType>
+        <EntityType Name="EjecucionTokenEmail">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Token" Type="nvarchar" MaxLength="150" />
+          <Property Name="UnixTimeEjecucionEmail" Type="bigint" />
+        </EntityType>
+        <EntityType Name="Empresa">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="RazonSocial" Type="nvarchar" MaxLength="150" />
+          <Property Name="NombreFantasia" Type="nvarchar" MaxLength="150" />
+          <Property Name="Direccion" Type="nvarchar" MaxLength="150" />
+          <Property Name="Telefono" Type="nvarchar" MaxLength="50" />
+          <Property Name="Vigente" Type="bit" />
+          <Property Name="Rut" Type="nvarchar" MaxLength="50" />
+          <Property Name="NombreResponsable" Type="nvarchar" MaxLength="150" />
+          <Property Name="RutResponsable" Type="nvarchar" MaxLength="50" />
+          <Property Name="CorreoResponsable" Type="nvarchar" MaxLength="150" />
+        </EntityType>
+        <EntityType Name="EmpresaEspecie">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="EmpresaId" Type="int" />
+          <Property Name="EspecieId" Type="int" />
+          <Property Name="Vigente" Type="bit" />
+        </EntityType>
+        <EntityType Name="Especie">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Nombre" Type="nvarchar" MaxLength="80" />
+          <Property Name="Vigente" Type="bit" />
+        </EntityType>
+        <EntityType Name="Establecimiento">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="RUP" Type="nvarchar" MaxLength="50" />
+          <Property Name="Direccion" Type="nvarchar" MaxLength="50" />
+          <Property Name="EmpresaId" Type="int" />
+          <Property Name="Latitud" Type="nvarchar" MaxLength="50" />
+          <Property Name="Longitud" Type="nvarchar" MaxLength="50" />
+          <Property Name="Vigente" Type="bit" />
+          <Property Name="Nombre" Type="nvarchar" MaxLength="150" />
+        </EntityType>
+        <EntityType Name="EstadoAnimal">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Nombre" Type="nvarchar" MaxLength="50" />
+          <Property Name="Vigente" Type="bit" />
+        </EntityType>
+        <EntityType Name="EstadoLote">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Nombre" Type="nvarchar" MaxLength="50" />
+          <Property Name="Vigente" Type="bit" />
+        </EntityType>
+        <EntityType Name="ListadoCorreos">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Correo" Type="nvarchar" MaxLength="550" />
+          <Property Name="Vigente" Type="bit" />
+          <Property Name="PanelControlId" Type="int" />
+        </EntityType>
+        <EntityType Name="Lote">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Nombre" Type="nvarchar" MaxLength="150" />
+          <Property Name="FechaTransaccion" Type="datetime" />
+          <Property Name="Vigente" Type="bit" />
+          <Property Name="EstablecimientoId" Type="int" />
+          <Property Name="EstadoLoteId" Type="int" />
+        </EntityType>
+        <EntityType Name="Medicamento">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Nombre" Type="nvarchar" MaxLength="150" />
+          <Property Name="Descripcion" Type="nvarchar" MaxLength="1000" />
+          <Property Name="Vigente" Type="bit" />
+        </EntityType>
+        <EntityType Name="Modelo">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Nombre" Type="nvarchar" MaxLength="150" />
+          <Property Name="Descripcion" Type="nvarchar" MaxLength="2500" />
+        </EntityType>
+        <EntityType Name="ModeloComponentes">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ComponenteId" Type="int" />
+          <Property Name="ModeloId" Type="int" />
+          <Property Name="PinAnalogo" Type="int" />
+          <Property Name="PinDigital" Type="int" />
+          <Property Name="Descripcion" Type="nvarchar" MaxLength="1050" />
+          <Property Name="PinDigitalDiametro" Type="nvarchar" MaxLength="250" />
+          <Property Name="PinDigitalLitroXMinuto" Type="nvarchar" MaxLength="150" />
+        </EntityType>
+        <EntityType Name="MovimientoAlimento">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="FechaMovimiento" Type="datetime" />
+          <Property Name="AlimentoId" Type="int" />
+          <Property Name="UnidadMedida" Type="nvarchar" MaxLength="50" />
+          <Property Name="CantidadIngreso" Type="int" />
+          <Property Name="CantidadEgreso" Type="int" />
+          <Property Name="PrecioIngreso" Type="nvarchar" MaxLength="50" />
+          <Property Name="PrecioEgreso" Type="nvarchar" MaxLength="50" />
+          <Property Name="BodegaEstablecimientoId" Type="int" />
+          <Property Name="Observacion" Type="nvarchar" MaxLength="500" />
+        </EntityType>
+        <EntityType Name="MovimientoMedicamento">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="FechaMovimiento" Type="datetime" />
+          <Property Name="MedicamentoId" Type="int" />
+          <Property Name="DosisIngresadas" Type="int" />
+          <Property Name="DosisEgresadas" Type="int" />
+          <Property Name="UnidadMedida" Type="nvarchar" MaxLength="50" />
+          <Property Name="PrecioIngreso" Type="nvarchar" MaxLength="50" />
+          <Property Name="PrecioSalida" Type="nvarchar" MaxLength="50" />
+          <Property Name="BodegaEstablecimientoId" Type="int" />
+          <Property Name="Observacion" Type="nvarchar" MaxLength="500" />
+        </EntityType>
+        <EntityType Name="MovimientosAnimal">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TipoMovimientoId" Type="int" />
+          <Property Name="FechaMovimiento" Type="datetime" />
+          <Property Name="FechaCompra" Type="datetime" />
+          <Property Name="KGIngreso" Type="nvarchar" MaxLength="50" />
+          <Property Name="KGSalida" Type="nvarchar" MaxLength="50" />
+          <Property Name="KGGanados" Type="nvarchar" MaxLength="50" />
+          <Property Name="PrecioCompra" Type="nvarchar" MaxLength="50" />
+          <Property Name="PrecioVenta" Type="nvarchar" MaxLength="50" />
+          <Property Name="FechaVenta" Type="datetime" />
+          <Property Name="DiasEngorda" Type="int" />
+          <Property Name="PromedioKGDia" Type="nvarchar" MaxLength="50" />
+          <Property Name="AnimalId" Type="int" />
+          <Property Name="AlimentoId" Type="int" />
+          <Property Name="MedicamentoId" Type="int" />
+          <Property Name="AlimentoInvertidoKG" Type="nvarchar" MaxLength="50" />
+          <Property Name="FechaAplicacionAlimento" Type="datetime" />
+          <Property Name="FechaAplicacionMedicamento" Type="datetime" />
+          <Property Name="DosisMedicamentAplicada" Type="int" />
+          <Property Name="Observacion" Type="nvarchar" MaxLength="1000" />
+          <Property Name="RutMv" Type="nvarchar" MaxLength="50" />
+          <Property Name="NombreMv" Type="nvarchar" MaxLength="150" />
+          <Property Name="EstablecimientoId" Type="int" />
+          <Property Name="EspecieId" Type="int" />
+        </EntityType>
+        <EntityType Name="PanelControl">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Nombre" Type="nvarchar" MaxLength="150" />
+          <Property Name="Descripcion" Type="nvarchar" MaxLength="500" />
+          <Property Name="Token" Type="nvarchar" MaxLength="150" />
+          <Property Name="AguaDadaMas3Min" Type="bit" />
+          <Property Name="AguaDadaMas5Min" Type="bit" />
+          <Property Name="AguaDadaMas10Min" Type="bit" />
+          <Property Name="SinTareaEjecutando" Type="bit" />
+          <Property Name="EnvioCorreo" Type="bit" />
+          <Property Name="Vigente" Type="bit" />
+          <Property Name="EnvioCorreoInforme1Hora" Type="bit" />
+          <Property Name="UnixTimeEnvioInforme" Type="bigint" />
+          <Property Name="UsuarioId" Type="int" />
+          <Property Name="SinTareaEjecutadoCorreo" Type="bit" />
+        </EntityType>
+        <EntityType Name="Recurso">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Modulo" Type="nvarchar" MaxLength="150" />
+          <Property Name="Url" Type="nvarchar" MaxLength="150" />
+          <Property Name="Nombre" Type="nvarchar" MaxLength="150" />
+          <Property Name="Vigente" Type="bit" />
+          <Property Name="SistemaId" Type="int" />
+          <Property Name="Color" Type="nvarchar" MaxLength="50" />
+          <Property Name="ColorLetra" Type="nvarchar" MaxLength="50" />
+          <Property Name="Descripcion" Type="nvarchar" MaxLength="150" />
+        </EntityType>
+        <EntityType Name="Roles">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Nombre" Type="nvarchar" MaxLength="50" />
+          <Property Name="Vigente" Type="bit" />
+        </EntityType>
+        <EntityType Name="RolRecurso">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="RolId" Type="int" />
+          <Property Name="RecursoId" Type="int" />
+        </EntityType>
+        <EntityType Name="Sistema">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Nombre" Type="nvarchar" MaxLength="150" />
+          <Property Name="Descripcion" Type="nvarchar" MaxLength="3050" />
+          <Property Name="Vigente" Type="bit" />
+          <Property Name="Area" Type="nvarchar" MaxLength="150" />
+          <Property Name="Controller" Type="nvarchar" MaxLength="150" />
+          <Property Name="Action" Type="nvarchar" MaxLength="50" />
+          <Property Name="Color" Type="nvarchar" MaxLength="50" />
+          <Property Name="ColorLetra" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="TipoMovimiento">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Nombre" Type="nvarchar" MaxLength="150" />
+          <Property Name="Vigente" Type="bit" />
+        </EntityType>
+        <EntityType Name="TokenPlaca">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Token" Type="nvarchar" MaxLength="150" />
+          <Property Name="UsuarioId" Type="int" />
+          <Property Name="ModeloId" Type="int" />
+          <Property Name="Vigente" Type="bit" />
+          <Property Name="Latitud" Type="nvarchar" MaxLength="150" />
+          <Property Name="Longitud" Type="nvarchar" MaxLength="150" />
+          <Property Name="Identificacion" Type="nvarchar" MaxLength="1350" />
+          <Property Name="EmpresaId" Type="int" />
+          <Property Name="ValorSensor" Type="int" />
+          <Property Name="PorcentajeCorrespondiente" Type="int" />
+          <Property Name="ValorBajo" Type="int" />
+        </EntityType>
+        <EntityType Name="Usuario">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="UserName" Type="nvarchar" MaxLength="150" />
+          <Property Name="Password" Type="nvarchar" MaxLength="150" />
+          <Property Name="NombrePersona" Type="nvarchar" MaxLength="150" />
+          <Property Name="ApellidosPersona" Type="nvarchar" MaxLength="250" />
+          <Property Name="RutPersona" Type="nvarchar" MaxLength="50" />
+          <Property Name="EmailPersona" Type="nvarchar" MaxLength="150" />
+          <Property Name="Vigente" Type="bit" />
+        </EntityType>
+        <EntityType Name="UsuarioEstablecimiento">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="UsuarioId" Type="int" />
+          <Property Name="EstablecimientoId" Type="int" />
+          <Property Name="SistemaId" Type="int" />
+        </EntityType>
+        <EntityType Name="UsuarioRecurso">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="UsuarioId" Type="int" />
+          <Property Name="RecursoId" Type="int" />
+        </EntityType>
+        <EntityType Name="UsuarioRol">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="UsuarioId" Type="int" />
+          <Property Name="RolId" Type="int" />
+        </EntityType>
+        <EntityType Name="UsuarioSistema">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="UsuarioId" Type="int" />
+          <Property Name="SistemaId" Type="int" />
+        </EntityType>
+        <Association Name="FK_Animal_Categoria">
+          <End Role="Categoria" Type="Self.Categoria" Multiplicity="0..1" />
+          <End Role="Animal" Type="Self.Animal" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Categoria">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Animal">
+              <PropertyRef Name="CategoriaEspecieId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Animal_Establecimiento">
+          <End Role="Establecimiento" Type="Self.Establecimiento" Multiplicity="0..1" />
+          <End Role="Animal" Type="Self.Animal" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Establecimiento">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Animal">
+              <PropertyRef Name="EstablecimientoId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Animal_EstadoAnimal">
+          <End Role="EstadoAnimal" Type="Self.EstadoAnimal" Multiplicity="0..1" />
+          <End Role="Animal" Type="Self.Animal" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EstadoAnimal">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Animal">
+              <PropertyRef Name="EstadoAnimalId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Animal_Lote">
+          <End Role="Lote" Type="Self.Lote" Multiplicity="0..1" />
+          <End Role="Animal" Type="Self.Animal" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Lote">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Animal">
+              <PropertyRef Name="LoteId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BodegaEstablecimiento_Alimento">
+          <End Role="Alimento" Type="Self.Alimento" Multiplicity="0..1" />
+          <End Role="BodegaEstablecimiento" Type="Self.BodegaEstablecimiento" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Alimento">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="BodegaEstablecimiento">
+              <PropertyRef Name="AlimentoId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BodegaEstablecimiento_Medicamento">
+          <End Role="Medicamento" Type="Self.Medicamento" Multiplicity="0..1" />
+          <End Role="BodegaEstablecimiento" Type="Self.BodegaEstablecimiento" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Medicamento">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="BodegaEstablecimiento">
+              <PropertyRef Name="MedicamentoId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CategoriaEspecie_Categoria">
+          <End Role="Categoria" Type="Self.Categoria" Multiplicity="0..1" />
+          <End Role="CategoriaEspecie" Type="Self.CategoriaEspecie" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Categoria">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="CategoriaEspecie">
+              <PropertyRef Name="CategoriaId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CategoriaEspecie_Especie">
+          <End Role="Especie" Type="Self.Especie" Multiplicity="0..1" />
+          <End Role="CategoriaEspecie" Type="Self.CategoriaEspecie" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Especie">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="CategoriaEspecie">
+              <PropertyRef Name="EspecieId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ConfiguracionPlaca_TokenPlaca">
+          <End Role="TokenPlaca" Type="Self.TokenPlaca" Multiplicity="0..1" />
+          <End Role="ConfiguracionPlaca" Type="Self.ConfiguracionPlaca" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TokenPlaca">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="ConfiguracionPlaca">
+              <PropertyRef Name="TokenPlacaId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_EmpresaEspecie_Empresa">
+          <End Role="Empresa" Type="Self.Empresa" Multiplicity="0..1" />
+          <End Role="EmpresaEspecie" Type="Self.EmpresaEspecie" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Empresa">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="EmpresaEspecie">
+              <PropertyRef Name="EmpresaId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_EmpresaEspecie_Especie">
+          <End Role="Especie" Type="Self.Especie" Multiplicity="0..1" />
+          <End Role="EmpresaEspecie" Type="Self.EmpresaEspecie" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Especie">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="EmpresaEspecie">
+              <PropertyRef Name="EspecieId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Establecimiento_Empresa">
+          <End Role="Empresa" Type="Self.Empresa" Multiplicity="0..1" />
+          <End Role="Establecimiento" Type="Self.Establecimiento" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Empresa">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Establecimiento">
+              <PropertyRef Name="EmpresaId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ListadoCorreos_PanelControl">
+          <End Role="PanelControl" Type="Self.PanelControl" Multiplicity="0..1" />
+          <End Role="ListadoCorreos" Type="Self.ListadoCorreos" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PanelControl">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="ListadoCorreos">
+              <PropertyRef Name="PanelControlId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Lote_EstadoLote">
+          <End Role="EstadoLote" Type="Self.EstadoLote" Multiplicity="0..1" />
+          <End Role="Lote" Type="Self.Lote" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EstadoLote">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Lote">
+              <PropertyRef Name="EstadoLoteId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ModeloComponentes_Componente">
+          <End Role="Componente" Type="Self.Componente" Multiplicity="0..1" />
+          <End Role="ModeloComponentes" Type="Self.ModeloComponentes" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Componente">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="ModeloComponentes">
+              <PropertyRef Name="ComponenteId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ModeloComponentes_Modelo">
+          <End Role="Modelo" Type="Self.Modelo" Multiplicity="0..1" />
+          <End Role="ModeloComponentes" Type="Self.ModeloComponentes" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Modelo">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="ModeloComponentes">
+              <PropertyRef Name="ModeloId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_MovimientoAlimento_Alimento">
+          <End Role="Alimento" Type="Self.Alimento" Multiplicity="0..1" />
+          <End Role="MovimientoAlimento" Type="Self.MovimientoAlimento" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Alimento">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="MovimientoAlimento">
+              <PropertyRef Name="AlimentoId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_MovimientoMedicamento_Medicamento">
+          <End Role="Medicamento" Type="Self.Medicamento" Multiplicity="0..1" />
+          <End Role="MovimientoMedicamento" Type="Self.MovimientoMedicamento" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Medicamento">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="MovimientoMedicamento">
+              <PropertyRef Name="MedicamentoId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_MovimientosAnimal_Animal">
+          <End Role="Animal" Type="Self.Animal" Multiplicity="0..1" />
+          <End Role="MovimientosAnimal" Type="Self.MovimientosAnimal" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Animal">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="MovimientosAnimal">
+              <PropertyRef Name="AnimalId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_MovimientosAnimal_Especie">
+          <End Role="Especie" Type="Self.Especie" Multiplicity="0..1" />
+          <End Role="MovimientosAnimal" Type="Self.MovimientosAnimal" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Especie">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="MovimientosAnimal">
+              <PropertyRef Name="EspecieId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_MovimientosAnimal_Establecimiento">
+          <End Role="Establecimiento" Type="Self.Establecimiento" Multiplicity="0..1" />
+          <End Role="MovimientosAnimal" Type="Self.MovimientosAnimal" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Establecimiento">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="MovimientosAnimal">
+              <PropertyRef Name="EstablecimientoId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_MovimientosAnimal_TipoMovimiento">
+          <End Role="TipoMovimiento" Type="Self.TipoMovimiento" Multiplicity="0..1" />
+          <End Role="MovimientosAnimal" Type="Self.MovimientosAnimal" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TipoMovimiento">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="MovimientosAnimal">
+              <PropertyRef Name="TipoMovimientoId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PanelControl_Usuario">
+          <End Role="Usuario" Type="Self.Usuario" Multiplicity="0..1" />
+          <End Role="PanelControl" Type="Self.PanelControl" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Usuario">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="PanelControl">
+              <PropertyRef Name="UsuarioId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Recurso_Sistema">
+          <End Role="Sistema" Type="Self.Sistema" Multiplicity="0..1" />
+          <End Role="Recurso" Type="Self.Recurso" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Sistema">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Recurso">
+              <PropertyRef Name="SistemaId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_RolRecurso_Recurso">
+          <End Role="Recurso" Type="Self.Recurso" Multiplicity="0..1" />
+          <End Role="RolRecurso" Type="Self.RolRecurso" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Recurso">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="RolRecurso">
+              <PropertyRef Name="RecursoId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_RolRecurso_Roles">
+          <End Role="Roles" Type="Self.Roles" Multiplicity="0..1" />
+          <End Role="RolRecurso" Type="Self.RolRecurso" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Roles">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="RolRecurso">
+              <PropertyRef Name="RolId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TokenPlaca_Modelo">
+          <End Role="Modelo" Type="Self.Modelo" Multiplicity="0..1" />
+          <End Role="TokenPlaca" Type="Self.TokenPlaca" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Modelo">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="TokenPlaca">
+              <PropertyRef Name="ModeloId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TokenPlaca_Usuario">
+          <End Role="Usuario" Type="Self.Usuario" Multiplicity="0..1" />
+          <End Role="TokenPlaca" Type="Self.TokenPlaca" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Usuario">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="TokenPlaca">
+              <PropertyRef Name="UsuarioId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UsuarioEstablecimiento_Establecimiento">
+          <End Role="Establecimiento" Type="Self.Establecimiento" Multiplicity="0..1" />
+          <End Role="UsuarioEstablecimiento" Type="Self.UsuarioEstablecimiento" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Establecimiento">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="UsuarioEstablecimiento">
+              <PropertyRef Name="EstablecimientoId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UsuarioEstablecimiento_Usuario">
+          <End Role="Usuario" Type="Self.Usuario" Multiplicity="0..1" />
+          <End Role="UsuarioEstablecimiento" Type="Self.UsuarioEstablecimiento" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Usuario">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="UsuarioEstablecimiento">
+              <PropertyRef Name="UsuarioId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UsuarioRecurso_Recurso">
+          <End Role="Recurso" Type="Self.Recurso" Multiplicity="0..1" />
+          <End Role="UsuarioRecurso" Type="Self.UsuarioRecurso" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Recurso">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="UsuarioRecurso">
+              <PropertyRef Name="RecursoId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UsuarioRecurso_Usuario">
+          <End Role="Usuario" Type="Self.Usuario" Multiplicity="0..1" />
+          <End Role="UsuarioRecurso" Type="Self.UsuarioRecurso" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Usuario">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="UsuarioRecurso">
+              <PropertyRef Name="UsuarioId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UsuarioRol_Roles">
+          <End Role="Roles" Type="Self.Roles" Multiplicity="0..1" />
+          <End Role="UsuarioRol" Type="Self.UsuarioRol" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Roles">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="UsuarioRol">
+              <PropertyRef Name="RolId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UsuarioRol_Usuario">
+          <End Role="Usuario" Type="Self.Usuario" Multiplicity="0..1" />
+          <End Role="UsuarioRol" Type="Self.UsuarioRol" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Usuario">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="UsuarioRol">
+              <PropertyRef Name="UsuarioId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UsuarioSistema_Sistema">
+          <End Role="Sistema" Type="Self.Sistema" Multiplicity="0..1" />
+          <End Role="UsuarioSistema" Type="Self.UsuarioSistema" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Sistema">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="UsuarioSistema">
+              <PropertyRef Name="SistemaId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UsuarioSistema_Usuario">
+          <End Role="Usuario" Type="Self.Usuario" Multiplicity="0..1" />
+          <End Role="UsuarioSistema" Type="Self.UsuarioSistema" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Usuario">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="UsuarioSistema">
+              <PropertyRef Name="UsuarioId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="TokenPlacaRelacion2">
+          <End Role="Empresa" Type="Self.Empresa" Multiplicity="0..1" />
+          <End Role="TokenPlaca" Type="Self.TokenPlaca" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Empresa">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="TokenPlaca">
+              <PropertyRef Name="EmpresaId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="masterModelStoreContainer">
+          <EntitySet Name="Alimento" EntityType="Self.Alimento" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Animal" EntityType="Self.Animal" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="BitacoraLecturasAcciones" EntityType="Self.BitacoraLecturasAcciones" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="BitacoraLitrosAproxConsumido" EntityType="Self.BitacoraLitrosAproxConsumido" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="BodegaEstablecimiento" EntityType="Self.BodegaEstablecimiento" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Categoria" EntityType="Self.Categoria" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="CategoriaEspecie" EntityType="Self.CategoriaEspecie" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Componente" EntityType="Self.Componente" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ConfiguracionPlaca" EntityType="Self.ConfiguracionPlaca" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="EjecucionTokenEmail" EntityType="Self.EjecucionTokenEmail" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Empresa" EntityType="Self.Empresa" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="EmpresaEspecie" EntityType="Self.EmpresaEspecie" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Especie" EntityType="Self.Especie" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Establecimiento" EntityType="Self.Establecimiento" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="EstadoAnimal" EntityType="Self.EstadoAnimal" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="EstadoLote" EntityType="Self.EstadoLote" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ListadoCorreos" EntityType="Self.ListadoCorreos" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Lote" EntityType="Self.Lote" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Medicamento" EntityType="Self.Medicamento" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Modelo" EntityType="Self.Modelo" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ModeloComponentes" EntityType="Self.ModeloComponentes" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="MovimientoAlimento" EntityType="Self.MovimientoAlimento" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="MovimientoMedicamento" EntityType="Self.MovimientoMedicamento" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="MovimientosAnimal" EntityType="Self.MovimientosAnimal" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PanelControl" EntityType="Self.PanelControl" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Recurso" EntityType="Self.Recurso" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Roles" EntityType="Self.Roles" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="RolRecurso" EntityType="Self.RolRecurso" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Sistema" EntityType="Self.Sistema" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TipoMovimiento" EntityType="Self.TipoMovimiento" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TokenPlaca" EntityType="Self.TokenPlaca" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Usuario" EntityType="Self.Usuario" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="UsuarioEstablecimiento" EntityType="Self.UsuarioEstablecimiento" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="UsuarioRecurso" EntityType="Self.UsuarioRecurso" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="UsuarioRol" EntityType="Self.UsuarioRol" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="UsuarioSistema" EntityType="Self.UsuarioSistema" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_Animal_Categoria" Association="Self.FK_Animal_Categoria">
+            <End Role="Categoria" EntitySet="Categoria" />
+            <End Role="Animal" EntitySet="Animal" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Animal_Establecimiento" Association="Self.FK_Animal_Establecimiento">
+            <End Role="Establecimiento" EntitySet="Establecimiento" />
+            <End Role="Animal" EntitySet="Animal" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Animal_EstadoAnimal" Association="Self.FK_Animal_EstadoAnimal">
+            <End Role="EstadoAnimal" EntitySet="EstadoAnimal" />
+            <End Role="Animal" EntitySet="Animal" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Animal_Lote" Association="Self.FK_Animal_Lote">
+            <End Role="Lote" EntitySet="Lote" />
+            <End Role="Animal" EntitySet="Animal" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BodegaEstablecimiento_Alimento" Association="Self.FK_BodegaEstablecimiento_Alimento">
+            <End Role="Alimento" EntitySet="Alimento" />
+            <End Role="BodegaEstablecimiento" EntitySet="BodegaEstablecimiento" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BodegaEstablecimiento_Medicamento" Association="Self.FK_BodegaEstablecimiento_Medicamento">
+            <End Role="Medicamento" EntitySet="Medicamento" />
+            <End Role="BodegaEstablecimiento" EntitySet="BodegaEstablecimiento" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CategoriaEspecie_Categoria" Association="Self.FK_CategoriaEspecie_Categoria">
+            <End Role="Categoria" EntitySet="Categoria" />
+            <End Role="CategoriaEspecie" EntitySet="CategoriaEspecie" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CategoriaEspecie_Especie" Association="Self.FK_CategoriaEspecie_Especie">
+            <End Role="Especie" EntitySet="Especie" />
+            <End Role="CategoriaEspecie" EntitySet="CategoriaEspecie" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ConfiguracionPlaca_TokenPlaca" Association="Self.FK_ConfiguracionPlaca_TokenPlaca">
+            <End Role="TokenPlaca" EntitySet="TokenPlaca" />
+            <End Role="ConfiguracionPlaca" EntitySet="ConfiguracionPlaca" />
+          </AssociationSet>
+          <AssociationSet Name="FK_EmpresaEspecie_Empresa" Association="Self.FK_EmpresaEspecie_Empresa">
+            <End Role="Empresa" EntitySet="Empresa" />
+            <End Role="EmpresaEspecie" EntitySet="EmpresaEspecie" />
+          </AssociationSet>
+          <AssociationSet Name="FK_EmpresaEspecie_Especie" Association="Self.FK_EmpresaEspecie_Especie">
+            <End Role="Especie" EntitySet="Especie" />
+            <End Role="EmpresaEspecie" EntitySet="EmpresaEspecie" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Establecimiento_Empresa" Association="Self.FK_Establecimiento_Empresa">
+            <End Role="Empresa" EntitySet="Empresa" />
+            <End Role="Establecimiento" EntitySet="Establecimiento" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ListadoCorreos_PanelControl" Association="Self.FK_ListadoCorreos_PanelControl">
+            <End Role="PanelControl" EntitySet="PanelControl" />
+            <End Role="ListadoCorreos" EntitySet="ListadoCorreos" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Lote_EstadoLote" Association="Self.FK_Lote_EstadoLote">
+            <End Role="EstadoLote" EntitySet="EstadoLote" />
+            <End Role="Lote" EntitySet="Lote" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ModeloComponentes_Componente" Association="Self.FK_ModeloComponentes_Componente">
+            <End Role="Componente" EntitySet="Componente" />
+            <End Role="ModeloComponentes" EntitySet="ModeloComponentes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ModeloComponentes_Modelo" Association="Self.FK_ModeloComponentes_Modelo">
+            <End Role="Modelo" EntitySet="Modelo" />
+            <End Role="ModeloComponentes" EntitySet="ModeloComponentes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_MovimientoAlimento_Alimento" Association="Self.FK_MovimientoAlimento_Alimento">
+            <End Role="Alimento" EntitySet="Alimento" />
+            <End Role="MovimientoAlimento" EntitySet="MovimientoAlimento" />
+          </AssociationSet>
+          <AssociationSet Name="FK_MovimientoMedicamento_Medicamento" Association="Self.FK_MovimientoMedicamento_Medicamento">
+            <End Role="Medicamento" EntitySet="Medicamento" />
+            <End Role="MovimientoMedicamento" EntitySet="MovimientoMedicamento" />
+          </AssociationSet>
+          <AssociationSet Name="FK_MovimientosAnimal_Animal" Association="Self.FK_MovimientosAnimal_Animal">
+            <End Role="Animal" EntitySet="Animal" />
+            <End Role="MovimientosAnimal" EntitySet="MovimientosAnimal" />
+          </AssociationSet>
+          <AssociationSet Name="FK_MovimientosAnimal_Especie" Association="Self.FK_MovimientosAnimal_Especie">
+            <End Role="Especie" EntitySet="Especie" />
+            <End Role="MovimientosAnimal" EntitySet="MovimientosAnimal" />
+          </AssociationSet>
+          <AssociationSet Name="FK_MovimientosAnimal_Establecimiento" Association="Self.FK_MovimientosAnimal_Establecimiento">
+            <End Role="Establecimiento" EntitySet="Establecimiento" />
+            <End Role="MovimientosAnimal" EntitySet="MovimientosAnimal" />
+          </AssociationSet>
+          <AssociationSet Name="FK_MovimientosAnimal_TipoMovimiento" Association="Self.FK_MovimientosAnimal_TipoMovimiento">
+            <End Role="TipoMovimiento" EntitySet="TipoMovimiento" />
+            <End Role="MovimientosAnimal" EntitySet="MovimientosAnimal" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PanelControl_Usuario" Association="Self.FK_PanelControl_Usuario">
+            <End Role="Usuario" EntitySet="Usuario" />
+            <End Role="PanelControl" EntitySet="PanelControl" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Recurso_Sistema" Association="Self.FK_Recurso_Sistema">
+            <End Role="Sistema" EntitySet="Sistema" />
+            <End Role="Recurso" EntitySet="Recurso" />
+          </AssociationSet>
+          <AssociationSet Name="FK_RolRecurso_Recurso" Association="Self.FK_RolRecurso_Recurso">
+            <End Role="Recurso" EntitySet="Recurso" />
+            <End Role="RolRecurso" EntitySet="RolRecurso" />
+          </AssociationSet>
+          <AssociationSet Name="FK_RolRecurso_Roles" Association="Self.FK_RolRecurso_Roles">
+            <End Role="Roles" EntitySet="Roles" />
+            <End Role="RolRecurso" EntitySet="RolRecurso" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TokenPlaca_Modelo" Association="Self.FK_TokenPlaca_Modelo">
+            <End Role="Modelo" EntitySet="Modelo" />
+            <End Role="TokenPlaca" EntitySet="TokenPlaca" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TokenPlaca_Usuario" Association="Self.FK_TokenPlaca_Usuario">
+            <End Role="Usuario" EntitySet="Usuario" />
+            <End Role="TokenPlaca" EntitySet="TokenPlaca" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UsuarioEstablecimiento_Establecimiento" Association="Self.FK_UsuarioEstablecimiento_Establecimiento">
+            <End Role="Establecimiento" EntitySet="Establecimiento" />
+            <End Role="UsuarioEstablecimiento" EntitySet="UsuarioEstablecimiento" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UsuarioEstablecimiento_Usuario" Association="Self.FK_UsuarioEstablecimiento_Usuario">
+            <End Role="Usuario" EntitySet="Usuario" />
+            <End Role="UsuarioEstablecimiento" EntitySet="UsuarioEstablecimiento" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UsuarioRecurso_Recurso" Association="Self.FK_UsuarioRecurso_Recurso">
+            <End Role="Recurso" EntitySet="Recurso" />
+            <End Role="UsuarioRecurso" EntitySet="UsuarioRecurso" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UsuarioRecurso_Usuario" Association="Self.FK_UsuarioRecurso_Usuario">
+            <End Role="Usuario" EntitySet="Usuario" />
+            <End Role="UsuarioRecurso" EntitySet="UsuarioRecurso" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UsuarioRol_Roles" Association="Self.FK_UsuarioRol_Roles">
+            <End Role="Roles" EntitySet="Roles" />
+            <End Role="UsuarioRol" EntitySet="UsuarioRol" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UsuarioRol_Usuario" Association="Self.FK_UsuarioRol_Usuario">
+            <End Role="Usuario" EntitySet="Usuario" />
+            <End Role="UsuarioRol" EntitySet="UsuarioRol" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UsuarioSistema_Sistema" Association="Self.FK_UsuarioSistema_Sistema">
+            <End Role="Sistema" EntitySet="Sistema" />
+            <End Role="UsuarioSistema" EntitySet="UsuarioSistema" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UsuarioSistema_Usuario" Association="Self.FK_UsuarioSistema_Usuario">
+            <End Role="Usuario" EntitySet="Usuario" />
+            <End Role="UsuarioSistema" EntitySet="UsuarioSistema" />
+          </AssociationSet>
+          <AssociationSet Name="TokenPlacaRelacion2" Association="Self.TokenPlacaRelacion2">
+            <End Role="Empresa" EntitySet="Empresa" />
+            <End Role="TokenPlaca" EntitySet="TokenPlaca" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="masterModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="masterEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Alimento" EntityType="masterModel.Alimento" />
+          <EntitySet Name="Animal" EntityType="masterModel.Animal" />
+          <EntitySet Name="BodegaEstablecimiento" EntityType="masterModel.BodegaEstablecimiento" />
+          <EntitySet Name="Categoria" EntityType="masterModel.Categoria" />
+          <EntitySet Name="CategoriaEspecie" EntityType="masterModel.CategoriaEspecie" />
+          <EntitySet Name="Componente" EntityType="masterModel.Componente" />
+          <EntitySet Name="ConfiguracionPlaca" EntityType="masterModel.ConfiguracionPlaca" />
+          <EntitySet Name="Empresa" EntityType="masterModel.Empresa" />
+          <EntitySet Name="EmpresaEspecie" EntityType="masterModel.EmpresaEspecie" />
+          <EntitySet Name="Especie" EntityType="masterModel.Especie" />
+          <EntitySet Name="Establecimiento" EntityType="masterModel.Establecimiento" />
+          <EntitySet Name="EstadoAnimal" EntityType="masterModel.EstadoAnimal" />
+          <EntitySet Name="EstadoLote" EntityType="masterModel.EstadoLote" />
+          <EntitySet Name="Lote" EntityType="masterModel.Lote" />
+          <EntitySet Name="Medicamento" EntityType="masterModel.Medicamento" />
+          <EntitySet Name="Modelo" EntityType="masterModel.Modelo" />
+          <EntitySet Name="ModeloComponentes" EntityType="masterModel.ModeloComponentes" />
+          <EntitySet Name="MovimientoAlimento" EntityType="masterModel.MovimientoAlimento" />
+          <EntitySet Name="MovimientoMedicamento" EntityType="masterModel.MovimientoMedicamento" />
+          <EntitySet Name="MovimientosAnimal" EntityType="masterModel.MovimientosAnimal" />
+          <EntitySet Name="Recurso" EntityType="masterModel.Recurso" />
+          <EntitySet Name="Roles" EntityType="masterModel.Roles" />
+          <EntitySet Name="RolRecurso" EntityType="masterModel.RolRecurso" />
+          <EntitySet Name="Sistema" EntityType="masterModel.Sistema" />
+          <EntitySet Name="TipoMovimiento" EntityType="masterModel.TipoMovimiento" />
+          <EntitySet Name="TokenPlaca" EntityType="masterModel.TokenPlaca" />
+          <EntitySet Name="Usuario" EntityType="masterModel.Usuario" />
+          <EntitySet Name="UsuarioEstablecimiento" EntityType="masterModel.UsuarioEstablecimiento" />
+          <EntitySet Name="UsuarioRecurso" EntityType="masterModel.UsuarioRecurso" />
+          <EntitySet Name="UsuarioRol" EntityType="masterModel.UsuarioRol" />
+          <EntitySet Name="UsuarioSistema" EntityType="masterModel.UsuarioSistema" />
+          <AssociationSet Name="FK_BodegaEstablecimiento_Alimento" Association="masterModel.FK_BodegaEstablecimiento_Alimento">
+            <End Role="Alimento" EntitySet="Alimento" />
+            <End Role="BodegaEstablecimiento" EntitySet="BodegaEstablecimiento" />
+          </AssociationSet>
+          <AssociationSet Name="FK_MovimientoAlimento_Alimento" Association="masterModel.FK_MovimientoAlimento_Alimento">
+            <End Role="Alimento" EntitySet="Alimento" />
+            <End Role="MovimientoAlimento" EntitySet="MovimientoAlimento" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Animal_Categoria" Association="masterModel.FK_Animal_Categoria">
+            <End Role="Categoria" EntitySet="Categoria" />
+            <End Role="Animal" EntitySet="Animal" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Animal_Establecimiento" Association="masterModel.FK_Animal_Establecimiento">
+            <End Role="Establecimiento" EntitySet="Establecimiento" />
+            <End Role="Animal" EntitySet="Animal" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Animal_EstadoAnimal" Association="masterModel.FK_Animal_EstadoAnimal">
+            <End Role="EstadoAnimal" EntitySet="EstadoAnimal" />
+            <End Role="Animal" EntitySet="Animal" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Animal_Lote" Association="masterModel.FK_Animal_Lote">
+            <End Role="Lote" EntitySet="Lote" />
+            <End Role="Animal" EntitySet="Animal" />
+          </AssociationSet>
+          <AssociationSet Name="FK_MovimientosAnimal_Animal" Association="masterModel.FK_MovimientosAnimal_Animal">
+            <End Role="Animal" EntitySet="Animal" />
+            <End Role="MovimientosAnimal" EntitySet="MovimientosAnimal" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BodegaEstablecimiento_Medicamento" Association="masterModel.FK_BodegaEstablecimiento_Medicamento">
+            <End Role="Medicamento" EntitySet="Medicamento" />
+            <End Role="BodegaEstablecimiento" EntitySet="BodegaEstablecimiento" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CategoriaEspecie_Categoria" Association="masterModel.FK_CategoriaEspecie_Categoria">
+            <End Role="Categoria" EntitySet="Categoria" />
+            <End Role="CategoriaEspecie" EntitySet="CategoriaEspecie" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CategoriaEspecie_Especie" Association="masterModel.FK_CategoriaEspecie_Especie">
+            <End Role="Especie" EntitySet="Especie" />
+            <End Role="CategoriaEspecie" EntitySet="CategoriaEspecie" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ModeloComponentes_Componente" Association="masterModel.FK_ModeloComponentes_Componente">
+            <End Role="Componente" EntitySet="Componente" />
+            <End Role="ModeloComponentes" EntitySet="ModeloComponentes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ConfiguracionPlaca_TokenPlaca" Association="masterModel.FK_ConfiguracionPlaca_TokenPlaca">
+            <End Role="TokenPlaca" EntitySet="TokenPlaca" />
+            <End Role="ConfiguracionPlaca" EntitySet="ConfiguracionPlaca" />
+          </AssociationSet>
+          <AssociationSet Name="FK_EmpresaEspecie_Empresa" Association="masterModel.FK_EmpresaEspecie_Empresa">
+            <End Role="Empresa" EntitySet="Empresa" />
+            <End Role="EmpresaEspecie" EntitySet="EmpresaEspecie" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Establecimiento_Empresa" Association="masterModel.FK_Establecimiento_Empresa">
+            <End Role="Empresa" EntitySet="Empresa" />
+            <End Role="Establecimiento" EntitySet="Establecimiento" />
+          </AssociationSet>
+          <AssociationSet Name="FK_EmpresaEspecie_Especie" Association="masterModel.FK_EmpresaEspecie_Especie">
+            <End Role="Especie" EntitySet="Especie" />
+            <End Role="EmpresaEspecie" EntitySet="EmpresaEspecie" />
+          </AssociationSet>
+          <AssociationSet Name="FK_MovimientosAnimal_Especie" Association="masterModel.FK_MovimientosAnimal_Especie">
+            <End Role="Especie" EntitySet="Especie" />
+            <End Role="MovimientosAnimal" EntitySet="MovimientosAnimal" />
+          </AssociationSet>
+          <AssociationSet Name="FK_MovimientosAnimal_Establecimiento" Association="masterModel.FK_MovimientosAnimal_Establecimiento">
+            <End Role="Establecimiento" EntitySet="Establecimiento" />
+            <End Role="MovimientosAnimal" EntitySet="MovimientosAnimal" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UsuarioEstablecimiento_Establecimiento" Association="masterModel.FK_UsuarioEstablecimiento_Establecimiento">
+            <End Role="Establecimiento" EntitySet="Establecimiento" />
+            <End Role="UsuarioEstablecimiento" EntitySet="UsuarioEstablecimiento" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Lote_EstadoLote" Association="masterModel.FK_Lote_EstadoLote">
+            <End Role="EstadoLote" EntitySet="EstadoLote" />
+            <End Role="Lote" EntitySet="Lote" />
+          </AssociationSet>
+          <AssociationSet Name="FK_MovimientoMedicamento_Medicamento" Association="masterModel.FK_MovimientoMedicamento_Medicamento">
+            <End Role="Medicamento" EntitySet="Medicamento" />
+            <End Role="MovimientoMedicamento" EntitySet="MovimientoMedicamento" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ModeloComponentes_Modelo" Association="masterModel.FK_ModeloComponentes_Modelo">
+            <End Role="Modelo" EntitySet="Modelo" />
+            <End Role="ModeloComponentes" EntitySet="ModeloComponentes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TokenPlaca_Modelo" Association="masterModel.FK_TokenPlaca_Modelo">
+            <End Role="Modelo" EntitySet="Modelo" />
+            <End Role="TokenPlaca" EntitySet="TokenPlaca" />
+          </AssociationSet>
+          <AssociationSet Name="FK_MovimientosAnimal_TipoMovimiento" Association="masterModel.FK_MovimientosAnimal_TipoMovimiento">
+            <End Role="TipoMovimiento" EntitySet="TipoMovimiento" />
+            <End Role="MovimientosAnimal" EntitySet="MovimientosAnimal" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Recurso_Sistema" Association="masterModel.FK_Recurso_Sistema">
+            <End Role="Sistema" EntitySet="Sistema" />
+            <End Role="Recurso" EntitySet="Recurso" />
+          </AssociationSet>
+          <AssociationSet Name="FK_RolRecurso_Recurso" Association="masterModel.FK_RolRecurso_Recurso">
+            <End Role="Recurso" EntitySet="Recurso" />
+            <End Role="RolRecurso" EntitySet="RolRecurso" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UsuarioRecurso_Recurso" Association="masterModel.FK_UsuarioRecurso_Recurso">
+            <End Role="Recurso" EntitySet="Recurso" />
+            <End Role="UsuarioRecurso" EntitySet="UsuarioRecurso" />
+          </AssociationSet>
+          <AssociationSet Name="FK_RolRecurso_Roles" Association="masterModel.FK_RolRecurso_Roles">
+            <End Role="Roles" EntitySet="Roles" />
+            <End Role="RolRecurso" EntitySet="RolRecurso" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UsuarioRol_Roles" Association="masterModel.FK_UsuarioRol_Roles">
+            <End Role="Roles" EntitySet="Roles" />
+            <End Role="UsuarioRol" EntitySet="UsuarioRol" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UsuarioSistema_Sistema" Association="masterModel.FK_UsuarioSistema_Sistema">
+            <End Role="Sistema" EntitySet="Sistema" />
+            <End Role="UsuarioSistema" EntitySet="UsuarioSistema" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TokenPlaca_Usuario" Association="masterModel.FK_TokenPlaca_Usuario">
+            <End Role="Usuario" EntitySet="Usuario" />
+            <End Role="TokenPlaca" EntitySet="TokenPlaca" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UsuarioEstablecimiento_Usuario" Association="masterModel.FK_UsuarioEstablecimiento_Usuario">
+            <End Role="Usuario" EntitySet="Usuario" />
+            <End Role="UsuarioEstablecimiento" EntitySet="UsuarioEstablecimiento" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UsuarioRecurso_Usuario" Association="masterModel.FK_UsuarioRecurso_Usuario">
+            <End Role="Usuario" EntitySet="Usuario" />
+            <End Role="UsuarioRecurso" EntitySet="UsuarioRecurso" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UsuarioRol_Usuario" Association="masterModel.FK_UsuarioRol_Usuario">
+            <End Role="Usuario" EntitySet="Usuario" />
+            <End Role="UsuarioRol" EntitySet="UsuarioRol" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UsuarioSistema_Usuario" Association="masterModel.FK_UsuarioSistema_Usuario">
+            <End Role="Usuario" EntitySet="Usuario" />
+            <End Role="UsuarioSistema" EntitySet="UsuarioSistema" />
+          </AssociationSet>
+          <EntitySet Name="BitacoraLecturasAcciones" EntityType="masterModel.BitacoraLecturasAcciones" />
+          <EntitySet Name="BitacoraLitrosAproxConsumido" EntityType="masterModel.BitacoraLitrosAproxConsumido" />
+          <AssociationSet Name="TokenPlacaRelacion2" Association="masterModel.TokenPlacaRelacion2">
+            <End Role="Empresa" EntitySet="Empresa" />
+            <End Role="TokenPlaca" EntitySet="TokenPlaca" />
+          </AssociationSet>
+          <EntitySet Name="ListadoCorreos" EntityType="masterModel.ListadoCorreos" />
+          <EntitySet Name="PanelControl" EntityType="masterModel.PanelControl" />
+          <AssociationSet Name="FK_ListadoCorreos_PanelControl" Association="masterModel.FK_ListadoCorreos_PanelControl">
+            <End Role="PanelControl" EntitySet="PanelControl" />
+            <End Role="ListadoCorreos" EntitySet="ListadoCorreos" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PanelControl_Usuario" Association="masterModel.FK_PanelControl_Usuario">
+            <End Role="Usuario" EntitySet="Usuario" />
+            <End Role="PanelControl" EntitySet="PanelControl" />
+          </AssociationSet>
+          <EntitySet Name="EjecucionTokenEmail" EntityType="masterModel.EjecucionTokenEmail" />
+        </EntityContainer>
+        <EntityType Name="Alimento">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nombre" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="Descripcion" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Vigente" Type="Boolean" />
+          <NavigationProperty Name="BodegaEstablecimiento" Relationship="masterModel.FK_BodegaEstablecimiento_Alimento" FromRole="Alimento" ToRole="BodegaEstablecimiento" />
+          <NavigationProperty Name="MovimientoAlimento" Relationship="masterModel.FK_MovimientoAlimento_Alimento" FromRole="Alimento" ToRole="MovimientoAlimento" />
+        </EntityType>
+        <EntityType Name="Animal">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="IdentificacionAnimal" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="Sexo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CategoriaEspecieId" Type="Int32" />
+          <Property Name="EstablecimientoId" Type="Int32" />
+          <Property Name="MedidaEdad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="EstadoAnimalId" Type="Int32" />
+          <Property Name="Vigente" Type="Boolean" />
+          <Property Name="FechaNacimiento" Type="DateTime" Precision="3" />
+          <Property Name="LoteId" Type="Int32" />
+          <NavigationProperty Name="Categoria" Relationship="masterModel.FK_Animal_Categoria" FromRole="Animal" ToRole="Categoria" />
+          <NavigationProperty Name="Establecimiento" Relationship="masterModel.FK_Animal_Establecimiento" FromRole="Animal" ToRole="Establecimiento" />
+          <NavigationProperty Name="EstadoAnimal" Relationship="masterModel.FK_Animal_EstadoAnimal" FromRole="Animal" ToRole="EstadoAnimal" />
+          <NavigationProperty Name="Lote" Relationship="masterModel.FK_Animal_Lote" FromRole="Animal" ToRole="Lote" />
+          <NavigationProperty Name="MovimientosAnimal" Relationship="masterModel.FK_MovimientosAnimal_Animal" FromRole="Animal" ToRole="MovimientosAnimal" />
+        </EntityType>
+        <EntityType Name="BodegaEstablecimiento">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="EstablecimientoId" Type="Int32" />
+          <Property Name="AlimentoId" Type="Int32" />
+          <Property Name="NumeroSerie" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="FechaVencimiento" Type="DateTime" Precision="3" />
+          <Property Name="CantidadStock" Type="Int32" />
+          <Property Name="MedicamentoId" Type="Int32" />
+          <Property Name="Vigente" Type="Boolean" />
+          <NavigationProperty Name="Alimento" Relationship="masterModel.FK_BodegaEstablecimiento_Alimento" FromRole="BodegaEstablecimiento" ToRole="Alimento" />
+          <NavigationProperty Name="Medicamento" Relationship="masterModel.FK_BodegaEstablecimiento_Medicamento" FromRole="BodegaEstablecimiento" ToRole="Medicamento" />
+        </EntityType>
+        <EntityType Name="Categoria">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nombre" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="Vigente" Type="Boolean" />
+          <NavigationProperty Name="Animal" Relationship="masterModel.FK_Animal_Categoria" FromRole="Categoria" ToRole="Animal" />
+          <NavigationProperty Name="CategoriaEspecie" Relationship="masterModel.FK_CategoriaEspecie_Categoria" FromRole="Categoria" ToRole="CategoriaEspecie" />
+        </EntityType>
+        <EntityType Name="CategoriaEspecie">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="EspecieId" Type="Int32" />
+          <Property Name="CategoriaId" Type="Int32" />
+          <NavigationProperty Name="Categoria" Relationship="masterModel.FK_CategoriaEspecie_Categoria" FromRole="CategoriaEspecie" ToRole="Categoria" />
+          <NavigationProperty Name="Especie" Relationship="masterModel.FK_CategoriaEspecie_Especie" FromRole="CategoriaEspecie" ToRole="Especie" />
+        </EntityType>
+        <EntityType Name="Componente">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nombre" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="EsAnalogo" Type="Boolean" />
+          <Property Name="Descripcion" Type="String" MaxLength="550" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="ModeloComponentes" Relationship="masterModel.FK_ModeloComponentes_Componente" FromRole="Componente" ToRole="ModeloComponentes" />
+        </EntityType>
+        <EntityType Name="ConfiguracionPlaca">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TokenPlacaId" Type="Int32" />
+          <Property Name="Configuracion" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="FechaInicio" Type="DateTime" Precision="3" />
+          <Property Name="FechaFin" Type="DateTime" Precision="3" />
+          <Property Name="Vigente" Type="Boolean" />
+          <NavigationProperty Name="TokenPlaca" Relationship="masterModel.FK_ConfiguracionPlaca_TokenPlaca" FromRole="ConfiguracionPlaca" ToRole="TokenPlaca" />
+          <Property Name="Nombre" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="Descripcion" Type="String" MaxLength="1550" FixedLength="false" Unicode="true" />
+          <Property Name="PorcentajeOptimo" Type="Int32" />
+          <Property Name="PorcentajeAccion" Type="Int32" />
+          </EntityType>
+        <EntityType Name="Empresa">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="RazonSocial" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="NombreFantasia" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="Direccion" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="Telefono" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Vigente" Type="Boolean" />
+          <Property Name="Rut" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="NombreResponsable" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="RutResponsable" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CorreoResponsable" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="EmpresaEspecie" Relationship="masterModel.FK_EmpresaEspecie_Empresa" FromRole="Empresa" ToRole="EmpresaEspecie" />
+          <NavigationProperty Name="Establecimiento" Relationship="masterModel.FK_Establecimiento_Empresa" FromRole="Empresa" ToRole="Establecimiento" />
+          <NavigationProperty Name="TokenPlaca" Relationship="masterModel.TokenPlacaRelacion2" FromRole="Empresa" ToRole="TokenPlaca" />
+        </EntityType>
+        <EntityType Name="EmpresaEspecie">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="EmpresaId" Type="Int32" />
+          <Property Name="EspecieId" Type="Int32" />
+          <Property Name="Vigente" Type="Boolean" />
+          <NavigationProperty Name="Empresa" Relationship="masterModel.FK_EmpresaEspecie_Empresa" FromRole="EmpresaEspecie" ToRole="Empresa" />
+          <NavigationProperty Name="Especie" Relationship="masterModel.FK_EmpresaEspecie_Especie" FromRole="EmpresaEspecie" ToRole="Especie" />
+        </EntityType>
+        <EntityType Name="Especie">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nombre" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+          <Property Name="Vigente" Type="Boolean" />
+          <NavigationProperty Name="CategoriaEspecie" Relationship="masterModel.FK_CategoriaEspecie_Especie" FromRole="Especie" ToRole="CategoriaEspecie" />
+          <NavigationProperty Name="EmpresaEspecie" Relationship="masterModel.FK_EmpresaEspecie_Especie" FromRole="Especie" ToRole="EmpresaEspecie" />
+          <NavigationProperty Name="MovimientosAnimal" Relationship="masterModel.FK_MovimientosAnimal_Especie" FromRole="Especie" ToRole="MovimientosAnimal" />
+        </EntityType>
+        <EntityType Name="Establecimiento">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="RUP" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Direccion" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="EmpresaId" Type="Int32" />
+          <Property Name="Latitud" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Longitud" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Vigente" Type="Boolean" />
+          <Property Name="Nombre" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Animal" Relationship="masterModel.FK_Animal_Establecimiento" FromRole="Establecimiento" ToRole="Animal" />
+          <NavigationProperty Name="Empresa" Relationship="masterModel.FK_Establecimiento_Empresa" FromRole="Establecimiento" ToRole="Empresa" />
+          <NavigationProperty Name="MovimientosAnimal" Relationship="masterModel.FK_MovimientosAnimal_Establecimiento" FromRole="Establecimiento" ToRole="MovimientosAnimal" />
+          <NavigationProperty Name="UsuarioEstablecimiento" Relationship="masterModel.FK_UsuarioEstablecimiento_Establecimiento" FromRole="Establecimiento" ToRole="UsuarioEstablecimiento" />
+        </EntityType>
+        <EntityType Name="EstadoAnimal">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Vigente" Type="Boolean" />
+          <NavigationProperty Name="Animal" Relationship="masterModel.FK_Animal_EstadoAnimal" FromRole="EstadoAnimal" ToRole="Animal" />
+        </EntityType>
+        <EntityType Name="EstadoLote">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Vigente" Type="Boolean" />
+          <NavigationProperty Name="Lote" Relationship="masterModel.FK_Lote_EstadoLote" FromRole="EstadoLote" ToRole="Lote" />
+        </EntityType>
+        <EntityType Name="Lote">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nombre" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="FechaTransaccion" Type="DateTime" Precision="3" />
+          <Property Name="Vigente" Type="Boolean" />
+          <Property Name="EstablecimientoId" Type="Int32" />
+          <Property Name="EstadoLoteId" Type="Int32" />
+          <NavigationProperty Name="Animal" Relationship="masterModel.FK_Animal_Lote" FromRole="Lote" ToRole="Animal" />
+          <NavigationProperty Name="EstadoLote" Relationship="masterModel.FK_Lote_EstadoLote" FromRole="Lote" ToRole="EstadoLote" />
+        </EntityType>
+        <EntityType Name="Medicamento">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nombre" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="Descripcion" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="Vigente" Type="Boolean" />
+          <NavigationProperty Name="BodegaEstablecimiento" Relationship="masterModel.FK_BodegaEstablecimiento_Medicamento" FromRole="Medicamento" ToRole="BodegaEstablecimiento" />
+          <NavigationProperty Name="MovimientoMedicamento" Relationship="masterModel.FK_MovimientoMedicamento_Medicamento" FromRole="Medicamento" ToRole="MovimientoMedicamento" />
+        </EntityType>
+        <EntityType Name="Modelo">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nombre" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="Descripcion" Type="String" MaxLength="2500" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="ModeloComponentes" Relationship="masterModel.FK_ModeloComponentes_Modelo" FromRole="Modelo" ToRole="ModeloComponentes" />
+          <NavigationProperty Name="TokenPlaca" Relationship="masterModel.FK_TokenPlaca_Modelo" FromRole="Modelo" ToRole="TokenPlaca" />
+        </EntityType>
+        <EntityType Name="ModeloComponentes">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ComponenteId" Type="Int32" />
+          <Property Name="ModeloId" Type="Int32" />
+          <Property Name="PinAnalogo" Type="Int32" />
+          <Property Name="PinDigital" Type="Int32" />
+          <NavigationProperty Name="Componente" Relationship="masterModel.FK_ModeloComponentes_Componente" FromRole="ModeloComponentes" ToRole="Componente" />
+          <NavigationProperty Name="Modelo" Relationship="masterModel.FK_ModeloComponentes_Modelo" FromRole="ModeloComponentes" ToRole="Modelo" />
+          <Property Name="Descripcion" Type="String" MaxLength="1050" FixedLength="false" Unicode="true" />
+          <Property Name="PinDigitalDiametro" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="PinDigitalLitroXMinuto" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="MovimientoAlimento">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FechaMovimiento" Type="DateTime" Precision="3" />
+          <Property Name="AlimentoId" Type="Int32" />
+          <Property Name="UnidadMedida" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CantidadIngreso" Type="Int32" />
+          <Property Name="CantidadEgreso" Type="Int32" />
+          <Property Name="PrecioIngreso" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="PrecioEgreso" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="BodegaEstablecimientoId" Type="Int32" />
+          <Property Name="Observacion" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Alimento" Relationship="masterModel.FK_MovimientoAlimento_Alimento" FromRole="MovimientoAlimento" ToRole="Alimento" />
+        </EntityType>
+        <EntityType Name="MovimientoMedicamento">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FechaMovimiento" Type="DateTime" Precision="3" />
+          <Property Name="MedicamentoId" Type="Int32" />
+          <Property Name="DosisIngresadas" Type="Int32" />
+          <Property Name="DosisEgresadas" Type="Int32" />
+          <Property Name="UnidadMedida" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="PrecioIngreso" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="PrecioSalida" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="BodegaEstablecimientoId" Type="Int32" />
+          <Property Name="Observacion" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Medicamento" Relationship="masterModel.FK_MovimientoMedicamento_Medicamento" FromRole="MovimientoMedicamento" ToRole="Medicamento" />
+        </EntityType>
+        <EntityType Name="MovimientosAnimal">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TipoMovimientoId" Type="Int32" />
+          <Property Name="FechaMovimiento" Type="DateTime" Precision="3" />
+          <Property Name="FechaCompra" Type="DateTime" Precision="3" />
+          <Property Name="KGIngreso" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="KGSalida" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="KGGanados" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="PrecioCompra" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="PrecioVenta" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="FechaVenta" Type="DateTime" Precision="3" />
+          <Property Name="DiasEngorda" Type="Int32" />
+          <Property Name="PromedioKGDia" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="AnimalId" Type="Int32" />
+          <Property Name="AlimentoId" Type="Int32" />
+          <Property Name="MedicamentoId" Type="Int32" />
+          <Property Name="AlimentoInvertidoKG" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="FechaAplicacionAlimento" Type="DateTime" Precision="3" />
+          <Property Name="FechaAplicacionMedicamento" Type="DateTime" Precision="3" />
+          <Property Name="DosisMedicamentAplicada" Type="Int32" />
+          <Property Name="Observacion" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="RutMv" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="NombreMv" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="EstablecimientoId" Type="Int32" />
+          <Property Name="EspecieId" Type="Int32" />
+          <NavigationProperty Name="Animal" Relationship="masterModel.FK_MovimientosAnimal_Animal" FromRole="MovimientosAnimal" ToRole="Animal" />
+          <NavigationProperty Name="Especie" Relationship="masterModel.FK_MovimientosAnimal_Especie" FromRole="MovimientosAnimal" ToRole="Especie" />
+          <NavigationProperty Name="Establecimiento" Relationship="masterModel.FK_MovimientosAnimal_Establecimiento" FromRole="MovimientosAnimal" ToRole="Establecimiento" />
+          <NavigationProperty Name="TipoMovimiento" Relationship="masterModel.FK_MovimientosAnimal_TipoMovimiento" FromRole="MovimientosAnimal" ToRole="TipoMovimiento" />
+        </EntityType>
+        <EntityType Name="Recurso">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Modulo" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="Url" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="Nombre" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="Vigente" Type="Boolean" />
+          <Property Name="SistemaId" Type="Int32" />
+          <Property Name="Color" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ColorLetra" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Descripcion" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Sistema" Relationship="masterModel.FK_Recurso_Sistema" FromRole="Recurso" ToRole="Sistema" />
+          <NavigationProperty Name="RolRecurso" Relationship="masterModel.FK_RolRecurso_Recurso" FromRole="Recurso" ToRole="RolRecurso" />
+          <NavigationProperty Name="UsuarioRecurso" Relationship="masterModel.FK_UsuarioRecurso_Recurso" FromRole="Recurso" ToRole="UsuarioRecurso" />
+        </EntityType>
+        <EntityType Name="Roles">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Vigente" Type="Boolean" />
+          <NavigationProperty Name="RolRecurso" Relationship="masterModel.FK_RolRecurso_Roles" FromRole="Roles" ToRole="RolRecurso" />
+          <NavigationProperty Name="UsuarioRol" Relationship="masterModel.FK_UsuarioRol_Roles" FromRole="Roles" ToRole="UsuarioRol" />
+        </EntityType>
+        <EntityType Name="RolRecurso">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="RolId" Type="Int32" />
+          <Property Name="RecursoId" Type="Int32" />
+          <NavigationProperty Name="Recurso" Relationship="masterModel.FK_RolRecurso_Recurso" FromRole="RolRecurso" ToRole="Recurso" />
+          <NavigationProperty Name="Roles" Relationship="masterModel.FK_RolRecurso_Roles" FromRole="RolRecurso" ToRole="Roles" />
+        </EntityType>
+        <EntityType Name="Sistema">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nombre" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="Descripcion" Type="String" MaxLength="3050" FixedLength="false" Unicode="true" />
+          <Property Name="Vigente" Type="Boolean" />
+          <Property Name="Area" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="Controller" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="Action" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Color" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ColorLetra" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Recurso" Relationship="masterModel.FK_Recurso_Sistema" FromRole="Sistema" ToRole="Recurso" />
+          <NavigationProperty Name="UsuarioSistema" Relationship="masterModel.FK_UsuarioSistema_Sistema" FromRole="Sistema" ToRole="UsuarioSistema" />
+        </EntityType>
+        <EntityType Name="TipoMovimiento">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nombre" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="Vigente" Type="Boolean" />
+          <NavigationProperty Name="MovimientosAnimal" Relationship="masterModel.FK_MovimientosAnimal_TipoMovimiento" FromRole="TipoMovimiento" ToRole="MovimientosAnimal" />
+        </EntityType>
+        <EntityType Name="TokenPlaca">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Token" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="UsuarioId" Type="Int32" />
+          <Property Name="ModeloId" Type="Int32" />
+          <Property Name="Vigente" Type="Boolean" />
+          <Property Name="Latitud" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="Longitud" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="ConfiguracionPlaca" Relationship="masterModel.FK_ConfiguracionPlaca_TokenPlaca" FromRole="TokenPlaca" ToRole="ConfiguracionPlaca" />
+          <NavigationProperty Name="Modelo" Relationship="masterModel.FK_TokenPlaca_Modelo" FromRole="TokenPlaca" ToRole="Modelo" />
+          <NavigationProperty Name="Usuario" Relationship="masterModel.FK_TokenPlaca_Usuario" FromRole="TokenPlaca" ToRole="Usuario" />
+          <Property Name="Identificacion" Type="String" MaxLength="1350" FixedLength="false" Unicode="true" />
+          <Property Name="EmpresaId" Type="Int32" />
+          <NavigationProperty Name="Empresa" Relationship="masterModel.TokenPlacaRelacion2" FromRole="TokenPlaca" ToRole="Empresa" />
+          <Property Name="ValorSensor" Type="Int32" />
+          <Property Name="PorcentajeCorrespondiente" Type="Int32" />
+          <Property Name="ValorBajo" Type="Int32" />
+        </EntityType>
+        <EntityType Name="Usuario">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UserName" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="Password" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="NombrePersona" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="ApellidosPersona" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="RutPersona" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="EmailPersona" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="Vigente" Type="Boolean" />
+          <NavigationProperty Name="TokenPlaca" Relationship="masterModel.FK_TokenPlaca_Usuario" FromRole="Usuario" ToRole="TokenPlaca" />
+          <NavigationProperty Name="UsuarioEstablecimiento" Relationship="masterModel.FK_UsuarioEstablecimiento_Usuario" FromRole="Usuario" ToRole="UsuarioEstablecimiento" />
+          <NavigationProperty Name="UsuarioRecurso" Relationship="masterModel.FK_UsuarioRecurso_Usuario" FromRole="Usuario" ToRole="UsuarioRecurso" />
+          <NavigationProperty Name="UsuarioRol" Relationship="masterModel.FK_UsuarioRol_Usuario" FromRole="Usuario" ToRole="UsuarioRol" />
+          <NavigationProperty Name="UsuarioSistema" Relationship="masterModel.FK_UsuarioSistema_Usuario" FromRole="Usuario" ToRole="UsuarioSistema" />
+          <NavigationProperty Name="PanelControl" Relationship="masterModel.FK_PanelControl_Usuario" FromRole="Usuario" ToRole="PanelControl" />
+        </EntityType>
+        <EntityType Name="UsuarioEstablecimiento">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UsuarioId" Type="Int32" />
+          <Property Name="EstablecimientoId" Type="Int32" />
+          <Property Name="SistemaId" Type="Int32" />
+          <NavigationProperty Name="Establecimiento" Relationship="masterModel.FK_UsuarioEstablecimiento_Establecimiento" FromRole="UsuarioEstablecimiento" ToRole="Establecimiento" />
+          <NavigationProperty Name="Usuario" Relationship="masterModel.FK_UsuarioEstablecimiento_Usuario" FromRole="UsuarioEstablecimiento" ToRole="Usuario" />
+        </EntityType>
+        <EntityType Name="UsuarioRecurso">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UsuarioId" Type="Int32" />
+          <Property Name="RecursoId" Type="Int32" />
+          <NavigationProperty Name="Recurso" Relationship="masterModel.FK_UsuarioRecurso_Recurso" FromRole="UsuarioRecurso" ToRole="Recurso" />
+          <NavigationProperty Name="Usuario" Relationship="masterModel.FK_UsuarioRecurso_Usuario" FromRole="UsuarioRecurso" ToRole="Usuario" />
+        </EntityType>
+        <EntityType Name="UsuarioRol">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UsuarioId" Type="Int32" />
+          <Property Name="RolId" Type="Int32" />
+          <NavigationProperty Name="Roles" Relationship="masterModel.FK_UsuarioRol_Roles" FromRole="UsuarioRol" ToRole="Roles" />
+          <NavigationProperty Name="Usuario" Relationship="masterModel.FK_UsuarioRol_Usuario" FromRole="UsuarioRol" ToRole="Usuario" />
+        </EntityType>
+        <EntityType Name="UsuarioSistema">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UsuarioId" Type="Int32" />
+          <Property Name="SistemaId" Type="Int32" />
+          <NavigationProperty Name="Sistema" Relationship="masterModel.FK_UsuarioSistema_Sistema" FromRole="UsuarioSistema" ToRole="Sistema" />
+          <NavigationProperty Name="Usuario" Relationship="masterModel.FK_UsuarioSistema_Usuario" FromRole="UsuarioSistema" ToRole="Usuario" />
+        </EntityType>
+        <Association Name="FK_BodegaEstablecimiento_Alimento">
+          <End Type="masterModel.Alimento" Role="Alimento" Multiplicity="0..1" />
+          <End Type="masterModel.BodegaEstablecimiento" Role="BodegaEstablecimiento" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Alimento">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="BodegaEstablecimiento">
+              <PropertyRef Name="AlimentoId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_MovimientoAlimento_Alimento">
+          <End Type="masterModel.Alimento" Role="Alimento" Multiplicity="0..1" />
+          <End Type="masterModel.MovimientoAlimento" Role="MovimientoAlimento" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Alimento">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="MovimientoAlimento">
+              <PropertyRef Name="AlimentoId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Animal_Categoria">
+          <End Type="masterModel.Categoria" Role="Categoria" Multiplicity="0..1" />
+          <End Type="masterModel.Animal" Role="Animal" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Categoria">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Animal">
+              <PropertyRef Name="CategoriaEspecieId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Animal_Establecimiento">
+          <End Type="masterModel.Establecimiento" Role="Establecimiento" Multiplicity="0..1" />
+          <End Type="masterModel.Animal" Role="Animal" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Establecimiento">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Animal">
+              <PropertyRef Name="EstablecimientoId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Animal_EstadoAnimal">
+          <End Type="masterModel.EstadoAnimal" Role="EstadoAnimal" Multiplicity="0..1" />
+          <End Type="masterModel.Animal" Role="Animal" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EstadoAnimal">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Animal">
+              <PropertyRef Name="EstadoAnimalId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Animal_Lote">
+          <End Type="masterModel.Lote" Role="Lote" Multiplicity="0..1" />
+          <End Type="masterModel.Animal" Role="Animal" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Lote">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Animal">
+              <PropertyRef Name="LoteId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_MovimientosAnimal_Animal">
+          <End Type="masterModel.Animal" Role="Animal" Multiplicity="0..1" />
+          <End Type="masterModel.MovimientosAnimal" Role="MovimientosAnimal" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Animal">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="MovimientosAnimal">
+              <PropertyRef Name="AnimalId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BodegaEstablecimiento_Medicamento">
+          <End Type="masterModel.Medicamento" Role="Medicamento" Multiplicity="0..1" />
+          <End Type="masterModel.BodegaEstablecimiento" Role="BodegaEstablecimiento" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Medicamento">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="BodegaEstablecimiento">
+              <PropertyRef Name="MedicamentoId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CategoriaEspecie_Categoria">
+          <End Type="masterModel.Categoria" Role="Categoria" Multiplicity="0..1" />
+          <End Type="masterModel.CategoriaEspecie" Role="CategoriaEspecie" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Categoria">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="CategoriaEspecie">
+              <PropertyRef Name="CategoriaId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CategoriaEspecie_Especie">
+          <End Type="masterModel.Especie" Role="Especie" Multiplicity="0..1" />
+          <End Type="masterModel.CategoriaEspecie" Role="CategoriaEspecie" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Especie">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="CategoriaEspecie">
+              <PropertyRef Name="EspecieId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ModeloComponentes_Componente">
+          <End Type="masterModel.Componente" Role="Componente" Multiplicity="0..1" />
+          <End Type="masterModel.ModeloComponentes" Role="ModeloComponentes" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Componente">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="ModeloComponentes">
+              <PropertyRef Name="ComponenteId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ConfiguracionPlaca_TokenPlaca">
+          <End Type="masterModel.TokenPlaca" Role="TokenPlaca" Multiplicity="0..1" />
+          <End Type="masterModel.ConfiguracionPlaca" Role="ConfiguracionPlaca" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TokenPlaca">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="ConfiguracionPlaca">
+              <PropertyRef Name="TokenPlacaId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_EmpresaEspecie_Empresa">
+          <End Type="masterModel.Empresa" Role="Empresa" Multiplicity="0..1" />
+          <End Type="masterModel.EmpresaEspecie" Role="EmpresaEspecie" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Empresa">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="EmpresaEspecie">
+              <PropertyRef Name="EmpresaId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Establecimiento_Empresa">
+          <End Type="masterModel.Empresa" Role="Empresa" Multiplicity="0..1" />
+          <End Type="masterModel.Establecimiento" Role="Establecimiento" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Empresa">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Establecimiento">
+              <PropertyRef Name="EmpresaId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_EmpresaEspecie_Especie">
+          <End Type="masterModel.Especie" Role="Especie" Multiplicity="0..1" />
+          <End Type="masterModel.EmpresaEspecie" Role="EmpresaEspecie" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Especie">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="EmpresaEspecie">
+              <PropertyRef Name="EspecieId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_MovimientosAnimal_Especie">
+          <End Type="masterModel.Especie" Role="Especie" Multiplicity="0..1" />
+          <End Type="masterModel.MovimientosAnimal" Role="MovimientosAnimal" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Especie">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="MovimientosAnimal">
+              <PropertyRef Name="EspecieId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_MovimientosAnimal_Establecimiento">
+          <End Type="masterModel.Establecimiento" Role="Establecimiento" Multiplicity="0..1" />
+          <End Type="masterModel.MovimientosAnimal" Role="MovimientosAnimal" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Establecimiento">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="MovimientosAnimal">
+              <PropertyRef Name="EstablecimientoId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UsuarioEstablecimiento_Establecimiento">
+          <End Type="masterModel.Establecimiento" Role="Establecimiento" Multiplicity="0..1" />
+          <End Type="masterModel.UsuarioEstablecimiento" Role="UsuarioEstablecimiento" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Establecimiento">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="UsuarioEstablecimiento">
+              <PropertyRef Name="EstablecimientoId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Lote_EstadoLote">
+          <End Type="masterModel.EstadoLote" Role="EstadoLote" Multiplicity="0..1" />
+          <End Type="masterModel.Lote" Role="Lote" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EstadoLote">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Lote">
+              <PropertyRef Name="EstadoLoteId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_MovimientoMedicamento_Medicamento">
+          <End Type="masterModel.Medicamento" Role="Medicamento" Multiplicity="0..1" />
+          <End Type="masterModel.MovimientoMedicamento" Role="MovimientoMedicamento" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Medicamento">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="MovimientoMedicamento">
+              <PropertyRef Name="MedicamentoId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ModeloComponentes_Modelo">
+          <End Type="masterModel.Modelo" Role="Modelo" Multiplicity="0..1" />
+          <End Type="masterModel.ModeloComponentes" Role="ModeloComponentes" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Modelo">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="ModeloComponentes">
+              <PropertyRef Name="ModeloId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TokenPlaca_Modelo">
+          <End Type="masterModel.Modelo" Role="Modelo" Multiplicity="0..1" />
+          <End Type="masterModel.TokenPlaca" Role="TokenPlaca" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Modelo">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="TokenPlaca">
+              <PropertyRef Name="ModeloId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_MovimientosAnimal_TipoMovimiento">
+          <End Type="masterModel.TipoMovimiento" Role="TipoMovimiento" Multiplicity="0..1" />
+          <End Type="masterModel.MovimientosAnimal" Role="MovimientosAnimal" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TipoMovimiento">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="MovimientosAnimal">
+              <PropertyRef Name="TipoMovimientoId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Recurso_Sistema">
+          <End Type="masterModel.Sistema" Role="Sistema" Multiplicity="0..1" />
+          <End Type="masterModel.Recurso" Role="Recurso" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Sistema">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Recurso">
+              <PropertyRef Name="SistemaId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_RolRecurso_Recurso">
+          <End Type="masterModel.Recurso" Role="Recurso" Multiplicity="0..1" />
+          <End Type="masterModel.RolRecurso" Role="RolRecurso" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Recurso">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="RolRecurso">
+              <PropertyRef Name="RecursoId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UsuarioRecurso_Recurso">
+          <End Type="masterModel.Recurso" Role="Recurso" Multiplicity="0..1" />
+          <End Type="masterModel.UsuarioRecurso" Role="UsuarioRecurso" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Recurso">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="UsuarioRecurso">
+              <PropertyRef Name="RecursoId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_RolRecurso_Roles">
+          <End Type="masterModel.Roles" Role="Roles" Multiplicity="0..1" />
+          <End Type="masterModel.RolRecurso" Role="RolRecurso" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Roles">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="RolRecurso">
+              <PropertyRef Name="RolId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UsuarioRol_Roles">
+          <End Type="masterModel.Roles" Role="Roles" Multiplicity="0..1" />
+          <End Type="masterModel.UsuarioRol" Role="UsuarioRol" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Roles">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="UsuarioRol">
+              <PropertyRef Name="RolId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UsuarioSistema_Sistema">
+          <End Type="masterModel.Sistema" Role="Sistema" Multiplicity="0..1" />
+          <End Type="masterModel.UsuarioSistema" Role="UsuarioSistema" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Sistema">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="UsuarioSistema">
+              <PropertyRef Name="SistemaId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TokenPlaca_Usuario">
+          <End Type="masterModel.Usuario" Role="Usuario" Multiplicity="0..1" />
+          <End Type="masterModel.TokenPlaca" Role="TokenPlaca" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Usuario">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="TokenPlaca">
+              <PropertyRef Name="UsuarioId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UsuarioEstablecimiento_Usuario">
+          <End Type="masterModel.Usuario" Role="Usuario" Multiplicity="0..1" />
+          <End Type="masterModel.UsuarioEstablecimiento" Role="UsuarioEstablecimiento" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Usuario">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="UsuarioEstablecimiento">
+              <PropertyRef Name="UsuarioId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UsuarioRecurso_Usuario">
+          <End Type="masterModel.Usuario" Role="Usuario" Multiplicity="0..1" />
+          <End Type="masterModel.UsuarioRecurso" Role="UsuarioRecurso" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Usuario">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="UsuarioRecurso">
+              <PropertyRef Name="UsuarioId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UsuarioRol_Usuario">
+          <End Type="masterModel.Usuario" Role="Usuario" Multiplicity="0..1" />
+          <End Type="masterModel.UsuarioRol" Role="UsuarioRol" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Usuario">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="UsuarioRol">
+              <PropertyRef Name="UsuarioId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UsuarioSistema_Usuario">
+          <End Type="masterModel.Usuario" Role="Usuario" Multiplicity="0..1" />
+          <End Type="masterModel.UsuarioSistema" Role="UsuarioSistema" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Usuario">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="UsuarioSistema">
+              <PropertyRef Name="UsuarioId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="BitacoraLecturasAcciones">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="EmpresaId" Type="Int32" />
+          <Property Name="UsuarioId" Type="Int32" />
+          <Property Name="Token" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="IdentificacionEquipo" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="Longitud" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="Latitud" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="ModeloEquipo" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="PinAnalogo" Type="Int32" />
+          <Property Name="Valor" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="PinDigital" Type="Int32" />
+          <Property Name="AccionEjecutada" Type="String" MaxLength="550" FixedLength="false" Unicode="true" />
+          <Property Name="FechaRegistro" Type="DateTime" Precision="3" />
+          <Property Name="FechaRegistroUnix" Type="Int64" />
+          <Property Name="TareaEjecutada" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="BitacoraLitrosAproxConsumido">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="EmpresaId" Type="Int32" />
+          <Property Name="UsuarioId" Type="Int32" />
+          <Property Name="Token" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="IdentificacionEquipo" Type="String" MaxLength="1050" FixedLength="false" Unicode="true" />
+          <Property Name="Longitud" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="Latitud" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="ModeloEquipo" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="PinAnalogo" Type="Int32" />
+          <Property Name="PinDigital" Type="Int32" />
+          <Property Name="FechaAccion" Type="DateTime" Precision="3" />
+          <Property Name="FechaAccionUnix" Type="Int64" />
+          <Property Name="LitrosAprox" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Encendido" Type="Int32" />
+        </EntityType>
+        <Association Name="TokenPlacaRelacion2">
+          <End Type="masterModel.Empresa" Role="Empresa" Multiplicity="0..1" />
+          <End Type="masterModel.TokenPlaca" Role="TokenPlaca" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Empresa">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="TokenPlaca">
+              <PropertyRef Name="EmpresaId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="ListadoCorreos">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Correo" Type="String" MaxLength="550" FixedLength="false" Unicode="true" />
+          <Property Name="Vigente" Type="Boolean" />
+          <Property Name="PanelControlId" Type="Int32" />
+          <NavigationProperty Name="PanelControl" Relationship="masterModel.FK_ListadoCorreos_PanelControl" FromRole="ListadoCorreos" ToRole="PanelControl" />
+        </EntityType>
+        <EntityType Name="PanelControl">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nombre" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="Descripcion" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Token" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="AguaDadaMas3Min" Type="Boolean" />
+          <Property Name="AguaDadaMas5Min" Type="Boolean" />
+          <Property Name="AguaDadaMas10Min" Type="Boolean" />
+          <Property Name="SinTareaEjecutando" Type="Boolean" />
+          <Property Name="EnvioCorreo" Type="Boolean" />
+          <Property Name="Vigente" Type="Boolean" />
+          <Property Name="EnvioCorreoInforme1Hora" Type="Boolean" />
+          <NavigationProperty Name="ListadoCorreos" Relationship="masterModel.FK_ListadoCorreos_PanelControl" FromRole="PanelControl" ToRole="ListadoCorreos" />
+          <Property Name="UnixTimeEnvioInforme" Type="Int64" />
+          <Property Name="UsuarioId" Type="Int32" />
+          <Property Name="SinTareaEjecutadoCorreo" Type="Boolean" />
+          <NavigationProperty Name="Usuario" Relationship="masterModel.FK_PanelControl_Usuario" FromRole="PanelControl" ToRole="Usuario" />
+        </EntityType>
+        <Association Name="FK_ListadoCorreos_PanelControl">
+          <End Type="masterModel.PanelControl" Role="PanelControl" Multiplicity="0..1" />
+          <End Type="masterModel.ListadoCorreos" Role="ListadoCorreos" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PanelControl">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="ListadoCorreos">
+              <PropertyRef Name="PanelControlId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PanelControl_Usuario">
+          <End Type="masterModel.Usuario" Role="Usuario" Multiplicity="0..1" />
+          <End Type="masterModel.PanelControl" Role="PanelControl" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Usuario">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="PanelControl">
+              <PropertyRef Name="UsuarioId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="EjecucionTokenEmail">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Token" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="UnixTimeEjecucionEmail" Type="Int64" />
+        </EntityType>
+        </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="masterModelStoreContainer" CdmEntityContainer="masterEntities">
+          <EntitySetMapping Name="Alimento">
+            <EntityTypeMapping TypeName="masterModel.Alimento">
+              <MappingFragment StoreEntitySet="Alimento">
+                <ScalarProperty Name="Vigente" ColumnName="Vigente" />
+                <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Animal">
+            <EntityTypeMapping TypeName="masterModel.Animal">
+              <MappingFragment StoreEntitySet="Animal">
+                <ScalarProperty Name="LoteId" ColumnName="LoteId" />
+                <ScalarProperty Name="FechaNacimiento" ColumnName="FechaNacimiento" />
+                <ScalarProperty Name="Vigente" ColumnName="Vigente" />
+                <ScalarProperty Name="EstadoAnimalId" ColumnName="EstadoAnimalId" />
+                <ScalarProperty Name="MedidaEdad" ColumnName="MedidaEdad" />
+                <ScalarProperty Name="EstablecimientoId" ColumnName="EstablecimientoId" />
+                <ScalarProperty Name="CategoriaEspecieId" ColumnName="CategoriaEspecieId" />
+                <ScalarProperty Name="Sexo" ColumnName="Sexo" />
+                <ScalarProperty Name="IdentificacionAnimal" ColumnName="IdentificacionAnimal" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="BodegaEstablecimiento">
+            <EntityTypeMapping TypeName="masterModel.BodegaEstablecimiento">
+              <MappingFragment StoreEntitySet="BodegaEstablecimiento">
+                <ScalarProperty Name="Vigente" ColumnName="Vigente" />
+                <ScalarProperty Name="MedicamentoId" ColumnName="MedicamentoId" />
+                <ScalarProperty Name="CantidadStock" ColumnName="CantidadStock" />
+                <ScalarProperty Name="FechaVencimiento" ColumnName="FechaVencimiento" />
+                <ScalarProperty Name="NumeroSerie" ColumnName="NumeroSerie" />
+                <ScalarProperty Name="AlimentoId" ColumnName="AlimentoId" />
+                <ScalarProperty Name="EstablecimientoId" ColumnName="EstablecimientoId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Categoria">
+            <EntityTypeMapping TypeName="masterModel.Categoria">
+              <MappingFragment StoreEntitySet="Categoria">
+                <ScalarProperty Name="Vigente" ColumnName="Vigente" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CategoriaEspecie">
+            <EntityTypeMapping TypeName="masterModel.CategoriaEspecie">
+              <MappingFragment StoreEntitySet="CategoriaEspecie">
+                <ScalarProperty Name="CategoriaId" ColumnName="CategoriaId" />
+                <ScalarProperty Name="EspecieId" ColumnName="EspecieId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Componente">
+            <EntityTypeMapping TypeName="masterModel.Componente">
+              <MappingFragment StoreEntitySet="Componente">
+                <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+                <ScalarProperty Name="EsAnalogo" ColumnName="EsAnalogo" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ConfiguracionPlaca">
+            <EntityTypeMapping TypeName="masterModel.ConfiguracionPlaca">
+              <MappingFragment StoreEntitySet="ConfiguracionPlaca">
+                <ScalarProperty Name="PorcentajeAccion" ColumnName="PorcentajeAccion" />
+                <ScalarProperty Name="PorcentajeOptimo" ColumnName="PorcentajeOptimo" />
+                <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="Vigente" ColumnName="Vigente" />
+                <ScalarProperty Name="FechaFin" ColumnName="FechaFin" />
+                <ScalarProperty Name="FechaInicio" ColumnName="FechaInicio" />
+                <ScalarProperty Name="Configuracion" ColumnName="Configuracion" />
+                <ScalarProperty Name="TokenPlacaId" ColumnName="TokenPlacaId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Empresa">
+            <EntityTypeMapping TypeName="masterModel.Empresa">
+              <MappingFragment StoreEntitySet="Empresa">
+                <ScalarProperty Name="CorreoResponsable" ColumnName="CorreoResponsable" />
+                <ScalarProperty Name="RutResponsable" ColumnName="RutResponsable" />
+                <ScalarProperty Name="NombreResponsable" ColumnName="NombreResponsable" />
+                <ScalarProperty Name="Rut" ColumnName="Rut" />
+                <ScalarProperty Name="Vigente" ColumnName="Vigente" />
+                <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+                <ScalarProperty Name="Direccion" ColumnName="Direccion" />
+                <ScalarProperty Name="NombreFantasia" ColumnName="NombreFantasia" />
+                <ScalarProperty Name="RazonSocial" ColumnName="RazonSocial" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EmpresaEspecie">
+            <EntityTypeMapping TypeName="masterModel.EmpresaEspecie">
+              <MappingFragment StoreEntitySet="EmpresaEspecie">
+                <ScalarProperty Name="Vigente" ColumnName="Vigente" />
+                <ScalarProperty Name="EspecieId" ColumnName="EspecieId" />
+                <ScalarProperty Name="EmpresaId" ColumnName="EmpresaId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Especie">
+            <EntityTypeMapping TypeName="masterModel.Especie">
+              <MappingFragment StoreEntitySet="Especie">
+                <ScalarProperty Name="Vigente" ColumnName="Vigente" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Establecimiento">
+            <EntityTypeMapping TypeName="masterModel.Establecimiento">
+              <MappingFragment StoreEntitySet="Establecimiento">
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="Vigente" ColumnName="Vigente" />
+                <ScalarProperty Name="Longitud" ColumnName="Longitud" />
+                <ScalarProperty Name="Latitud" ColumnName="Latitud" />
+                <ScalarProperty Name="EmpresaId" ColumnName="EmpresaId" />
+                <ScalarProperty Name="Direccion" ColumnName="Direccion" />
+                <ScalarProperty Name="RUP" ColumnName="RUP" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EstadoAnimal">
+            <EntityTypeMapping TypeName="masterModel.EstadoAnimal">
+              <MappingFragment StoreEntitySet="EstadoAnimal">
+                <ScalarProperty Name="Vigente" ColumnName="Vigente" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EstadoLote">
+            <EntityTypeMapping TypeName="masterModel.EstadoLote">
+              <MappingFragment StoreEntitySet="EstadoLote">
+                <ScalarProperty Name="Vigente" ColumnName="Vigente" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Lote">
+            <EntityTypeMapping TypeName="masterModel.Lote">
+              <MappingFragment StoreEntitySet="Lote">
+                <ScalarProperty Name="EstadoLoteId" ColumnName="EstadoLoteId" />
+                <ScalarProperty Name="EstablecimientoId" ColumnName="EstablecimientoId" />
+                <ScalarProperty Name="Vigente" ColumnName="Vigente" />
+                <ScalarProperty Name="FechaTransaccion" ColumnName="FechaTransaccion" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Medicamento">
+            <EntityTypeMapping TypeName="masterModel.Medicamento">
+              <MappingFragment StoreEntitySet="Medicamento">
+                <ScalarProperty Name="Vigente" ColumnName="Vigente" />
+                <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Modelo">
+            <EntityTypeMapping TypeName="masterModel.Modelo">
+              <MappingFragment StoreEntitySet="Modelo">
+                <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ModeloComponentes">
+            <EntityTypeMapping TypeName="masterModel.ModeloComponentes">
+              <MappingFragment StoreEntitySet="ModeloComponentes">
+                <ScalarProperty Name="PinDigitalLitroXMinuto" ColumnName="PinDigitalLitroXMinuto" />
+                <ScalarProperty Name="PinDigitalDiametro" ColumnName="PinDigitalDiametro" />
+                <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+                <ScalarProperty Name="PinDigital" ColumnName="PinDigital" />
+                <ScalarProperty Name="PinAnalogo" ColumnName="PinAnalogo" />
+                <ScalarProperty Name="ModeloId" ColumnName="ModeloId" />
+                <ScalarProperty Name="ComponenteId" ColumnName="ComponenteId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MovimientoAlimento">
+            <EntityTypeMapping TypeName="masterModel.MovimientoAlimento">
+              <MappingFragment StoreEntitySet="MovimientoAlimento">
+                <ScalarProperty Name="Observacion" ColumnName="Observacion" />
+                <ScalarProperty Name="BodegaEstablecimientoId" ColumnName="BodegaEstablecimientoId" />
+                <ScalarProperty Name="PrecioEgreso" ColumnName="PrecioEgreso" />
+                <ScalarProperty Name="PrecioIngreso" ColumnName="PrecioIngreso" />
+                <ScalarProperty Name="CantidadEgreso" ColumnName="CantidadEgreso" />
+                <ScalarProperty Name="CantidadIngreso" ColumnName="CantidadIngreso" />
+                <ScalarProperty Name="UnidadMedida" ColumnName="UnidadMedida" />
+                <ScalarProperty Name="AlimentoId" ColumnName="AlimentoId" />
+                <ScalarProperty Name="FechaMovimiento" ColumnName="FechaMovimiento" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MovimientoMedicamento">
+            <EntityTypeMapping TypeName="masterModel.MovimientoMedicamento">
+              <MappingFragment StoreEntitySet="MovimientoMedicamento">
+                <ScalarProperty Name="Observacion" ColumnName="Observacion" />
+                <ScalarProperty Name="BodegaEstablecimientoId" ColumnName="BodegaEstablecimientoId" />
+                <ScalarProperty Name="PrecioSalida" ColumnName="PrecioSalida" />
+                <ScalarProperty Name="PrecioIngreso" ColumnName="PrecioIngreso" />
+                <ScalarProperty Name="UnidadMedida" ColumnName="UnidadMedida" />
+                <ScalarProperty Name="DosisEgresadas" ColumnName="DosisEgresadas" />
+                <ScalarProperty Name="DosisIngresadas" ColumnName="DosisIngresadas" />
+                <ScalarProperty Name="MedicamentoId" ColumnName="MedicamentoId" />
+                <ScalarProperty Name="FechaMovimiento" ColumnName="FechaMovimiento" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MovimientosAnimal">
+            <EntityTypeMapping TypeName="masterModel.MovimientosAnimal">
+              <MappingFragment StoreEntitySet="MovimientosAnimal">
+                <ScalarProperty Name="EspecieId" ColumnName="EspecieId" />
+                <ScalarProperty Name="EstablecimientoId" ColumnName="EstablecimientoId" />
+                <ScalarProperty Name="NombreMv" ColumnName="NombreMv" />
+                <ScalarProperty Name="RutMv" ColumnName="RutMv" />
+                <ScalarProperty Name="Observacion" ColumnName="Observacion" />
+                <ScalarProperty Name="DosisMedicamentAplicada" ColumnName="DosisMedicamentAplicada" />
+                <ScalarProperty Name="FechaAplicacionMedicamento" ColumnName="FechaAplicacionMedicamento" />
+                <ScalarProperty Name="FechaAplicacionAlimento" ColumnName="FechaAplicacionAlimento" />
+                <ScalarProperty Name="AlimentoInvertidoKG" ColumnName="AlimentoInvertidoKG" />
+                <ScalarProperty Name="MedicamentoId" ColumnName="MedicamentoId" />
+                <ScalarProperty Name="AlimentoId" ColumnName="AlimentoId" />
+                <ScalarProperty Name="AnimalId" ColumnName="AnimalId" />
+                <ScalarProperty Name="PromedioKGDia" ColumnName="PromedioKGDia" />
+                <ScalarProperty Name="DiasEngorda" ColumnName="DiasEngorda" />
+                <ScalarProperty Name="FechaVenta" ColumnName="FechaVenta" />
+                <ScalarProperty Name="PrecioVenta" ColumnName="PrecioVenta" />
+                <ScalarProperty Name="PrecioCompra" ColumnName="PrecioCompra" />
+                <ScalarProperty Name="KGGanados" ColumnName="KGGanados" />
+                <ScalarProperty Name="KGSalida" ColumnName="KGSalida" />
+                <ScalarProperty Name="KGIngreso" ColumnName="KGIngreso" />
+                <ScalarProperty Name="FechaCompra" ColumnName="FechaCompra" />
+                <ScalarProperty Name="FechaMovimiento" ColumnName="FechaMovimiento" />
+                <ScalarProperty Name="TipoMovimientoId" ColumnName="TipoMovimientoId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Recurso">
+            <EntityTypeMapping TypeName="masterModel.Recurso">
+              <MappingFragment StoreEntitySet="Recurso">
+                <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+                <ScalarProperty Name="ColorLetra" ColumnName="ColorLetra" />
+                <ScalarProperty Name="Color" ColumnName="Color" />
+                <ScalarProperty Name="SistemaId" ColumnName="SistemaId" />
+                <ScalarProperty Name="Vigente" ColumnName="Vigente" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="Url" ColumnName="Url" />
+                <ScalarProperty Name="Modulo" ColumnName="Modulo" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Roles">
+            <EntityTypeMapping TypeName="masterModel.Roles">
+              <MappingFragment StoreEntitySet="Roles">
+                <ScalarProperty Name="Vigente" ColumnName="Vigente" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RolRecurso">
+            <EntityTypeMapping TypeName="masterModel.RolRecurso">
+              <MappingFragment StoreEntitySet="RolRecurso">
+                <ScalarProperty Name="RecursoId" ColumnName="RecursoId" />
+                <ScalarProperty Name="RolId" ColumnName="RolId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Sistema">
+            <EntityTypeMapping TypeName="masterModel.Sistema">
+              <MappingFragment StoreEntitySet="Sistema">
+                <ScalarProperty Name="ColorLetra" ColumnName="ColorLetra" />
+                <ScalarProperty Name="Color" ColumnName="Color" />
+                <ScalarProperty Name="Action" ColumnName="Action" />
+                <ScalarProperty Name="Controller" ColumnName="Controller" />
+                <ScalarProperty Name="Area" ColumnName="Area" />
+                <ScalarProperty Name="Vigente" ColumnName="Vigente" />
+                <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TipoMovimiento">
+            <EntityTypeMapping TypeName="masterModel.TipoMovimiento">
+              <MappingFragment StoreEntitySet="TipoMovimiento">
+                <ScalarProperty Name="Vigente" ColumnName="Vigente" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TokenPlaca">
+            <EntityTypeMapping TypeName="masterModel.TokenPlaca">
+              <MappingFragment StoreEntitySet="TokenPlaca">
+                <ScalarProperty Name="ValorBajo" ColumnName="ValorBajo" />
+                <ScalarProperty Name="PorcentajeCorrespondiente" ColumnName="PorcentajeCorrespondiente" />
+                <ScalarProperty Name="ValorSensor" ColumnName="ValorSensor" />
+                <ScalarProperty Name="EmpresaId" ColumnName="EmpresaId" />
+                <ScalarProperty Name="Identificacion" ColumnName="Identificacion" />
+                <ScalarProperty Name="Longitud" ColumnName="Longitud" />
+                <ScalarProperty Name="Latitud" ColumnName="Latitud" />
+                <ScalarProperty Name="Vigente" ColumnName="Vigente" />
+                <ScalarProperty Name="ModeloId" ColumnName="ModeloId" />
+                <ScalarProperty Name="UsuarioId" ColumnName="UsuarioId" />
+                <ScalarProperty Name="Token" ColumnName="Token" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Usuario">
+            <EntityTypeMapping TypeName="masterModel.Usuario">
+              <MappingFragment StoreEntitySet="Usuario">
+                <ScalarProperty Name="Vigente" ColumnName="Vigente" />
+                <ScalarProperty Name="EmailPersona" ColumnName="EmailPersona" />
+                <ScalarProperty Name="RutPersona" ColumnName="RutPersona" />
+                <ScalarProperty Name="ApellidosPersona" ColumnName="ApellidosPersona" />
+                <ScalarProperty Name="NombrePersona" ColumnName="NombrePersona" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="UsuarioEstablecimiento">
+            <EntityTypeMapping TypeName="masterModel.UsuarioEstablecimiento">
+              <MappingFragment StoreEntitySet="UsuarioEstablecimiento">
+                <ScalarProperty Name="SistemaId" ColumnName="SistemaId" />
+                <ScalarProperty Name="EstablecimientoId" ColumnName="EstablecimientoId" />
+                <ScalarProperty Name="UsuarioId" ColumnName="UsuarioId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="UsuarioRecurso">
+            <EntityTypeMapping TypeName="masterModel.UsuarioRecurso">
+              <MappingFragment StoreEntitySet="UsuarioRecurso">
+                <ScalarProperty Name="RecursoId" ColumnName="RecursoId" />
+                <ScalarProperty Name="UsuarioId" ColumnName="UsuarioId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="UsuarioRol">
+            <EntityTypeMapping TypeName="masterModel.UsuarioRol">
+              <MappingFragment StoreEntitySet="UsuarioRol">
+                <ScalarProperty Name="RolId" ColumnName="RolId" />
+                <ScalarProperty Name="UsuarioId" ColumnName="UsuarioId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="UsuarioSistema">
+            <EntityTypeMapping TypeName="masterModel.UsuarioSistema">
+              <MappingFragment StoreEntitySet="UsuarioSistema">
+                <ScalarProperty Name="SistemaId" ColumnName="SistemaId" />
+                <ScalarProperty Name="UsuarioId" ColumnName="UsuarioId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="BitacoraLecturasAcciones">
+            <EntityTypeMapping TypeName="masterModel.BitacoraLecturasAcciones">
+              <MappingFragment StoreEntitySet="BitacoraLecturasAcciones">
+                <ScalarProperty Name="TareaEjecutada" ColumnName="TareaEjecutada" />
+                <ScalarProperty Name="FechaRegistroUnix" ColumnName="FechaRegistroUnix" />
+                <ScalarProperty Name="FechaRegistro" ColumnName="FechaRegistro" />
+                <ScalarProperty Name="AccionEjecutada" ColumnName="AccionEjecutada" />
+                <ScalarProperty Name="PinDigital" ColumnName="PinDigital" />
+                <ScalarProperty Name="Valor" ColumnName="Valor" />
+                <ScalarProperty Name="PinAnalogo" ColumnName="PinAnalogo" />
+                <ScalarProperty Name="ModeloEquipo" ColumnName="ModeloEquipo" />
+                <ScalarProperty Name="Latitud" ColumnName="Latitud" />
+                <ScalarProperty Name="Longitud" ColumnName="Longitud" />
+                <ScalarProperty Name="IdentificacionEquipo" ColumnName="IdentificacionEquipo" />
+                <ScalarProperty Name="Token" ColumnName="Token" />
+                <ScalarProperty Name="UsuarioId" ColumnName="UsuarioId" />
+                <ScalarProperty Name="EmpresaId" ColumnName="EmpresaId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="BitacoraLitrosAproxConsumido">
+            <EntityTypeMapping TypeName="masterModel.BitacoraLitrosAproxConsumido">
+              <MappingFragment StoreEntitySet="BitacoraLitrosAproxConsumido">
+                <ScalarProperty Name="Encendido" ColumnName="Encendido" />
+                <ScalarProperty Name="LitrosAprox" ColumnName="LitrosAprox" />
+                <ScalarProperty Name="FechaAccionUnix" ColumnName="FechaAccionUnix" />
+                <ScalarProperty Name="FechaAccion" ColumnName="FechaAccion" />
+                <ScalarProperty Name="PinDigital" ColumnName="PinDigital" />
+                <ScalarProperty Name="PinAnalogo" ColumnName="PinAnalogo" />
+                <ScalarProperty Name="ModeloEquipo" ColumnName="ModeloEquipo" />
+                <ScalarProperty Name="Latitud" ColumnName="Latitud" />
+                <ScalarProperty Name="Longitud" ColumnName="Longitud" />
+                <ScalarProperty Name="IdentificacionEquipo" ColumnName="IdentificacionEquipo" />
+                <ScalarProperty Name="Token" ColumnName="Token" />
+                <ScalarProperty Name="UsuarioId" ColumnName="UsuarioId" />
+                <ScalarProperty Name="EmpresaId" ColumnName="EmpresaId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ListadoCorreos">
+            <EntityTypeMapping TypeName="masterModel.ListadoCorreos">
+              <MappingFragment StoreEntitySet="ListadoCorreos">
+                <ScalarProperty Name="PanelControlId" ColumnName="PanelControlId" />
+                <ScalarProperty Name="Vigente" ColumnName="Vigente" />
+                <ScalarProperty Name="Correo" ColumnName="Correo" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PanelControl">
+            <EntityTypeMapping TypeName="masterModel.PanelControl">
+              <MappingFragment StoreEntitySet="PanelControl">
+                <ScalarProperty Name="SinTareaEjecutadoCorreo" ColumnName="SinTareaEjecutadoCorreo" />
+                <ScalarProperty Name="UsuarioId" ColumnName="UsuarioId" />
+                <ScalarProperty Name="UnixTimeEnvioInforme" ColumnName="UnixTimeEnvioInforme" />
+                <ScalarProperty Name="EnvioCorreoInforme1Hora" ColumnName="EnvioCorreoInforme1Hora" />
+                <ScalarProperty Name="Vigente" ColumnName="Vigente" />
+                <ScalarProperty Name="EnvioCorreo" ColumnName="EnvioCorreo" />
+                <ScalarProperty Name="SinTareaEjecutando" ColumnName="SinTareaEjecutando" />
+                <ScalarProperty Name="AguaDadaMas10Min" ColumnName="AguaDadaMas10Min" />
+                <ScalarProperty Name="AguaDadaMas5Min" ColumnName="AguaDadaMas5Min" />
+                <ScalarProperty Name="AguaDadaMas3Min" ColumnName="AguaDadaMas3Min" />
+                <ScalarProperty Name="Token" ColumnName="Token" />
+                <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EjecucionTokenEmail">
+            <EntityTypeMapping TypeName="masterModel.EjecucionTokenEmail">
+              <MappingFragment StoreEntitySet="EjecucionTokenEmail">
+                <ScalarProperty Name="UnixTimeEjecucionEmail" ColumnName="UnixTimeEjecucionEmail" />
+                <ScalarProperty Name="Token" ColumnName="Token" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

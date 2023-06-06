@@ -1,0 +1,351 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>SSoft</title>
+
+    <link href="~/Content/BootStrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/Css/the-big-picture.css" rel="stylesheet" />
+    <link href="~/Content/MetroUI/metro-bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/MetroUI/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/Content/Css/sitio.css" rel="stylesheet" />
+
+    <script src="~/Script/MetroUI/metro-docs.js"></script>
+    <script src="~/Script/MetroUI/Carrousel.js"></script>
+    <script src="~/Script/Jquery/jquery.min.js"></script>
+    <script src="~/Script/Jquery/jquery.validate.min.js"></script>
+    <script src="~/Script/Jquery/Jquery.Form.js"></script>
+    <script src="~/Script/BootStrap/bootstrap.min.js"></script>
+    <script src="~/Script/BootStrap/bootstrap.bundle.min.js"></script>
+    <script src="~/Script/Jquery/Masked.js"></script>
+    <script src="~/Script/Jquery/nprogress.js"></script>
+    <script src="~/Script/Base/EspereGifImplement.js"></script>
+
+
+</head>
+<body>
+    <style type="text/css" media="screen">
+        th.ui-th-column div {
+            white-space: normal !important;
+            height: auto !important;
+            padding: 2px;
+        }
+
+        .ui-jqgrid tr.jqgrow td {
+            white-space: normal !important;
+        }
+    </style>
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-36060270-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+
+
+
+        })();
+
+        $(document).ready(function () {
+         
+
+
+            $('#collapse-sidebar').click(function () {
+
+                $('.navbar-side').toggleClass('navbar-side-closed');
+                $('#wrapper').toggleClass('wrapper-full');
+
+
+            });
+
+            $("[rel=tooltip]").tooltip({ placement: 'right' });
+            $('body').click(function () {
+                $(".dropdown-menu").hide();
+            });
+            $('button').button();
+            //$(".calendario").datepicker();
+            $('#loginClick').click(function () {
+                $('#loginDialog').dialog({
+                    modal: true,
+                    width: 'auto'//,
+                    //position: ['top', 20]
+                });
+            });
+
+            $('#cambiarClave').click(function () {
+
+                $('#cambiarClaveModal').modal('show');
+            });
+            //var editUsuarioValidator = $('#editUseraForm').validate({
+            //    onkeyup: true,
+            //    success: $.noop, // Odd workaround for errorPlacement not firing!
+            //    rules: {
+            //        Clave5: {
+            //            required: true,
+            //            minlength: 3
+            //        },
+            //        Clave6: {
+            //            equalTo: "#Clave5"
+            //        }
+            //    },
+            //    messages: {
+            //        Clave5: {
+            //            required: "*",
+            //            minlength: "debe contener al menos 3 caracteres"
+            //        },
+            //        Clave6: {
+            //            equalTo: "las Claves no son identicas"
+            //        }
+            //    },
+            //    submitHandler: function (form) {
+            //        var opts = {
+            //            dataType: 'json',
+            //            beforeSubmit: function () {
+            //                var valid = $(form).valid();
+            //                // recolectar los roles
+            //                if (valid) {
+            //                    //EspereShow();
+            //                    //$(document.body).css({ 'cursor': 'wait' })
+            //                    return valid;
+            //                }
+            //            },
+            //            success: function (result) {
+            //                if (result.success == 4) {
+            //                    $('#cambiarClaveModal').modal('hide');
+            //                }
+            //                if (result.success == 1) {
+            //                    alertModal(result.mensaje, 'Alerta');
+            //                } else {
+            //                    alertModal(result.mensaje, 'Alerta');
+            //                }
+            //            }
+            //        };
+            //        $(form).ajaxSubmit(opts);
+            //    }
+            //});
+
+        });
+
+        function callbackHide() {
+            setTimeout(function () {
+                $("#effect").removeAttr("style").hide().fadeIn();
+
+            }, 1000);
+
+        };
+
+        function EspereShow() {
+            $('#espere').dialog({
+                modal: true,
+                closeOnEscape: false,
+                width: 'auto',
+                open: function (event, ui) {
+                    $(this).parent().children().children('.ui-dialog-titlebar-close').hide();
+                }
+            });
+            $('#espere').show();
+        }
+
+        function EjecutarUrl(url) {
+            $(location).attr('href', url); //'../Usuario/Perfil');
+        }
+
+        function MenuSeleccion(obj, menu1, menu2, modulo) {
+            $('#' + menu1).hide();
+            $('#' + menu2).show();
+            $('.opciones2').hide();
+            $('.' + modulo).show();
+            $('#volverBtnMenu').show();
+        }
+        function VolverMenu(menu1, menu2) {
+            $('#' + menu1).show();
+            $('#' + menu2).hide();
+            $('#volverBtnMenu').hide();
+        }
+    </script>
+    <div class="bodys">
+        <table class="tablaFormulario3Cols">
+            <tr>
+                <td style="width:65%;">
+                    <img src="~/Image/logo24.png" />
+                </td>
+                <td style="width:200px;">
+                    @*<div id="notificacionDiv" style="display:none;">
+                            <a href="javascript:void(0);" style="cursor: pointer; " onclick="menuOpcion();">
+                                <img width="35" height="35" style='cursor: pointer; cursor: hand;' src='~/Images/notificacion.gif' title='Usted tiene eventos pendientes' />
+                            </a>
+                            <div id='a_menu' style="display: none; position: absolute; border: 1px solid black; background-color: White;padding: 3px;">
+                                <div id="protocoloDevueltoOpt" style="display:none;"><ul><li><a href="../Protocolo/MonitorProtocoloAspx">Usted tiene <span id="numeroProtocolosTxt"></span> Protocolo(s) Devuelto(s)</a></li></ul></div>
+                                <div id="denunciaDevueltaOpt" style="display:none;"><ul><li><a href="../Denuncia/MonitorDenuncia">Usted tiene <span id="numeroDenunciaObsTxt"></span> Denuncia(s) con Observacion(es)</a></li></ul></div>
+                                <div id="denunciaValidarOpt" style="display:none;"><ul><li><a href="../Denuncia/MonitorDenuncia">Usted tiene <span id="numeroDenuciaValTxt"></span> Denuncia(s) por Validar</a></li></ul></div>
+                                <input type="hidden" id="isShow" value="0" />
+                            </div>
+
+                        </div>*@
+
+                </td>
+                @if ((string)Session["CodigoMensaje"] == "Ok")
+                {
+                    <td>
+                        <table>
+                            <tr>
+                                <td>
+                                    @if ((string)Session["CodigoMensaje"] == "Ok")
+                                    {
+                                        <div style="float: left;">
+                                            <p>Bienvenido : @Session["Nombre"] </p>
+                                        </div>
+                                    }
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-default"><span style="color: #CD853F;" class="glyphicon glyphicon-off" aria-hidden="true" title="Cerrar Sesion"></span></button>
+                                        <button type="button" class="btn btn-default"><span style="color: #CD853F;" class="glyphicon glyphicon-user" aria-hidden="true" title="Cambiar Contraseña"></span></button>
+                                        <button style="display:none;" id="verMenuBtn" type="button" class="btn btn-default"><span style="color: #CD853F;" class="glyphicon glyphicon-th-large" aria-hidden="true" title="Ver Menu"></span></button>
+                                        <button style="display:none;" type="button" class="btn btn-default"><span style="color: #CD853F;" class="glyphicon glyphicon-home" aria-hidden="true" title="Inicio"></span></button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+
+
+
+                        @*<a href="../index/cerrarSesion">Cerrar Sesion</a>
+                            <br />
+                            <a id="modificarClaveClick" href="#">Modificar Clave</a>*@
+                    </td>
+                }
+            </tr>
+        </table>
+    </div>
+    @*<div style="float: left; width: 100%;">
+            <div style="float: left; width: 20%;"></div>
+            <div class="titulo-page" style="float: left; width: 75%; padding: 0 1% 0 1%;">
+                <span id="lblTituloPagina"></span>
+            </div>
+            @if ((string)Session["CodigoMensaje"] == "Ok")
+            {
+                <div style="float: left;">
+                    <p>Bienvenido : @Session["Nombre"] </p>
+                </div>
+            }
+        </div>*@
+
+    <hr />
+    <div class="bodys">
+
+        <div style="margin-left:10px;">
+            @RenderBody()
+        </div>
+    </div>
+    <div id="confirm"></div>
+
+
+    <!-- Modal -->
+    <div id="alertModal" class="modal fade" role="dialog" style="z-index: 10;">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 id="tituloAlert" class="modal-title">Alerta</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-2">
+                                @*<img src="~/Images/Img/favicon/favicons.ico" width="30" height="30" />*@
+                            </div>
+                            <div class="col-md-6"><span id="mensajeAlert"></span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal" id="okBtn">OK</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="confirmModal" class="modal fade" role="dialog" style="z-index: 10;">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 id="tituloConfirm" class="modal-title">Confirmación</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-2">
+                                @*<img src="~/Images/Img/favicon/favicons.ico" width="30" height="30" />*@
+                            </div>
+                            <div class="col-md-6"><span id="mensajeConfirm"></span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" data-dismiss="modal" class="btn btn-primary " id="siBtn">SI</button>
+                    <button type="button" data-dismiss="modal" class="btn noBtn">NO</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Modal -->
+    <div id="cambiarClaveModal" class="modal fade" role="dialog" style="z-index: 10;">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 id="tituloConfirm" class="modal-title">Cambiar Clave</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <form id="editUseraForm" action="@Url.Action("ModificarClave", "Usuario")" method="post">
+                            <table>
+                                <tr>
+                                    <td style="width:500px;">Contraseña</td>
+                                    <td>@Html.Password("Clave5")</td>
+                                </tr>
+                            </table>
+                            <hr />
+                            <table>
+                                <tr>
+                                    <td style="width:500px;">Confirmar Contraseña</td>
+                                    <td>@Html.Password("Clave6")</td>
+                                </tr>
+                            </table>
+                            <button type="submit">
+                                Aceptar
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <input type="hidden" id="flagVolverMenu" value="0" />
+    @RenderSection("scripts", required: false)
+</body>
+</html>

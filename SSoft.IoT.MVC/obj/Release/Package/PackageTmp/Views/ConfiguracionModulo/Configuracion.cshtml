@@ -1,0 +1,224 @@
+﻿@{
+    ViewBag.Title = "Configuracion";
+    Layout = "~/Views/Layout/_master.cshtml";
+}
+<script src="~/Script/CultivoOnlineJs/ConfiguracionJs.js"></script>
+<style>
+    .slider-track-high {
+        background: red;
+    }
+
+    .slider-track-low {
+        background: green;
+    }
+
+    .slider-selection {
+        background: yellow;
+    }
+</style>
+<div style="margin-top:150px;margin-left:2%;margin-right:1%;">
+    <h2>Configuración de Modulos</h2>
+    En este item usted podra configurar los distintos modulos adquiridos. primero seleccione su modulo para luego planificar su cultivo.
+    <hr />
+    <div style="width:100%;text-align:center;">
+        <h3>Listado de mis Modulos</h3>
+    </div>
+    <div class="row margenTopLinea">
+        <div class="col-md-9">
+            <table id="modeloTable"></table>
+            <div id="modeloPager"></div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog" style="width: 90%;">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Planificación del Cultivo</h4>
+            </div>
+            <div class="modal-body">
+                <div style="width:100%;text-align:center;">
+                    @* <h3>Planificación</h3>*@
+                </div>
+                @Html.Hidden("modeloIdCliente", 0)
+                <p>Aca usted puede agregar, editar o eliminar una tarea que necesite para su cultivo.</p>
+                <button data-toggle="modal" class="btn btn-success" data-target="#myModalPlani" onclick="Editar(0);">Agregar tarea</button>
+                <hr />
+                <div class="row margenTopLinea">
+                    <div class="col-md-9">
+                        <table id="configTable"></table>
+                        <div id="configPager"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<div class="modal fade" id="myModalPlani" role="dialog">
+    <div class="modal-dialog" style="width: 70%;">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div style="width:100%;text-align:center;">
+                    <h3>Tarea</h3>
+                </div>
+                <hr />
+                <h3>Identificación de la tarea</h3>
+                <p>ingrese nombre y fechas para la ejecucion de la tarea</p>
+                <div class="row margenTopLinea">
+                    <div class="col-md-3">
+                        <div role="form">
+                            <div class="form-group">
+                                <label for="name">Nombre de la Tarea:</label>
+                                @Html.TextBox("nombreTarea", "", new { @class = "form-control", autofocus = true })
+                                <div class="help-block with-errors"></div>
+                                @Html.Hidden("idConfHidden", 0)
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div role="form">
+                            <div class="form-group">
+                                <label for="name">Fecha de Inicio:</label>
+                                @Html.TextBox("fechaInicio", "", new { @class = "form-control form_datetime", autofocus = false })
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div role="form">
+                            <div class="form-group">
+                                <label for="name">Fecha de Fin:</label>
+                                @Html.TextBox("fechaFin", "", new { @class = "form-control form_datetime", autofocus = false })
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+                <h3>Nivel Humedad</h3>
+                <p>Seleccione el rango de humedad que desea por cada puerto</p>
+                <div class="row margenTopLinea">
+                    <div class="col-md-3">
+                        <div role="form">
+                            <div class="form-group">
+                                <label for="name">Input 1:</label>
+                                <form class="range-field">
+                                    <p><input id="input1" type="range" min="100" max="1000" /></p>
+                                    <p>Valor Optimo: <span id="input1Valor"></span><div id="input1Class" class="muyHumedo" title="Muy Humedo"></div></p>
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div role="form">
+                            <div class="form-group">
+                                <label for="name">Input 2:</label>
+                                <form class="range-field">
+                                    <p><input id="input2" type="range" min="100" max="1000" /></p>
+                                    <p>Valor Optimo: <span id="input2Valor"></span><div id="input2Class" class="muyHumedo" title="Muy Humedo"></div></p>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div role="form">
+                            <div class="form-group">
+                                <label for="name">Input 3:</label>
+                                <form class="range-field">
+                                    <p><input id="input3" type="range" min="100" max="1000" /></p>
+                                    <p>Valor Optimo: <span id="input3Valor"></span><div id="input3Class" class="muyHumedo" title="Muy Humedo"></div></p>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div role="form">
+                            <div class="form-group">
+                                <label for="name">Input 4:</label>
+                                <form class="range-field">
+                                    <p><input id="input4" type="range" min="100" max="1000" /></p>
+                                    <p>Valor Optimo: <span id="input4Valor"></span><div id="input4Class" class="muyHumedo" title="Muy Humedo"></div></p>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+                <h3>Recopilación de Datos</h3>
+                <p>puede controlar la frecuencia para el envio de informacion</p>
+                <div class="row margenTopLinea">
+                    <div class="col-md-5">
+                        <div role="form">
+                            <div class="form-group">
+                                <label for="name">Ingrese un valor de frecuencia</label>
+                                <form class="range-field">
+                                    <p><input id="numeroIteracciones" type="number" /></p>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+                <h3>Detener</h3>
+                <p>puede detener toda accion</p>
+                <div class="row margenTopLinea">
+                    <div class="col-md-5">
+                        <div role="form">
+                            <div class="form-group">
+                                <label for="name">Detener Tarea?</label>
+                                <form class="range-field">
+                                    <p>
+                                        <select id="ejecuntandoTarea">
+                                            <option value="1">SI</option>
+                                            <option value="0">NO</option>
+                                        </select>
+                                    </p>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+                <h3>Segundos Agua</h3>
+                <p>Configure cuantos segundos debe dar el agua</p>
+                <div class="row margenTopLinea">
+                    <div class="col-md-5">
+                        <div role="form">
+                            <div class="form-group">
+                                <label for="name">segundos de agua (1000 => 1 Segundo)</label>
+                                <form class="range-field">
+                                    <p><input id="segundos" type="number" /></p>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="col-md-3">
+                        <button id="guardarConfig" class="btn btn-success" title="Guardar">Guardar</button>
+                    </div>
+                    <div class="col-md-3">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Cancelar</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+@Html.Hidden("tokenPlacaIdHidden", 0)
+@Html.Hidden("modeloIdHidden", 0)

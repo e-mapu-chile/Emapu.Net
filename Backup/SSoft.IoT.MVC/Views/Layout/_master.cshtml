@@ -1,0 +1,315 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>E-Mapu &mdash; Cultivo OnLine</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="cultivo online" />
+    <meta name="keywords" content="cultivo,bajar costos,online" />
+    <meta name="author" content="Empresa E-Mapu" />
+
+   
+    <meta property="og:title" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:description" content="" />
+    <meta name="twitter:title" content="" />
+    <meta name="twitter:image" content="" />
+    <meta name="twitter:url" content="" />
+    <meta name="twitter:card" content="" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+    <link href="~/Content/Css/sitio.css" rel="stylesheet" />
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="~/TemaCss/splash/css/animate.css">
+    <!-- Icomoon Icon Fonts-->
+    <link rel="stylesheet" href="~/TemaCss/splash/css/icomoon.css">
+    <!-- Themify Icons-->
+    <link rel="stylesheet" href="~/TemaCss/splash/css/themify-icons.css">
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="~/TemaCss/splash/css/bootstrap.css">
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="~/TemaCss/splash/css/magnific-popup.css">
+    <!-- Owl Carousel  -->
+    <link rel="stylesheet" href="~/TemaCss/splash/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="~/TemaCss/splash/css/owl.theme.default.min.css">
+    <!-- Theme style  -->
+    <link rel="stylesheet" href="~/TemaCss/splash/css/style.css">
+
+    <link href="~/Content/jquery-grid/ui.jqgrid.css" rel="stylesheet" />
+    <!-- Modernizr JS -->
+    <script src="~/TemaCss/splash/js/modernizr-2.6.2.min.js"></script>
+    <link href="~/Content/bootstrap-slider/Bootstrap-Slider.css" rel="stylesheet" />
+    <!-- FOR IE9 below -->
+    <!--[if lt IE 9]>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <!-- jQuery -->
+    @*<script src="~/Script/Jquery/jquery.min.js"></script>*@
+    <script src="~/TemaCss/splash/js/jquery.min.js"></script>
+    <script src="~/Script/Jquery/jquery.validate.min.js"></script>
+    <script src="~/Script/Jquery/Jquery.Form.js"></script>
+    <!-- jQuery Easing -->
+    <script src="~/TemaCss/splash/js/jquery.easing.1.3.js"></script>
+    <!-- Bootstrap -->
+    <script src="~/TemaCss/splash/js/bootstrap.min.js"></script>
+    <!-- Waypoints -->
+    <script src="~/TemaCss/splash/js/jquery.waypoints.min.js"></script>
+    <!-- Carousel -->
+
+    <link href="~/Script/jquery-ui-1.12.1.custom/jquery-ui.css" rel="stylesheet" />
+
+
+    <script src="~/Script/Jquery/nprogress.js"></script>
+
+    <script src="~/TemaCss/splash/js/owl.carousel.min.js"></script>
+    <!-- countTo -->
+    <script src="~/TemaCss/splash/js/jquery.countTo.js"></script>
+    <!-- Magnific Popup -->
+    <script src="~/TemaCss/splash/js/jquery.magnific-popup.min.js"></script>
+    <script src="~/TemaCss/splash/js/magnific-popup-options.js"></script>
+    <!-- Main -->
+    <script src="~/TemaCss/splash/js/main.js"></script>
+    @*<script src="~/Script/Base/datepicker-es.js"></script>*@
+    <script src="~/Script/jquery-grid/grid.locale-en.js"></script>
+    <script src="~/Script/jquery-grid/jquery.jqGrid.min.js"></script>
+    <script src="~/Script/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+
+    <script src="~/Script/jquery-ui-1.12.1.custom/datepicker-es.js"></script>
+    <script src="~/Script/Base/jquery.mask.js"></script>
+    <script src="~/Script/Base/EspereGifImplement.js"></script>
+    <script src="~/Script/bootstrap-slider/Bootstrap-Slider.js"></script>
+    @*<script src="~/Script/Base/jquery.numberMask.js"></script>
+        <script src="~/Script/Base/jquery.Rut.min.js"></script>
+        <script src="~/Script/Base/Masked.js"></script>*@
+</head>
+<body>
+    <script type="text/javascript">
+
+        //var _gaq = _gaq || [];
+        //////_gaq.push(['_setAccount', 'UA-36060270-1']);
+        //////_gaq.push(['_trackPageview']);
+
+        //////(function () {
+        //////    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        //////    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        //////    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+
+
+
+        //////})();
+
+        $(document).ready(function () {
+
+            //$(".form_datetime").datetimepicker({ format: 'yyyy-mm-dd' });
+
+            //$(".form_datetime").datepicker();
+            $('.money').mask('000.000.000.000.000', { reverse: true });
+
+            $(".form_datetime").datepicker({
+                beforeShow: function () {
+                    setTimeout(function () {
+                        $('.ui-datepicker').css('z-index', 99999999999999);
+                    }, 0);
+                }
+            });
+
+          //  $(".form_datetime").datepicker({ dateFormat: 'dd/mm/yy' });
+            //$(".form_datetime").datepicker($.datepicker.regional['es']);
+
+
+        });
+
+        function callbackHide() {
+            setTimeout(function () {
+                $("#effect").removeAttr("style").hide().fadeIn();
+            }, 1000);
+
+        };
+
+        function EspereShow() {
+            $('#espere').dialog({
+                modal: true,
+                closeOnEscape: false,
+                width: 'auto',
+                open: function (event, ui) {
+                    $(this).parent().children().children('.ui-dialog-titlebar-close').hide();
+                }
+            });
+            $('#espere').show();
+        }
+
+        function EjecutarUrl(url) {
+            $(location).attr('href', url); //'../Usuario/Perfil');
+        }
+
+        //////function MenuSeleccion(obj, menu1, menu2, modulo) {
+        //////    $('#' + menu1).hide();
+        //////    $('#' + menu2).show();
+        //////    $('.opciones2').hide();
+        //////    $('.' + modulo).show();
+        //////    $('#volverBtnMenu').show();
+        //////}
+        //////function VolverMenu(menu1, menu2) {
+        //////    $('#' + menu1).show();
+        //////    $('#' + menu2).hide();
+        //////    $('#volverBtnMenu').hide();
+        //////}
+    </script>
+    <div class="gtco-loader"></div>
+
+    <div id="page">
+        <div class="page-inner">
+            <nav class="gtco-nav" role="navigation">
+                <div class="gtco-container">
+
+                    <div class="row">
+                        <div class="col-sm-4 col-xs-12">
+                            <div id="gtco-logo"><a href="index.html">e-Mapu<em>.</em></a></div>
+                        </div>
+                        <div class="col-xs-8 text-right menu-1">
+                            @if ((string)Session["CodigoMensaje"] == "Ok")
+                            {
+                                List<SSoft.Aplicacion.Dto.Objetos.ObjetoRecursoDto> recursos = (List<SSoft.Aplicacion.Dto.Objetos.ObjetoRecursoDto>)Session["Recursos"];
+                                var modulosList = recursos.GroupBy(test => test.Modulo).Select(grp => grp.First()).ToList();
+
+                                var modc = modulosList.GroupBy(i => i.Nombre).Select(group => group.First());
+                                <ul>
+                                    @foreach (var mod in modc)
+                                    {
+                                        var recursosList = from m in recursos
+                                                           where m.Modulo == mod.Modulo
+                                                           select new SSoft.DataAccess.Recurso
+                                                           {
+                                                               Id = m.Id,
+                                                               Url = m.Url,
+                                                               Nombre = m.Nombre
+                                                           };
+
+
+
+                                        <li class="has-dropdown">
+                                            <a id="h3_@mod.Id" href="#">@mod.Modulo</a>
+                                            <ul class="dropdown">
+                                                @foreach (var rec in recursosList)
+                                                {
+                                                    <li><a id="a_@rec.Id" href="@rec.Url">@rec.Nombre</a></li>
+                                                }
+                                            </ul>
+                                        </li>
+                                    }
+                                    <li class="btn-cta"> <a href="../index/cerrarSesion"><span>Cerrar Sesion</span></a></li>
+                                </ul>
+                            }
+                            else
+                            {
+                                <ul>
+                                    @*<li><a href="features.html">Features</a></li>
+                                        <li><a href="tour.html">Tour</a></li>
+                                        <li class="has-dropdown">
+                                            <a href="#">Dropdown</a>
+                                            <ul class="dropdown">
+                                                <li><a href="#">Web Design</a></li>
+                                                <li><a href="#">eCommerce</a></li>
+                                                <li><a href="#">Branding</a></li>
+                                                <li><a href="#">API</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="pricing.html">Pricing</a></li>*@
+                                    <li><a href="contact.html">Contactanos</a></li>
+                                    <li class="btn-cta"><a href="#"><span>Como Funciona</span></a></li>
+                                </ul>
+                            }
+                        </div>
+                    </div>
+
+                </div>
+            </nav>
+            @if ((string)Session["CodigoMensaje"] == "Ok")
+            {
+                <header id="gtco-header" class="gtco-cover" role="banner" style="height:100px;">
+                    <div class="overlay"></div>
+                    <div class="gtco-container">
+                        <div class="row">
+                            @*<div class="col-md-12 col-md-offset-0 text-left">
+                                <div class="row row-mt-15em">
+                                    <div class="col-md-4 col-md-push-1 animate-box" data-animate-effect="fadeInRight">
+                                    </div>
+                                </div>
+                            </div>*@
+                        </div>
+                    </div>
+                </header>
+            }
+            else
+            {
+                <header id="gtco-header" class="gtco-cover imagenPredioFondo" role="banner">
+                    <div class="overlay"></div>
+                    <div class="gtco-container">
+                        <div class="row">
+                            <div class="col-md-12 col-md-offset-0 text-left">
+
+                                <div class="row row-mt-15em">
+                                    <div class="col-md-7 mt-text animate-box" data-animate-effect="fadeInUp">
+                                        <span class="intro-text-small">Bienvenidos a E-Mapu</span>
+                                        <h1>Planifique sus cultivos remotamente y ahorre recursos.</h1>
+                                    </div>
+                                    <div class="col-md-4 col-md-push-1 animate-box" data-animate-effect="fadeInRight">
+                                        <div class="form-wrap">
+                                            <div class="tab">
+                                                <ul class="tab-menu">
+                                                    <li class="active gtco-first"><a href="#" data-tab="signup">Ingrese</a></li>
+                                                </ul>
+                                                <div class="tab-content">
+                                                    <div class="tab-content-inner active" data-content="signup">
+                                                        <form id="editUserForm" action="@Url.Action("Login", "Index")" method="post">
+                                                            <div class="row form-group">
+                                                                <div class="col-md-12">
+                                                                    <label for="username">Email</label>
+                                                                    @*<input type="text" class="form-control" id="Login">*@
+                                                                    @Html.TextBox("Login", "", new { @class = "form-control", autofocus = false })
+                                                                </div>
+                                                            </div>
+                                                            <div class="row form-group">
+                                                                <div class="col-md-12">
+                                                                    <label for="password">Contraseña</label>
+                                                                    @*<input type="password" class="form-control" id="Password">*@
+                                                                    @Html.Password("Password", "", new { @class = "form-control", autofocus = false })
+                                                                </div>
+                                                            </div>
+                                                            <div class="row form-group">
+                                                                <div class="col-md-12">
+                                                                    <input type="submit" class="btn btn-primary" value="Ingresar">
+                                                                </div>
+                                                            </div>
+                                                        </form>
+
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </header>
+            }
+            @RenderBody()
+
+        </div>
+    </div>
+    <div class="gototop js-top">
+        <a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+    </div>
+</body>
+</html>
